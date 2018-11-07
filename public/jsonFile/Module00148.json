@@ -1,0 +1,77 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00148",
+      "source": "文档菜单维护",
+      "s": {
+        "x": 692.3934037881309,
+        "y": 380.55517395175855,
+        "blmd": "文檔管理",
+        "blmdID": "Module00148",
+        "in": 0,
+        "out": 2
+      },
+      "target": "文档查询",
+      "t": {
+        "x": 383.9718501123215,
+        "y": 382.74082195752374,
+        "blmd": "",
+        "blmdID": "Module00148",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00148",
+      "source": "文档菜单维护",
+      "s": {
+        "x": 692.3934037881309,
+        "y": 380.55517395175855,
+        "blmd": "文檔管理",
+        "blmdID": "Module00148",
+        "in": 0,
+        "out": 2
+      },
+      "target": "文档管理",
+      "t": {
+        "x": 548.4130358293501,
+        "y": 379.3789879275446,
+        "blmd": "",
+        "blmdID": "Module00148",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00148",
+      "source": "文档管理",
+      "s": {
+        "x": 548.4130358293501,
+        "y": 379.3789879275446,
+        "blmd": "",
+        "blmdID": "Module00148",
+        "in": 1,
+        "out": 1
+      },
+      "target": "文档查询",
+      "t": {
+        "x": 383.9718501123215,
+        "y": 382.74082195752374,
+        "blmd": "",
+        "blmdID": "Module00148",
+        "in": 2,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

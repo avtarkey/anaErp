@@ -1,0 +1,389 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "主材单耗项目维护",
+      "s": {
+        "x": 2553.4200217294874,
+        "y": 1297.9810825162247,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 1
+      },
+      "target": "主材单耗目标维护",
+      "t": {
+        "x": 2377.9661817288043,
+        "y": 1294.869943815068,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 2829.39110447639,
+        "y": 1323.3989840790662,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "供应商基本资料",
+      "t": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商取消/启用",
+      "s": {
+        "x": 2400.07485776926,
+        "y": 1592.127774884434,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 1
+      },
+      "target": "供应商基本资料",
+      "t": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料",
+      "s": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      },
+      "target": "主材供应商承诺供货量维护",
+      "t": {
+        "x": 2135.0225256806693,
+        "y": 1312.1516268342828,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料",
+      "s": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      },
+      "target": "合格供应商基础数据",
+      "t": {
+        "x": 2138.005986363812,
+        "y": 1464.37526421219,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料",
+      "s": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      },
+      "target": "供应商地址维护",
+      "t": {
+        "x": 2136.839067425247,
+        "y": 1238.706656089536,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料",
+      "s": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      },
+      "target": "供应商取消/启用",
+      "t": {
+        "x": 2400.07485776926,
+        "y": 1592.127774884434,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料",
+      "s": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      },
+      "target": "供应商评鉴数据",
+      "t": {
+        "x": 2135.827622540755,
+        "y": 1384.3310843602985,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料",
+      "s": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      },
+      "target": "营运计划单价审核",
+      "t": {
+        "x": 2149.394861077232,
+        "y": 1556.118491222616,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商类别",
+      "s": {
+        "x": 2555.437515968931,
+        "y": 1371.8595770607083,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 1
+      },
+      "target": "供应商基本资料",
+      "t": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2719.4763920495307,
+        "y": 1327.3605323784468,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "营运计划单价审核",
+      "t": {
+        "x": 2149.394861077232,
+        "y": 1556.118491222616,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "采购类别<>已禁用功能",
+      "s": {
+        "x": 2718.6604088062463,
+        "y": 1396.702882022206,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "营运计划单价审核",
+      "t": {
+        "x": 2149.394861077232,
+        "y": 1556.118491222616,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2975.2104324032907,
+        "y": 1411.2076211301155,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "有害物质含量及标准录入",
+      "t": {
+        "x": 2581.885530548377,
+        "y": 1651.6888174202354,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2967.2783335645054,
+        "y": 1329.9191950031259,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "营运计划单价审核",
+      "t": {
+        "x": 2149.394861077232,
+        "y": 1556.118491222616,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "供應商基本信息管理",
+      "belongModuleID": "Module00166",
+      "source": "网上供应商基本资料<>供應商基本信息管理",
+      "s": {
+        "x": 3120.540275439073,
+        "y": 1324.8832888987272,
+        "blmd": "供應商基本信息管理",
+        "blmdID": "Module00166",
+        "in": 0,
+        "out": 0
+      },
+      "target": "供应商取消/启用",
+      "t": {
+        "x": 2400.07485776926,
+        "y": 1592.127774884434,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "供應商基本信息管理",
+      "belongModuleID": "Module00166",
+      "source": "网上供应商基本资料<>供應商基本信息管理",
+      "s": {
+        "x": 3120.540275439073,
+        "y": 1324.8832888987272,
+        "blmd": "供應商基本信息管理",
+        "blmdID": "Module00166",
+        "in": 0,
+        "out": 0
+      },
+      "target": "供应商基本资料",
+      "t": {
+        "x": 2386.9008906903036,
+        "y": 1452.5168973716682,
+        "blmd": "",
+        "blmdID": "Module00070",
+        "in": 2,
+        "out": 6
+      }
+    }
+  ],
+  "nodes": {}
+}

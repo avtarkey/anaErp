@@ -1,0 +1,1949 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "GerberFile点检<>點檢管理",
+      "s": {
+        "x": 3116.8425369608785,
+        "y": 1470.2420151773997,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "二级品号维护审核<>已禁用功能",
+      "s": {
+        "x": 2874.5586431118795,
+        "y": 1962.8551881695307,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产品预算数据维护",
+      "t": {
+        "x": 1955.792379927339,
+        "y": 2069.5275663788407,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "工艺名称维护<>工程基礎資料",
+      "s": {
+        "x": 3146.6856805120146,
+        "y": 2212.010189597083,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产品类别维护",
+      "t": {
+        "x": 2568.3104227204935,
+        "y": 2194.6839008273687,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "主材类别名称维护<>采購基礎資料",
+      "s": {
+        "x": 2957.3299161534483,
+        "y": 2124.4578858530026,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产品类别维护",
+      "t": {
+        "x": 2568.3104227204935,
+        "y": 2194.6839008273687,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 3334.7575313172865,
+        "y": 1675.386713048982,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包送货公司（子公司）明细",
+      "t": {
+        "x": 2553.7433472716816,
+        "y": 1684.9961247151969,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 3334.7575313172865,
+        "y": 1675.386713048982,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "往来意见书填写",
+      "t": {
+        "x": 2183.3656634616646,
+        "y": 2012.9482270154117,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 3334.7575313172865,
+        "y": 1675.386713048982,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户基本信息",
+      "t": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 3334.7575313172865,
+        "y": 1675.386713048982,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "送货公司（子公司）明细",
+      "t": {
+        "x": 2174.202404654296,
+        "y": 1834.2829256059852,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "出货通知单添加<>業務管理",
+      "s": {
+        "x": 2989.5834459572375,
+        "y": 1522.788065917864,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "销售运输费录入",
+      "t": {
+        "x": 2208.475829730358,
+        "y": 2209.880272520958,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "交易类型维护<>關務基礎資料",
+      "s": {
+        "x": 2971.9417605498793,
+        "y": 1693.5228137453191,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包送货公司（子公司）明细",
+      "t": {
+        "x": 2553.7433472716816,
+        "y": 1684.9961247151969,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "交易类型维护<>關務基礎資料",
+      "s": {
+        "x": 2971.9417605498793,
+        "y": 1693.5228137453191,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户基本信息",
+      "t": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "交易类型维护<>關務基礎資料",
+      "s": {
+        "x": 2971.9417605498793,
+        "y": 1693.5228137453191,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 0
+      },
+      "target": "送货公司（子公司）明细",
+      "t": {
+        "x": 2174.202404654296,
+        "y": 1834.2829256059852,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "协力商维护",
+      "s": {
+        "x": 2740.9093398874784,
+        "y": 1683.19542236441,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 2
+      },
+      "target": "全外包送货公司（子公司）明细",
+      "t": {
+        "x": 2553.7433472716816,
+        "y": 1684.9961247151969,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "协力商维护",
+      "s": {
+        "x": 2740.9093398874784,
+        "y": 1683.19542236441,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 2
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "物料分类单价类别设置",
+      "s": {
+        "x": 2719.114708752379,
+        "y": 1973.8158602735484,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "物料分类单价设置",
+      "t": {
+        "x": 2559.558970661837,
+        "y": 1977.353199811991,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2881.4192485522913,
+        "y": 1890.4021452391262,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料分类单价设置",
+      "t": {
+        "x": 2559.558970661837,
+        "y": 1977.353199811991,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2881.4192485522913,
+        "y": 1890.4021452391262,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产品类别维护",
+      "t": {
+        "x": 2568.3104227204935,
+        "y": 2194.6839008273687,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "表面处理方式维护",
+      "s": {
+        "x": 2732.141434233092,
+        "y": 2057.341164676762,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 5
+      },
+      "target": "客户基准单价维护",
+      "t": {
+        "x": 2192.9415667240105,
+        "y": 2095.228426966315,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "表面处理方式维护",
+      "s": {
+        "x": 2732.141434233092,
+        "y": 2057.341164676762,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 5
+      },
+      "target": "产品预算数据维护",
+      "t": {
+        "x": 1955.792379927339,
+        "y": 2069.5275663788407,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "表面处理方式维护",
+      "s": {
+        "x": 2732.141434233092,
+        "y": 2057.341164676762,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 5
+      },
+      "target": "产品类别维护",
+      "t": {
+        "x": 2568.3104227204935,
+        "y": 2194.6839008273687,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "表面处理方式维护",
+      "s": {
+        "x": 2732.141434233092,
+        "y": 2057.341164676762,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 5
+      },
+      "target": "报价基准维护",
+      "t": {
+        "x": 2199.1134659809554,
+        "y": 2155.7071233023994,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "表面处理方式维护",
+      "s": {
+        "x": 2732.141434233092,
+        "y": 2057.341164676762,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 5
+      },
+      "target": "业务报价加价条件维护1",
+      "t": {
+        "x": 2578.7806710347463,
+        "y": 2098.4440672596456,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "客户采购规格维护<>業務管理",
+      "s": {
+        "x": 2977.0740486950413,
+        "y": 1393.9614640805187,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "MOQ数据维护",
+      "t": {
+        "x": 2150.169693817761,
+        "y": 1483.1752398168774,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "交仓地点维护",
+      "t": {
+        "x": 2221.3956246066277,
+        "y": 2343.998489131418,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "各客户出货形态折让比例维护",
+      "t": {
+        "x": 2147.837928306012,
+        "y": 1347.6480426473936,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "各客户开料前置期维护",
+      "t": {
+        "x": 2164.131955091656,
+        "y": 1676.6607296051643,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "往来意见书填写",
+      "t": {
+        "x": 2183.3656634616646,
+        "y": 2012.9482270154117,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户打板要求维护",
+      "t": {
+        "x": 2129.5821889986923,
+        "y": 1288.5890146949682,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户扣款方式及比例维护",
+      "t": {
+        "x": 2160.968004286782,
+        "y": 1601.057388879014,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户送货地址有效性维护",
+      "t": {
+        "x": 1951.8761302371659,
+        "y": 1825.7019006710943,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户动态报告",
+      "t": {
+        "x": 2173.9963098306202,
+        "y": 1749.3781141313457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户国内送货地址维护",
+      "t": {
+        "x": 2210.654426548741,
+        "y": 2281.019637037415,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户基准单价维护",
+      "t": {
+        "x": 2192.9415667240105,
+        "y": 2095.228426966315,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户清单",
+      "t": {
+        "x": 2226.88875285928,
+        "y": 2412.2917747303336,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "客户检验规范维护",
+      "t": {
+        "x": 2158.030318601316,
+        "y": 1547.3847684462542,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "送货公司（子公司）明细",
+      "t": {
+        "x": 2174.202404654296,
+        "y": 1834.2829256059852,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "授信额度申请",
+      "t": {
+        "x": 1963.422914973859,
+        "y": 1946.5706697002738,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "产品预算数据维护",
+      "t": {
+        "x": 1955.792379927339,
+        "y": 2069.5275663788407,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "报价基准维护",
+      "t": {
+        "x": 2199.1134659809554,
+        "y": 2155.7071233023994,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "开发中客户转为正式客户维护",
+      "t": {
+        "x": 2142.727393662809,
+        "y": 1408.1501954958717,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "业务对账权限维护",
+      "t": {
+        "x": 2209.6841682346235,
+        "y": 2476.612767154514,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "销售运输费录入",
+      "t": {
+        "x": 2208.475829730358,
+        "y": 2209.880272520958,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息",
+      "s": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      },
+      "target": "营业计划管理",
+      "t": {
+        "x": 2184.9424771599315,
+        "y": 1901.9742942775579,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户产品类别",
+      "s": {
+        "x": 2731.2868564101354,
+        "y": 1893.8306855282558,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 2
+      },
+      "target": "客户产品类别分类维护",
+      "t": {
+        "x": 2558.384832144491,
+        "y": 1892.542698371787,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户产品类别",
+      "s": {
+        "x": 2731.2868564101354,
+        "y": 1893.8306855282558,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 2
+      },
+      "target": "营业计划管理",
+      "t": {
+        "x": 2184.9424771599315,
+        "y": 1901.9742942775579,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "派车单维护<>業務管理",
+      "s": {
+        "x": 2946.451771172811,
+        "y": 1001.0564535162084,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "送货公里数维护",
+      "t": {
+        "x": 2496.6536578186615,
+        "y": 1000.8829834578521,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "订单明细维护<>業務管理",
+      "s": {
+        "x": 2974.3656627689475,
+        "y": 1141.5060575283799,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "订单编号维护<>業務管理",
+      "s": {
+        "x": 2963.3151285008425,
+        "y": 1081.2501886485336,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3117.728328365955,
+        "y": 1911.2830401619408,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户清单",
+      "t": {
+        "x": 2226.88875285928,
+        "y": 2412.2917747303336,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3117.728328365955,
+        "y": 1911.2830401619408,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "业务对账权限维护",
+      "t": {
+        "x": 2209.6841682346235,
+        "y": 2476.612767154514,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "海关代码库<>關務基礎資料",
+      "s": {
+        "x": 2976.0517436565524,
+        "y": 1763.851524641922,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户基本信息",
+      "t": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "站别名称维护<>工程基礎資料",
+      "s": {
+        "x": 3152.641323825497,
+        "y": 2273.7996033998033,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产品类别维护",
+      "t": {
+        "x": 2568.3104227204935,
+        "y": 2194.6839008273687,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "送货公司（子公司）明细",
+      "s": {
+        "x": 2174.202404654296,
+        "y": 1834.2829256059852,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 2
+      },
+      "target": "客户送货地址有效性维护",
+      "t": {
+        "x": 1951.8761302371659,
+        "y": 1825.7019006710943,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "送货公司（子公司）明细",
+      "s": {
+        "x": 2174.202404654296,
+        "y": 1834.2829256059852,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 2
+      },
+      "target": "授信额度申请",
+      "t": {
+        "x": 1963.422914973859,
+        "y": 1946.5706697002738,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "产品估价维护<>業務管理",
+      "s": {
+        "x": 2982.426937213394,
+        "y": 1259.1998379536592,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "产品报价维护<>業務管理",
+      "s": {
+        "x": 2979.655851195957,
+        "y": 1451.206420469139,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "统一管理公司列表<>系統基礎資料",
+      "s": {
+        "x": 3324.695094839426,
+        "y": 1614.7815628014027,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户基本信息",
+      "t": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "统一管理公司列表<>系統基礎資料",
+      "s": {
+        "x": 3324.695094839426,
+        "y": 1614.7815628014027,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "开发中客户资料维护",
+      "t": {
+        "x": 2719.7910392403483,
+        "y": 1828.181419534223,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3120.311758005101,
+        "y": 1851.5570981725787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料分类单价设置",
+      "t": {
+        "x": 2559.558970661837,
+        "y": 1977.353199811991,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3120.311758005101,
+        "y": 1851.5570981725787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "业务对账权限维护",
+      "t": {
+        "x": 2209.6841682346235,
+        "y": 2476.612767154514,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "货运公司维护",
+      "s": {
+        "x": 2715.507489274224,
+        "y": 1178.2931514025208,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "运输公司报价数据维护",
+      "t": {
+        "x": 2526.9444120029716,
+        "y": 1243.8399843407503,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定<>系統基礎資料",
+      "s": {
+        "x": 3312.684329146399,
+        "y": 1480.6411932021251,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定<>系統基礎資料",
+      "s": {
+        "x": 3312.684329146399,
+        "y": 1480.6411932021251,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料分类单价设置",
+      "t": {
+        "x": 2559.558970661837,
+        "y": 1977.353199811991,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "栈板数据维护<>倉庫基礎資料",
+      "s": {
+        "x": 3236.3498136966828,
+        "y": 1298.408449050801,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户打板要求维护",
+      "t": {
+        "x": 2129.5821889986923,
+        "y": 1288.5890146949682,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "量产联络单<>業務管理",
+      "s": {
+        "x": 2989.595328206087,
+        "y": 1194.117359730858,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "开发中客户资料维护",
+      "s": {
+        "x": 2719.7910392403483,
+        "y": 1828.181419534223,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "客户基本信息",
+      "t": {
+        "x": 2557.906760970754,
+        "y": 1809.4746358261457,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 21
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "会计科目维护<>財務基礎資料",
+      "s": {
+        "x": 3258.34620051328,
+        "y": 1845.4644856372788,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料分类单价设置",
+      "t": {
+        "x": 2559.558970661837,
+        "y": 1977.353199811991,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "运费基准维护",
+      "s": {
+        "x": 2704.621498815387,
+        "y": 1046.243638937539,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "送货公里数维护",
+      "t": {
+        "x": 2496.6536578186615,
+        "y": 1000.8829834578521,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "运输公司报价项目维护",
+      "s": {
+        "x": 2717.5838531883087,
+        "y": 1243.0889399142902,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "运输公司报价数据维护",
+      "t": {
+        "x": 2526.9444120029716,
+        "y": 1243.8399843407503,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 3320.5586775989564,
+        "y": 1544.4715315250428,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 3320.5586775989564,
+        "y": 1544.4715315250428,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "协力商维护",
+      "t": {
+        "x": 2740.9093398874784,
+        "y": 1683.19542236441,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 3320.5586775989564,
+        "y": 1544.4715315250428,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料分类单价设置",
+      "t": {
+        "x": 2559.558970661837,
+        "y": 1977.353199811991,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 3320.5586775989564,
+        "y": 1544.4715315250428,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料分类单价类别设置",
+      "t": {
+        "x": 2719.114708752379,
+        "y": 1973.8158602735484,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 3320.5586775989564,
+        "y": 1544.4715315250428,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "客户基准单价维护",
+      "t": {
+        "x": 2192.9415667240105,
+        "y": 2095.228426966315,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "管理项目维护",
+      "s": {
+        "x": 2701.702680159139,
+        "y": 1114.2106079345228,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "管理项目时间维护",
+      "t": {
+        "x": 2510.798460363151,
+        "y": 1130.9917848416865,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "厂内料号编排<>點檢管理",
+      "s": {
+        "x": 3122.1393269336922,
+        "y": 1536.4092032520819,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 0
+      },
+      "target": "各客户开料前置期维护",
+      "t": {
+        "x": 2164.131955091656,
+        "y": 1676.6607296051643,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "厂外料号添加<>業務管理",
+      "s": {
+        "x": 2976.1563629477273,
+        "y": 1332.777185457994,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "全外包单价维护",
+      "t": {
+        "x": 2540.7142038822103,
+        "y": 1488.4168575882757,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "标准流程设置<>工程基礎資料",
+      "s": {
+        "x": 3141.124679959888,
+        "y": 2149.491768943055,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产品类别维护",
+      "t": {
+        "x": 2568.3104227204935,
+        "y": 2194.6839008273687,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "营业计划管理",
+      "s": {
+        "x": 2184.9424771599315,
+        "y": 1901.9742942775579,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 2
+      },
+      "target": "产品预算数据维护",
+      "t": {
+        "x": 1955.792379927339,
+        "y": 2069.5275663788407,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "营业计划管理",
+      "s": {
+        "x": 2184.9424771599315,
+        "y": 1901.9742942775579,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 2,
+        "out": 2
+      },
+      "target": "营业计划审核提交",
+      "t": {
+        "x": 1967.9434575241485,
+        "y": 2167.7388811109086,
+        "blmd": "",
+        "blmdID": "Module00069",
+        "in": 1,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

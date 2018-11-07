@@ -1,0 +1,1037 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "GerberFile点检<>點檢管理",
+      "s": {
+        "x": 2521.579608385187,
+        "y": 1259.9155180138155,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 2471.284800848727,
+        "y": 1038.7648122225285,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析生产确认",
+      "t": {
+        "x": 2289.0966571263943,
+        "y": 1098.6696714357706,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包作业<>外包管理",
+      "s": {
+        "x": 2648.6246204072504,
+        "y": 943.7960730593485,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析生产确认",
+      "t": {
+        "x": 2289.0966571263943,
+        "y": 1098.6696714357706,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包制程管理<>外包管理",
+      "s": {
+        "x": 2659.6648705396537,
+        "y": 1154.1748768647117,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析",
+      "t": {
+        "x": 2065.4361182181615,
+        "y": 1052.9550772877697,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包制程管理<>外包管理",
+      "s": {
+        "x": 2659.6648705396537,
+        "y": 1154.1748768647117,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析生产确认",
+      "t": {
+        "x": 2289.0966571263943,
+        "y": 1098.6696714357706,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包制程管理<>外包管理",
+      "s": {
+        "x": 2659.6648705396537,
+        "y": 1154.1748768647117,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析修改",
+      "t": {
+        "x": 2073.4915950439777,
+        "y": 1143.4943118404117,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包制程管理<>外包管理",
+      "s": {
+        "x": 2659.6648705396537,
+        "y": 1154.1748768647117,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析废",
+      "t": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包报价维护<>外包管理",
+      "s": {
+        "x": 2651.38085289221,
+        "y": 1009.8894867522629,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析",
+      "t": {
+        "x": 2065.4361182181615,
+        "y": 1052.9550772877697,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包报价维护<>外包管理",
+      "s": {
+        "x": 2651.38085289221,
+        "y": 1009.8894867522629,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析生产确认",
+      "t": {
+        "x": 2289.0966571263943,
+        "y": 1098.6696714357706,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包厂商维护<>外包管理",
+      "s": {
+        "x": 2658.098830148383,
+        "y": 1069.8118099227836,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析",
+      "t": {
+        "x": 2065.4361182181615,
+        "y": 1052.9550772877697,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包厂商维护<>外包管理",
+      "s": {
+        "x": 2658.098830148383,
+        "y": 1069.8118099227836,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析生产确认",
+      "t": {
+        "x": 2289.0966571263943,
+        "y": 1098.6696714357706,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包厂商维护<>外包管理",
+      "s": {
+        "x": 2658.098830148383,
+        "y": 1069.8118099227836,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析修改",
+      "t": {
+        "x": 2073.4915950439777,
+        "y": 1143.4943118404117,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包厂商维护<>外包管理",
+      "s": {
+        "x": 2658.098830148383,
+        "y": 1069.8118099227836,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析废",
+      "t": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "生产站别作业参数维护<>生管基礎資料",
+      "s": {
+        "x": 3099.6335306812794,
+        "y": 1242.871224709703,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "各站报废原因维护<>品質基礎資料",
+      "s": {
+        "x": 2990.720795920204,
+        "y": 978.9181990850188,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析废",
+      "t": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2805.0892327836104,
+        "y": 981.7023683777159,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析",
+      "t": {
+        "x": 2065.4361182181615,
+        "y": 1052.9550772877697,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2805.0892327836104,
+        "y": 981.7023683777159,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析修改",
+      "t": {
+        "x": 2073.4915950439777,
+        "y": 1143.4943118404117,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2805.0892327836104,
+        "y": 981.7023683777159,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析废",
+      "t": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "协力商<>系統基礎資料",
+      "s": {
+        "x": 2475.835195627557,
+        "y": 973.5940429419793,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废分析生产确认",
+      "t": {
+        "x": 2289.0966571263943,
+        "y": 1098.6696714357706,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "表面处理方式维护<>業務基礎資料",
+      "s": {
+        "x": 2810.9602282429773,
+        "y": 1184.6249743315236,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "客户采购规格维护<>業務管理",
+      "s": {
+        "x": 2952.3421125515033,
+        "y": 1815.4699064440294,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "客户采购规格维护<>業務管理",
+      "s": {
+        "x": 2952.3421125515033,
+        "y": 1815.4699064440294,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废确认查询",
+      "t": {
+        "x": 2342.976188004468,
+        "y": 1666.1681911516268,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息<>業務基礎資料",
+      "s": {
+        "x": 2808.2958943805806,
+        "y": 1264.3707473417303,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3058.5608118793016,
+        "y": 1631.2121350545772,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3058.5608118793016,
+        "y": 1631.2121350545772,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废确认查询",
+      "t": {
+        "x": 2342.976188004468,
+        "y": 1666.1681911516268,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2968.107040281862,
+        "y": 1751.6071042685132,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "站别名称维护<>工程基礎資料",
+      "s": {
+        "x": 3098.854916322623,
+        "y": 1382.9975411013468,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2936.6288345360995,
+        "y": 1583.071364441414,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2903.0590115410287,
+        "y": 1354.820278947317,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2903.0590115410287,
+        "y": 1354.820278947317,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "報廢管理",
+      "belongModuleID": "Module00057",
+      "source": "报废分析废",
+      "s": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      },
+      "target": "报废分析",
+      "t": {
+        "x": 2065.4361182181615,
+        "y": 1052.9550772877697,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "報廢管理",
+      "belongModuleID": "Module00057",
+      "source": "报废分析废",
+      "s": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      },
+      "target": "报废分析批量修改",
+      "t": {
+        "x": 2074.7028827199647,
+        "y": 1262.2549035396296,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "報廢管理",
+      "belongModuleID": "Module00057",
+      "source": "报废分析废",
+      "s": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      },
+      "target": "报废分析修改",
+      "t": {
+        "x": 2073.4915950439777,
+        "y": 1143.4943118404117,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "報廢管理",
+      "belongModuleID": "Module00057",
+      "source": "报废分析废",
+      "s": {
+        "x": 2310.93211808865,
+        "y": 1258.8537767795688,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 4
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "预算成本单价维护<>品質基礎資料",
+      "s": {
+        "x": 2999.274353192376,
+        "y": 1038.55161143023,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2910.798596060528,
+        "y": 1428.3118520208664,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "厂内料号编排<>點檢管理",
+      "s": {
+        "x": 2532.003059271263,
+        "y": 1339.9482627848902,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "厂内料号编排<>點檢管理",
+      "s": {
+        "x": 2532.003059271263,
+        "y": 1339.9482627848902,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "厂外料号添加<>業務管理",
+      "s": {
+        "x": 2935.264072730808,
+        "y": 1171.8174262753325,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "厂外料号添加<>業務管理",
+      "s": {
+        "x": 2935.264072730808,
+        "y": 1171.8174262753325,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废确认查询",
+      "t": {
+        "x": 2342.976188004468,
+        "y": 1666.1681911516268,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "厂别数据维护<>生管基礎資料",
+      "s": {
+        "x": 3094.4528905531974,
+        "y": 1172.6921375592865,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 0
+      },
+      "target": "报废呈报",
+      "t": {
+        "x": 2064.3210545192396,
+        "y": 1356.602888060316,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "样品料号编排<>業務管理",
+      "s": {
+        "x": 2949.9161583354626,
+        "y": 1681.2345359675464,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2924.16441169654,
+        "y": 1512.4526136492932,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目改善",
+      "t": {
+        "x": 2314.454652153612,
+        "y": 1480.58082333543,
+        "blmd": "",
+        "blmdID": "Module00057",
+        "in": 0,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

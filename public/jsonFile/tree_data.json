@@ -1,0 +1,1117 @@
+[ 
+  { 
+  "id": 0, 
+  "text": "My Documents", 
+  "children": [ 
+  { 
+  "id": "System00001", 
+  "text": "基础资料", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00001", 
+  "text": "人事基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00002", 
+  "text": "工程基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00003", 
+  "text": "品质基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00004", 
+  "text": "财务基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00005", 
+  "text": "系统基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00007", 
+  "text": "生管基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00068", 
+  "text": "关务基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00069", 
+  "text": "业务基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00070", 
+  "text": "采购基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00071", 
+  "text": "仓库基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00072", 
+  "text": "APS基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00073", 
+  "text": "MPS基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00079", 
+  "text": "信息基础资料", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00171", 
+  "text": "环安基础资料", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00002", 
+  "text": "进销存管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00020", 
+  "text": "业务管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00021", 
+  "text": "采购管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00022", 
+  "text": "仓库管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00164", 
+  "text": "物料样品管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00169", 
+  "text": "钻嘴仓", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00170", 
+  "text": "成品仓", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00023", 
+  "text": "APS管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00061", 
+  "text": "全外包管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00136", 
+  "text": "商品进出存管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00184", 
+  "text": "材料商品管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00003", 
+  "text": "工程管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00034", 
+  "text": "样品管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00035", 
+  "text": "工艺管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00036", 
+  "text": "资料管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00037", 
+  "text": "点检管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00046", 
+  "text": "费用管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00142", 
+  "text": "制程管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00208", 
+  "text": "测试", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00005", 
+  "text": "生产管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00042", 
+  "text": "工单管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00043", 
+  "text": "移转管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00044", 
+  "text": "MES排程", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00050", 
+  "text": "机修管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00052", 
+  "text": "盘点管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00062", 
+  "text": "MPS排程", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00080", 
+  "text": "异常维护", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00090", 
+  "text": "暂停管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00118", 
+  "text": "外包管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00006", 
+  "text": "品质管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00039", 
+  "text": "IQC管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00040", 
+  "text": "IPQC管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00041", 
+  "text": "OQC管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00047", 
+  "text": "仪器管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00056", 
+  "text": "CQA管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00057", 
+  "text": "报废管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00058", 
+  "text": "品质成本管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00060", 
+  "text": "药水检验作业", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00145", 
+  "text": "SOP执行力稽核", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00147", 
+  "text": "不合格品处理履歷", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00149", 
+  "text": "品质异常处理履歷", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00152", 
+  "text": "报废率状况", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00153", 
+  "text": "客户投诉履歷", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00163", 
+  "text": "检测测试管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00007", 
+  "text": "财务管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00024", 
+  "text": "应收帐款", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00025", 
+  "text": "应付帐款", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00027", 
+  "text": "固定资产", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00028", 
+  "text": "预算管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00150", 
+  "text": "成本核算", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00165", 
+  "text": "转ORACLE数据", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00201", 
+  "text": "总账", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00008", 
+  "text": "人力资源", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00029", 
+  "text": "人事管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00031", 
+  "text": "宿舍管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00032", 
+  "text": "教育培训", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00033", 
+  "text": "薪资管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00053", 
+  "text": "门禁管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00054", 
+  "text": "考勤管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00055", 
+  "text": "文档管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00063", 
+  "text": "图书管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00151", 
+  "text": "新宿舍管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00156", 
+  "text": "成检考勤管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00162", 
+  "text": "社保管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00175", 
+  "text": "临时就餐", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00202", 
+  "text": "绩效考核", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00009", 
+  "text": "报表管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00015", 
+  "text": "工程报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00016", 
+  "text": "生产报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00017", 
+  "text": "品质报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00018", 
+  "text": "财务报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00019", 
+  "text": "人力资源报表管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00186", 
+  "text": "各部门离职率明细统计报表", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00081", 
+  "text": "业务报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00082", 
+  "text": "采购报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00083", 
+  "text": "仓库报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00087", 
+  "text": "关务报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00092", 
+  "text": "机器维修报表", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00097", 
+  "text": "信息报表", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00117", 
+  "text": "全外包报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00126", 
+  "text": "APS报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00130", 
+  "text": "MPS报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00144", 
+  "text": "翔成报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00172", 
+  "text": "环安报表管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00224", 
+  "text": "全外包內销", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00010", 
+  "text": "资料查询", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00009", 
+  "text": "工程资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00010", 
+  "text": "生产资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00011", 
+  "text": "品质资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00013", 
+  "text": "人力资源资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00091", 
+  "text": "关务资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00093", 
+  "text": "机器维修查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00094", 
+  "text": "采购系统查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00095", 
+  "text": "财务资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00096", 
+  "text": "仓库系统查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00099", 
+  "text": "业务资料查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00120", 
+  "text": "信息查询", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00125", 
+  "text": "APS资料查询", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00124", 
+  "text": "环安查询", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00129", 
+  "text": "MPS资料查询", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00011", 
+  "text": "关务管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00064", 
+  "text": "报关单管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00067", 
+  "text": "包装明细管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00074", 
+  "text": "清单管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00075", 
+  "text": "转厂管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00076", 
+  "text": "电子帐册管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00088", 
+  "text": "外汇核销管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00089", 
+  "text": "加贸设备管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00122", 
+  "text": "废料管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00012", 
+  "text": "资讯管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00078", 
+  "text": "软件管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00098", 
+  "text": "硬件管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00119", 
+  "text": "公共表单", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00143", 
+  "text": "其他表单", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00148", 
+  "text": "文档管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00013", 
+  "text": "EIS报表", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00100", 
+  "text": "信息部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00101", 
+  "text": "工务部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00102", 
+  "text": "人力资源部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00103", 
+  "text": "资材部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00104", 
+  "text": "财务部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00105", 
+  "text": "环安部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00106", 
+  "text": "关务部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00107", 
+  "text": "电力处", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00108", 
+  "text": "生管部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00109", 
+  "text": "业务部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00110", 
+  "text": "品保部", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00157", 
+  "text": "品保其它项目工作报告", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00160", 
+  "text": "品保", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00111", 
+  "text": "工程部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00112", 
+  "text": "生产部", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00121", 
+  "text": "HDI", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00015", 
+  "text": "精实变革", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00116", 
+  "text": "精实变革专案管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00016", 
+  "text": "环安系统", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00123", 
+  "text": "环保", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00127", 
+  "text": "安全管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00128", 
+  "text": "共用表单", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00161", 
+  "text": "废弃物管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00017", 
+  "text": "HSF管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00131", 
+  "text": "年度HSF目标管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00132", 
+  "text": "HS年度测试管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00137", 
+  "text": "HS使用状况与消减", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00138", 
+  "text": "客户及法律法规要求", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00139", 
+  "text": "过程监控管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00140", 
+  "text": "识別与清查管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00141", 
+  "text": "GA资料常用资料", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00018", 
+  "text": "考勤刷卡系统", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00133", 
+  "text": "考勤管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00134", 
+  "text": "食堂刷卡管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00135", 
+  "text": "基础资料", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00019", 
+  "text": "供应链管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00154", 
+  "text": "供货及对帐管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00167", 
+  "text": "样品试用管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00166", 
+  "text": "供应商基本信息管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00020", 
+  "text": "系统服务", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00168", 
+  "text": "问题反馈管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00021", 
+  "text": "测试", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00173", 
+  "text": "练习测试", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00189", 
+  "text": "雷斌", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00193", 
+  "text": "报表操作", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00194", 
+  "text": "人事", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00195", 
+  "text": "采购", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00196", 
+  "text": "工程", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00198", 
+  "text": "仓库", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00199", 
+  "text": "采购", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00200", 
+  "text": "财务", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00209", 
+  "text": "李晨", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00210", 
+  "text": "测试", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00211", 
+  "text": "人事管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00212", 
+  "text": "刘连佳", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00222", 
+  "text": "陈鹏", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00223", 
+  "text": "练习测试", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "Module00225", 
+  "text": "周英川", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00226", 
+  "text": "流程管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00022", 
+  "text": "协同作业", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00177", 
+  "text": "电子公文", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00024", 
+  "text": "新菜单", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00185", 
+  "text": "二级菜单", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00215", 
+  "text": "陈鹏", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00216", 
+  "text": "环保", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00217", 
+  "text": "安全管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00218", 
+  "text": "共用表单", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00219", 
+  "text": "废弃物管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00221", 
+  "text": "公司员工资料", 
+  "state": "close" 
+  } 
+  ] 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00027", 
+  "text": "测试1", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00190", 
+  "text": "测试模块1", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00028", 
+  "text": "代加工管理", 
+  "state": "close", 
+  "children": [ 
+  { 
+  "id": "Module00203", 
+  "text": "代加工业务管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00204", 
+  "text": "代加工工程管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00205", 
+  "text": "代加工生产管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00206", 
+  "text": "代加工仓库管理", 
+  "state": "close" 
+  }, 
+  { 
+  "id": "Module00207", 
+  "text": "代加工财务管理", 
+  "state": "close" 
+  } 
+  ] 
+  }, 
+  { 
+  "id": "System00029", 
+  "text": "样品开始盘点", 
+  "state": "close" 
+  } 
+  ] 
+  } 
+  ]

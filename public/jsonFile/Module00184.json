@@ -1,0 +1,437 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "月结料处理审核<>倉庫管理",
+      "s": {
+        "x": 2838.4990686301308,
+        "y": 976.2162400186746,
+        "blmd": "倉庫管理",
+        "blmdID": "Module00022",
+        "in": 0,
+        "out": 1
+      },
+      "target": "商品PO",
+      "t": {
+        "x": 2462.1326400741295,
+        "y": 999.9703022361268,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "外出申请<>門禁管理",
+      "s": {
+        "x": 2998.278194918846,
+        "y": 825.6237495124299,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 1
+      },
+      "target": "材料商品出货单",
+      "t": {
+        "x": 2128.4998922074324,
+        "y": 984.1398516572131,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表",
+      "s": {
+        "x": 2697.4527715082636,
+        "y": 1256.6050616099578,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 5
+      },
+      "target": "材料商品出货单",
+      "t": {
+        "x": 2128.4998922074324,
+        "y": 984.1398516572131,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表",
+      "s": {
+        "x": 2697.4527715082636,
+        "y": 1256.6050616099578,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 5
+      },
+      "target": "商品出货记录",
+      "t": {
+        "x": 2134.760486458342,
+        "y": 1391.7928283611977,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表",
+      "s": {
+        "x": 2697.4527715082636,
+        "y": 1256.6050616099578,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 5
+      },
+      "target": "商品出货发票维护",
+      "t": {
+        "x": 2471.66998641763,
+        "y": 1376.505180412188,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表",
+      "s": {
+        "x": 2697.4527715082636,
+        "y": 1256.6050616099578,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 5
+      },
+      "target": "商品退货单",
+      "t": {
+        "x": 2466.27577727025,
+        "y": 1268.680023805954,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表",
+      "s": {
+        "x": 2697.4527715082636,
+        "y": 1256.6050616099578,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 5
+      },
+      "target": "商品销售统计表",
+      "t": {
+        "x": 2125.3724042462554,
+        "y": 1196.9197926756246,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 2838.152576918345,
+        "y": 914.866015996534,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 2
+      },
+      "target": "材料商品出货单",
+      "t": {
+        "x": 2128.4998922074324,
+        "y": 984.1398516572131,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 2838.152576918345,
+        "y": 914.866015996534,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 2
+      },
+      "target": "商品PO",
+      "t": {
+        "x": 2462.1326400741295,
+        "y": 999.9703022361268,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2709.68036384727,
+        "y": 1435.9116492841367,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "休息日出勤情况",
+      "t": {
+        "x": 2487.7883763593804,
+        "y": 1535.2137012176208,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "商品PO",
+      "s": {
+        "x": 2462.1326400741295,
+        "y": 999.9703022361268,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1
+      },
+      "target": "材料商品出货单",
+      "t": {
+        "x": 2128.4998922074324,
+        "y": 984.1398516572131,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "商品客户信息",
+      "s": {
+        "x": 2687.094659814428,
+        "y": 1076.3883167571832,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 1
+      },
+      "target": "商品PO",
+      "t": {
+        "x": 2462.1326400741295,
+        "y": 999.9703022361268,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "商品退货单",
+      "s": {
+        "x": 2466.27577727025,
+        "y": 1268.680023805954,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 2
+      },
+      "target": "商品出货记录",
+      "t": {
+        "x": 2134.760486458342,
+        "y": 1391.7928283611977,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "商品退货单",
+      "s": {
+        "x": 2466.27577727025,
+        "y": 1268.680023805954,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 2
+      },
+      "target": "商品销售统计表",
+      "t": {
+        "x": 2125.3724042462554,
+        "y": 1196.9197926756246,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2728.4859884357265,
+        "y": 1618.0399846927644,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "休息日出勤情况",
+      "t": {
+        "x": 2487.7883763593804,
+        "y": 1535.2137012176208,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2712.7801095520504,
+        "y": 1493.9123464573172,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "休息日出勤情况",
+      "t": {
+        "x": 2487.7883763593804,
+        "y": 1535.2137012176208,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2720.8829571219944,
+        "y": 1560.3120536999436,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "休息日出勤情况",
+      "t": {
+        "x": 2487.7883763593804,
+        "y": 1535.2137012176208,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职申请<>人事管理",
+      "s": {
+        "x": 2818.9298599014064,
+        "y": 1428.964770502344,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 1
+      },
+      "target": "休息日出勤情况",
+      "t": {
+        "x": 2487.7883763593804,
+        "y": 1535.2137012176208,
+        "blmd": "",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

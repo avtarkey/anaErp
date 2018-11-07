@@ -1,0 +1,2237 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "人才来源",
+      "s": {
+        "x": 2121.6868602345035,
+        "y": 1209.6795695047206,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "人员上班天数审核",
+      "s": {
+        "x": 1857.8176704902885,
+        "y": 2001.9458719668303,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 1
+      },
+      "target": "人员上班天数设置",
+      "t": {
+        "x": 1702.910588727515,
+        "y": 2010.246188524191,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "人员编制",
+      "s": {
+        "x": 1671.7054517949427,
+        "y": 1826.536041540765,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      },
+      "target": "各部门人员编制",
+      "t": {
+        "x": 1427.807269393986,
+        "y": 1962.506071403726,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "上班天数小时数基础数据",
+      "s": {
+        "x": 2167.593177951066,
+        "y": 1715.7494801075147,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "人员上班天数审核",
+      "t": {
+        "x": 1857.8176704902885,
+        "y": 2001.9458719668303,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "薪資管理",
+      "belongModuleID": "Module00033",
+      "source": "工资计算结果<>薪資管理",
+      "s": {
+        "x": 2723.437579829002,
+        "y": 1416.6145502244003,
+        "blmd": "薪資管理",
+        "blmdID": "Module00033",
+        "in": 0,
+        "out": 0
+      },
+      "target": "个人基本资料确认",
+      "t": {
+        "x": 1423.5568012803683,
+        "y": 1904.811632479464,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "月考勤计算结果<>考勤管理",
+      "s": {
+        "x": 2619.369753366641,
+        "y": 1425.739624492564,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      },
+      "target": "个人基本资料确认",
+      "t": {
+        "x": 1423.5568012803683,
+        "y": 1904.811632479464,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "考勤计算结果<>考勤管理",
+      "s": {
+        "x": 2622.8207334440185,
+        "y": 1489.6386277550641,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      },
+      "target": "个人基本资料确认",
+      "t": {
+        "x": 1423.5568012803683,
+        "y": 1904.811632479464,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "基礎資料",
+      "belongModuleID": "Module00135",
+      "source": "考勤数据表<>基礎資料",
+      "s": {
+        "x": 2440.5043458088367,
+        "y": 1419.3793401297828,
+        "blmd": "基礎資料",
+        "blmdID": "Module00135",
+        "in": 0,
+        "out": 0
+      },
+      "target": "新考勤卡制作",
+      "t": {
+        "x": 1394.859693484129,
+        "y": 1447.6520258905348,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类",
+      "s": {
+        "x": 1784.7968543971456,
+        "y": 1399.875957771136,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      },
+      "target": "员工技能数据",
+      "t": {
+        "x": 1394.3368901320955,
+        "y": 1294.7635401879588,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息类别维护",
+      "s": {
+        "x": 2129.332465916179,
+        "y": 1344.0027780447883,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "信息归类",
+      "t": {
+        "x": 1784.7968543971456,
+        "y": 1399.875957771136,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "人事岗位负责人维护",
+      "t": {
+        "x": 1412.527060311827,
+        "y": 1718.8850219522712,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "工号年份代码",
+      "t": {
+        "x": 1401.0599404074214,
+        "y": 1541.079228804597,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "主管管辖部门维护",
+      "t": {
+        "x": 1426.3778119948431,
+        "y": 2068.004924735612,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "永不录用人员",
+      "t": {
+        "x": 1427.2231773401134,
+        "y": 2158.2318096135314,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "各部门人员编制",
+      "t": {
+        "x": 1427.807269393986,
+        "y": 1962.506071403726,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "考勤日期维护锁卡",
+      "t": {
+        "x": 1411.8509042028563,
+        "y": 1682.2179562102285,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "考勤卡制作",
+      "t": {
+        "x": 1394.1268288127658,
+        "y": 1498.0254312641955,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "考勤特殊人员",
+      "t": {
+        "x": 1420.0859753436978,
+        "y": 1857.2135951153896,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "个人基本资料确认",
+      "t": {
+        "x": 1423.5568012803683,
+        "y": 1904.811632479464,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "员工技能数据",
+      "t": {
+        "x": 1394.3368901320955,
+        "y": 1294.7635401879588,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "培训讲师",
+      "t": {
+        "x": 1399.2224572056894,
+        "y": 1583.365133412748,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "组织架构",
+      "t": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "新考勤卡制作",
+      "t": {
+        "x": 1394.859693484129,
+        "y": 1447.6520258905348,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "满勤后不计考勤职务设置",
+      "t": {
+        "x": 1431.6428961564568,
+        "y": 2012.6745013403352,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "管理层人员维护",
+      "t": {
+        "x": 1416.9008099627126,
+        "y": 1804.4231853410256,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料",
+      "s": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      },
+      "target": "职员工资按员工算法人员设置",
+      "t": {
+        "x": 1413.048771468352,
+        "y": 1759.658924733329,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "人事岗位负责人维护",
+      "t": {
+        "x": 1412.527060311827,
+        "y": 1718.8850219522712,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "永不录用人员",
+      "t": {
+        "x": 1427.2231773401134,
+        "y": 2158.2318096135314,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "考勤特殊人员",
+      "t": {
+        "x": 1420.0859753436978,
+        "y": 1857.2135951153896,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "组织架构",
+      "t": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置",
+      "s": {
+        "x": 2160.1419709666543,
+        "y": 1648.0297445783465,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 7
+      },
+      "target": "管理层人员维护",
+      "t": {
+        "x": 1416.9008099627126,
+        "y": 1804.4231853410256,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "人事岗位负责人维护",
+      "t": {
+        "x": 1412.527060311827,
+        "y": 1718.8850219522712,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "人员编制",
+      "t": {
+        "x": 1671.7054517949427,
+        "y": 1826.536041540765,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "永不录用人员",
+      "t": {
+        "x": 1427.2231773401134,
+        "y": 2158.2318096135314,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "各部门人员编制",
+      "t": {
+        "x": 1427.807269393986,
+        "y": 1962.506071403726,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "考勤特殊人员",
+      "t": {
+        "x": 1420.0859753436978,
+        "y": 1857.2135951153896,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "信息归类",
+      "t": {
+        "x": 1784.7968543971456,
+        "y": 1399.875957771136,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "员工技能数据",
+      "t": {
+        "x": 1394.3368901320955,
+        "y": 1294.7635401879588,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "组织架构",
+      "t": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "满勤后不计考勤职务设置",
+      "t": {
+        "x": 1431.6428961564568,
+        "y": 2012.6745013403352,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "管理层人员维护",
+      "t": {
+        "x": 1416.9008099627126,
+        "y": 1804.4231853410256,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护",
+      "s": {
+        "x": 2138.8681552415374,
+        "y": 1401.3216901537187,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 13
+      },
+      "target": "职员工资按员工算法人员设置",
+      "t": {
+        "x": 1413.048771468352,
+        "y": 1759.658924733329,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "教育培訓",
+      "belongModuleID": "Module00032",
+      "source": "岗位资格<>教育培訓",
+      "s": {
+        "x": 2533.216702380311,
+        "y": 1425.7131160944473,
+        "blmd": "教育培訓",
+        "blmdID": "Module00032",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工技能数据",
+      "t": {
+        "x": 1394.3368901320955,
+        "y": 1294.7635401879588,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "人事岗位负责人维护",
+      "t": {
+        "x": 1412.527060311827,
+        "y": 1718.8850219522712,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "人员编制",
+      "t": {
+        "x": 1671.7054517949427,
+        "y": 1826.536041540765,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "月考勤限制天数设定",
+      "t": {
+        "x": 1676.5871599420889,
+        "y": 1915.5085994760257,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "主管管辖部门维护",
+      "t": {
+        "x": 1426.3778119948431,
+        "y": 2068.004924735612,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "永不录用人员",
+      "t": {
+        "x": 1427.2231773401134,
+        "y": 2158.2318096135314,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "考勤日期维护锁卡",
+      "t": {
+        "x": 1411.8509042028563,
+        "y": 1682.2179562102285,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "考勤特殊人员",
+      "t": {
+        "x": 1420.0859753436978,
+        "y": 1857.2135951153896,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "员工技能数据",
+      "t": {
+        "x": 1394.3368901320955,
+        "y": 1294.7635401879588,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "满勤后不计考勤职务设置",
+      "t": {
+        "x": 1431.6428961564568,
+        "y": 2012.6745013403352,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "管理层人员维护",
+      "t": {
+        "x": 1416.9008099627126,
+        "y": 1804.4231853410256,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构",
+      "s": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      },
+      "target": "职员工资按员工算法人员设置",
+      "t": {
+        "x": 1413.048771468352,
+        "y": 1759.658924733329,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织层级",
+      "s": {
+        "x": 2154.387361949349,
+        "y": 1589.5102964421337,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 2
+      },
+      "target": "员工技能数据",
+      "t": {
+        "x": 1394.3368901320955,
+        "y": 1294.7635401879588,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织层级",
+      "s": {
+        "x": 2154.387361949349,
+        "y": 1589.5102964421337,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 2
+      },
+      "target": "组织架构",
+      "t": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "部门门禁维护<>門禁管理",
+      "s": {
+        "x": 2280.455174154008,
+        "y": 1430.179290887293,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 0
+      },
+      "target": "新考勤卡制作",
+      "t": {
+        "x": 1394.859693484129,
+        "y": 1447.6520258905348,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "人事岗位负责人维护",
+      "t": {
+        "x": 1412.527060311827,
+        "y": 1718.8850219522712,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "永不录用人员",
+      "t": {
+        "x": 1427.2231773401134,
+        "y": 2158.2318096135314,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "各部门人员编制",
+      "t": {
+        "x": 1427.807269393986,
+        "y": 1962.506071403726,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "考勤特殊人员",
+      "t": {
+        "x": 1420.0859753436978,
+        "y": 1857.2135951153896,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "组织架构",
+      "t": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "管理层人员维护",
+      "t": {
+        "x": 1416.9008099627126,
+        "y": 1804.4231853410256,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护",
+      "s": {
+        "x": 2150.073200843697,
+        "y": 1459.2736351577623,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 9
+      },
+      "target": "职务维护",
+      "t": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "学历",
+      "s": {
+        "x": 2131.530297682322,
+        "y": 1273.9853969827163,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 1
+      },
+      "target": "各部门人员编制",
+      "t": {
+        "x": 1427.807269393986,
+        "y": 1962.506071403726,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "担保书<>文檔管理",
+      "s": {
+        "x": 2359.998680462187,
+        "y": 1430.0324562413289,
+        "blmd": "文檔管理",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "薪资定义项目设置",
+      "s": {
+        "x": 2148.7368493168888,
+        "y": 1527.5943889692528,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 3
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "薪资定义项目设置",
+      "s": {
+        "x": 2148.7368493168888,
+        "y": 1527.5943889692528,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 3
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "薪资定义项目设置",
+      "s": {
+        "x": 2148.7368493168888,
+        "y": 1527.5943889692528,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 3
+      },
+      "target": "职务维护",
+      "t": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "人事岗位负责人维护",
+      "t": {
+        "x": 1412.527060311827,
+        "y": 1718.8850219522712,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "人员编制",
+      "t": {
+        "x": 1671.7054517949427,
+        "y": 1826.536041540765,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "主管管辖部门维护",
+      "t": {
+        "x": 1426.3778119948431,
+        "y": 2068.004924735612,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "永不录用人员",
+      "t": {
+        "x": 1427.2231773401134,
+        "y": 2158.2318096135314,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "各部门人员编制",
+      "t": {
+        "x": 1427.807269393986,
+        "y": 1962.506071403726,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "考勤日期维护锁卡",
+      "t": {
+        "x": 1411.8509042028563,
+        "y": 1682.2179562102285,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "考勤特殊人员",
+      "t": {
+        "x": 1420.0859753436978,
+        "y": 1857.2135951153896,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "信息归类",
+      "t": {
+        "x": 1784.7968543971456,
+        "y": 1399.875957771136,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "个人基本资料",
+      "t": {
+        "x": 1788.871296595421,
+        "y": 1555.5333854551056,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 17
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "特殊人员其他薪资维护",
+      "t": {
+        "x": 1427.522251294497,
+        "y": 2112.3972117434237,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "组织架构",
+      "t": {
+        "x": 1808.5822285117056,
+        "y": 1709.0997966933066,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 13
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "满勤后不计考勤职务设置",
+      "t": {
+        "x": 1431.6428961564568,
+        "y": 2012.6745013403352,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "管理层人员维护",
+      "t": {
+        "x": 1416.9008099627126,
+        "y": 1804.4231853410256,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "职员工资按员工算法人员设置",
+      "t": {
+        "x": 1413.048771468352,
+        "y": 1759.658924733329,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护",
+      "s": {
+        "x": 1985.0096090488873,
+        "y": 1542.2718743265873,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 2,
+        "out": 15
+      },
+      "target": "职务晋升项目关联维护",
+      "t": {
+        "x": 1774.826622915451,
+        "y": 1269.6119106847095,
+        "blmd": "",
+        "blmdID": "Module00001",
+        "in": 1,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

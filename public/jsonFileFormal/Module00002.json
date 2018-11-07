@@ -1,0 +1,413 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "Gerber点检角色维护",
+      "s": {
+        "x": 1953.4851921870056,
+        "y": 1494.5627874152083,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      },
+      "target": "工程数据查检结果",
+      "t": {
+        "x": 1819.7615311138313,
+        "y": 1499.8572491709501,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "工程数据前置期",
+      "s": {
+        "x": 1936.237828195646,
+        "y": 1129.4823308398213,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      },
+      "target": "工程数据比率",
+      "t": {
+        "x": 1778.029175107361,
+        "y": 1157.1934876823154,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "工艺名称维护",
+      "s": {
+        "x": 1985.4552099124298,
+        "y": 1864.3912595287097,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 2
+      },
+      "target": "流程种类维护",
+      "t": {
+        "x": 1701.0592875429604,
+        "y": 1795.3454788108752,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "工艺名称维护",
+      "s": {
+        "x": 1985.4552099124298,
+        "y": 1864.3912595287097,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 2
+      },
+      "target": "站别名称维护",
+      "t": {
+        "x": 1837.5519747760586,
+        "y": 1787.6048418691375,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "角色设置<>人事基礎資料",
+      "s": {
+        "x": 2211.486798109445,
+        "y": 1317.4263830347775,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "新产品判定项目",
+      "t": {
+        "x": 1932.6789015842796,
+        "y": 1260.243903368558,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "治具类型维护",
+      "s": {
+        "x": 1964.6740426610047,
+        "y": 1583.177199538014,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      },
+      "target": "治具制作项目",
+      "t": {
+        "x": 1823.038097274496,
+        "y": 1582.644051825493,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2100.245081587055,
+        "y": 1388.4847073472718,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "探针基本资料维护",
+      "t": {
+        "x": 1936.0078984897032,
+        "y": 1316.831712298802,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2100.245081587055,
+        "y": 1388.4847073472718,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "规格色标选择",
+      "t": {
+        "x": 1932.046202104443,
+        "y": 1387.1773824620457,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2228.120393419468,
+        "y": 1464.39103408842,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "Gerber点检角色维护",
+      "t": {
+        "x": 1953.4851921870056,
+        "y": 1494.5627874152083,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "站别名称维护",
+      "s": {
+        "x": 1837.5519747760586,
+        "y": 1787.6048418691375,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 2,
+        "out": 1
+      },
+      "target": "流程种类维护",
+      "t": {
+        "x": 1701.0592875429604,
+        "y": 1795.3454788108752,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2224.526414872852,
+        "y": 1394.0495771879819,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "Gerber点检角色维护",
+      "t": {
+        "x": 1953.4851921870056,
+        "y": 1494.5627874152083,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "途程数据维护<>生管基礎資料",
+      "s": {
+        "x": 2312.671275560814,
+        "y": 1764.998380678364,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 0
+      },
+      "target": "标准流程设置",
+      "t": {
+        "x": 1972.1354482694574,
+        "y": 1780.1535370468353,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定<>系統基礎資料",
+      "s": {
+        "x": 2187.859139318621,
+        "y": 1126.829669923717,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "工程数据比率",
+      "t": {
+        "x": 1778.029175107361,
+        "y": 1157.1934876823154,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定<>系統基礎資料",
+      "s": {
+        "x": 2187.859139318621,
+        "y": 1126.829669923717,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "菲林外包扣款项目",
+      "t": {
+        "x": 1928.2010887830547,
+        "y": 1211.5707201850103,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2194.0720269723024,
+        "y": 1222.4769104191516,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "菲林外包扣款项目",
+      "t": {
+        "x": 1928.2010887830547,
+        "y": 1211.5707201850103,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "标准流程设置",
+      "s": {
+        "x": 1972.1354482694574,
+        "y": 1780.1535370468353,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      },
+      "target": "站别名称维护",
+      "t": {
+        "x": 1837.5519747760586,
+        "y": 1787.6048418691375,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "点检类别维护",
+      "s": {
+        "x": 1970.803944930271,
+        "y": 1674.8060094100451,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 1
+      },
+      "target": "点检项目维护",
+      "t": {
+        "x": 1837.8272286363117,
+        "y": 1676.1114067303192,
+        "blmd": "",
+        "blmdID": "Module00002",
+        "in": 1,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

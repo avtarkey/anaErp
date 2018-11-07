@@ -1,0 +1,3893 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "二级品号维护审核<>倉庫基礎資料",
+      "s": {
+        "x": 2344.9801638035306,
+        "y": 806.8360156446624,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "公司基本资料<>系統基礎資料",
+      "s": {
+        "x": 2376.8818147313086,
+        "y": 1000.4162789110267,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "用印申请",
+      "t": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 2091.184516652511,
+        "y": 1727.0145694158202,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "付款方式维护<>系統基礎資料",
+      "s": {
+        "x": 2091.184516652511,
+        "y": 1727.0145694158202,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "出差申请<>門禁管理",
+      "s": {
+        "x": 2382.4075388300944,
+        "y": 1591.9184302040962,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出差报销明细维护",
+      "t": {
+        "x": 1648.4583591507712,
+        "y": 1855.8695521609422,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "出差申请<>門禁管理",
+      "s": {
+        "x": 2382.4075388300944,
+        "y": 1591.9184302040962,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 0
+      },
+      "target": "特约车出差明细",
+      "t": {
+        "x": 1640.0601034146414,
+        "y": 1582.4542080371768,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "出差申请<>門禁管理",
+      "s": {
+        "x": 2382.4075388300944,
+        "y": 1591.9184302040962,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 0
+      },
+      "target": "费用结报确认与现金日记帐查询",
+      "t": {
+        "x": 1497.058981730162,
+        "y": 1100.7742288810557,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "出差申请<>門禁管理",
+      "s": {
+        "x": 2382.4075388300944,
+        "y": 1591.9184302040962,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "出差报销明细维护",
+      "s": {
+        "x": 1648.4583591507712,
+        "y": 1855.8695521609422,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      },
+      "target": "出差证明打印",
+      "t": {
+        "x": 1516.8045158086222,
+        "y": 1777.1483505782567,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "出差报销明细维护",
+      "s": {
+        "x": 1648.4583591507712,
+        "y": 1855.8695521609422,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      },
+      "target": "申请单作废",
+      "t": {
+        "x": 1522.644007565267,
+        "y": 1860.7051056148275,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "出差报销明细维护",
+      "s": {
+        "x": 1648.4583591507712,
+        "y": 1855.8695521609422,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      },
+      "target": "费用结报确认与现金日记帐查询",
+      "t": {
+        "x": 1497.058981730162,
+        "y": 1100.7742288810557,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "外出申请<>門禁管理",
+      "s": {
+        "x": 2389.854732908967,
+        "y": 1656.2580409604784,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外出单报销明细维护",
+      "t": {
+        "x": 1645.4514691232075,
+        "y": 1753.759583113323,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "外出单报销明细维护",
+      "s": {
+        "x": 1645.4514691232075,
+        "y": 1753.759583113323,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      },
+      "target": "出差证明打印",
+      "t": {
+        "x": 1516.8045158086222,
+        "y": 1777.1483505782567,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "外出单报销明细维护",
+      "s": {
+        "x": 1645.4514691232075,
+        "y": 1753.759583113323,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包报价维护<>外包管理",
+      "s": {
+        "x": 2227.9499088153198,
+        "y": 1582.9491913328873,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "外包管理",
+      "belongModuleID": "Module00118",
+      "source": "外包厂商维护<>外包管理",
+      "s": {
+        "x": 2218.519130243223,
+        "y": 1640.5671374790004,
+        "blmd": "外包管理",
+        "blmdID": "Module00118",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "用印申请",
+      "s": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "用印申请",
+      "s": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      },
+      "target": "资本支出费用维护",
+      "t": {
+        "x": 861.0817404541181,
+        "y": 1346.3978059899155,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務",
+      "belongModuleID": "Module00200",
+      "source": "印信申请<>財務",
+      "s": {
+        "x": 2366.6737415065136,
+        "y": 1353.118200719356,
+        "blmd": "財務",
+        "blmdID": "Module00200",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2081.2241379084107,
+        "y": 1672.845646139026,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2081.2241379084107,
+        "y": 1672.845646139026,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2081.2241379084107,
+        "y": 1672.845646139026,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "协力商<>系統基礎資料",
+      "s": {
+        "x": 2148.5562490536686,
+        "y": 1725.4639333172854,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "协力商费用维护<>工程基礎資料",
+      "s": {
+        "x": 2527.71030462855,
+        "y": 1475.0600882488197,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外包费用单",
+      "t": {
+        "x": 1773.9026119069335,
+        "y": 1487.7760211596376,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 2337.0837113657376,
+        "y": 867.3343417581784,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "CQA管理",
+      "belongModuleID": "Module00056",
+      "source": "客户访查报告及处理单<>CQA管理",
+      "s": {
+        "x": 2486.826231895306,
+        "y": 1618.5663881284725,
+        "blmd": "CQA管理",
+        "blmdID": "Module00056",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外出单报销明细维护",
+      "t": {
+        "x": 1645.4514691232075,
+        "y": 1753.759583113323,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "CQA管理",
+      "belongModuleID": "Module00056",
+      "source": "客户访查报告及处理单<>CQA管理",
+      "s": {
+        "x": 2486.826231895306,
+        "y": 1618.5663881284725,
+        "blmd": "CQA管理",
+        "blmdID": "Module00056",
+        "in": 0,
+        "out": 0
+      },
+      "target": "特约车出差明细",
+      "t": {
+        "x": 1640.0601034146414,
+        "y": 1582.4542080371768,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "借款申请",
+      "s": {
+        "x": 1660.4865981942694,
+        "y": 1665.6164315059066,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      },
+      "target": "费用结报确认与现金日记帐查询",
+      "t": {
+        "x": 1497.058981730162,
+        "y": 1100.7742288810557,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "工程验收新",
+      "t": {
+        "x": 1271.2773814777172,
+        "y": 1201.640155539705,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出差报销明细维护",
+      "t": {
+        "x": 1648.4583591507712,
+        "y": 1855.8695521609422,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出差证明打印",
+      "t": {
+        "x": 1516.8045158086222,
+        "y": 1777.1483505782567,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外出单报销明细维护",
+      "t": {
+        "x": 1645.4514691232075,
+        "y": 1753.759583113323,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印章借出申请单",
+      "t": {
+        "x": 1794.6676262685432,
+        "y": 1569.783477069005,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "特约车出差明细",
+      "t": {
+        "x": 1640.0601034146414,
+        "y": 1582.4542080371768,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "特约车出差明细表",
+      "t": {
+        "x": 1495.9242786254333,
+        "y": 1589.066194415395,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收",
+      "t": {
+        "x": 1273.678657138832,
+        "y": 1106.2712441374042,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "费用结报单打印报表",
+      "t": {
+        "x": 1530.8123279106994,
+        "y": 1678.4378129141696,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "费用结报确认与现金日记帐查询",
+      "t": {
+        "x": 1497.058981730162,
+        "y": 1100.7742288810557,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "会计修改识别码",
+      "t": {
+        "x": 1342.5560420100624,
+        "y": 1758.2325302525162,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出申请",
+      "t": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出执行申请",
+      "t": {
+        "x": 1282.682871904114,
+        "y": 1255.8502261992837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金及事务性费用申请单",
+      "t": {
+        "x": 1332.8552548401428,
+        "y": 1656.6531084720145,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "机器设备验收报告填写",
+      "t": {
+        "x": 1754.721819775993,
+        "y": 1122.1779397145988,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2086.0589625488183,
+        "y": 1482.5105030593422,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "薪资预算申请",
+      "t": {
+        "x": 1768.055628785848,
+        "y": 1195.905709850229,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "特约车出差明细",
+      "s": {
+        "x": 1640.0601034146414,
+        "y": 1582.4542080371768,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      },
+      "target": "特约车出差明细表",
+      "t": {
+        "x": 1495.9242786254333,
+        "y": 1589.066194415395,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2177.693432920463,
+        "y": 1510.6943979178725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2177.693432920463,
+        "y": 1510.6943979178725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印章借出申请单",
+      "t": {
+        "x": 1794.6676262685432,
+        "y": 1569.783477069005,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2177.693432920463,
+        "y": 1510.6943979178725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2177.693432920463,
+        "y": 1510.6943979178725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2177.693432920463,
+        "y": 1510.6943979178725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "机器设备验收报告填写",
+      "t": {
+        "x": 1754.721819775993,
+        "y": 1122.1779397145988,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2177.693432920463,
+        "y": 1510.6943979178725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "薪资预算申请",
+      "t": {
+        "x": 1768.055628785848,
+        "y": 1195.905709850229,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2131.9374545955097,
+        "y": 1406.934748644201,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2131.9374545955097,
+        "y": 1406.934748644201,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印章借出申请单",
+      "t": {
+        "x": 1794.6676262685432,
+        "y": 1569.783477069005,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2131.9374545955097,
+        "y": 1406.934748644201,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2131.9374545955097,
+        "y": 1406.934748644201,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2131.9374545955097,
+        "y": 1406.934748644201,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "机器设备验收报告填写",
+      "t": {
+        "x": 1754.721819775993,
+        "y": 1122.1779397145988,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2131.9374545955097,
+        "y": 1406.934748644201,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "薪资预算申请",
+      "t": {
+        "x": 1768.055628785848,
+        "y": 1195.905709850229,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人力需求计划",
+      "t": {
+        "x": 1751.927915554108,
+        "y": 1345.479178139805,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出差证明打印",
+      "t": {
+        "x": 1516.8045158086222,
+        "y": 1777.1483505782567,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外出单报销明细维护",
+      "t": {
+        "x": 1645.4514691232075,
+        "y": 1753.759583113323,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "生成项目采购",
+      "t": {
+        "x": 1157.3941873953872,
+        "y": 1587.1742021170799,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印章借出申请单",
+      "t": {
+        "x": 1794.6676262685432,
+        "y": 1569.783477069005,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "借款冲销确认",
+      "t": {
+        "x": 1808.9750170984094,
+        "y": 1867.166455017078,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "特约车出差明细",
+      "t": {
+        "x": 1640.0601034146414,
+        "y": 1582.4542080371768,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "特约车出差明细表",
+      "t": {
+        "x": 1495.9242786254333,
+        "y": 1589.066194415395,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收",
+      "t": {
+        "x": 1273.678657138832,
+        "y": 1106.2712441374042,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "费用结报单打印报表",
+      "t": {
+        "x": 1530.8123279106994,
+        "y": 1678.4378129141696,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "费用结报维护",
+      "t": {
+        "x": 1777.858324322738,
+        "y": 1254.657517826727,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "费用结报确认与现金日记帐查询",
+      "t": {
+        "x": 1497.058981730162,
+        "y": 1100.7742288810557,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "会计修改识别码",
+      "t": {
+        "x": 1342.5560420100624,
+        "y": 1758.2325302525162,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出申请",
+      "t": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出执行申请",
+      "t": {
+        "x": 1282.682871904114,
+        "y": 1255.8502261992837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出费用维护",
+      "t": {
+        "x": 861.0817404541181,
+        "y": 1346.3978059899155,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金及事务性费用申请单",
+      "t": {
+        "x": 1332.8552548401428,
+        "y": 1656.6531084720145,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "预算主控部门",
+      "t": {
+        "x": 1794.4400559756805,
+        "y": 1781.797419820257,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "预算归属作业",
+      "t": {
+        "x": 1753.9666209418442,
+        "y": 1408.5697230416981,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "机器设备验收报告填写",
+      "t": {
+        "x": 1754.721819775993,
+        "y": 1122.1779397145988,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "营业计划总预算提交",
+      "t": {
+        "x": 1795.535084532231,
+        "y": 1723.1218891145177,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2119.5248171410976,
+        "y": 1254.679402146499,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "薪资预算申请",
+      "t": {
+        "x": 1768.055628785848,
+        "y": 1195.905709850229,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 2327.28357122079,
+        "y": 921.2437501935284,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定<>系統基礎資料",
+      "s": {
+        "x": 2367.290620683114,
+        "y": 1131.9543730871908,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "費用管理",
+      "belongModuleID": "Module00046",
+      "source": "菲林外包_出货单<>費用管理",
+      "s": {
+        "x": 2331.9492253102326,
+        "y": 1792.1596008333663,
+        "blmd": "費用管理",
+        "blmdID": "Module00046",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外包费用单",
+      "t": {
+        "x": 1773.9026119069335,
+        "y": 1487.7760211596376,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "費用管理",
+      "belongModuleID": "Module00046",
+      "source": "菲林外包_底片报废/延误<>費用管理",
+      "s": {
+        "x": 2219.2239365833375,
+        "y": 1854.5708444290008,
+        "blmd": "費用管理",
+        "blmdID": "Module00046",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外包费用单",
+      "t": {
+        "x": 1773.9026119069335,
+        "y": 1487.7760211596376,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "費用管理",
+      "belongModuleID": "Module00046",
+      "source": "菲林外包_返单<>費用管理",
+      "s": {
+        "x": 2256.5127472836093,
+        "y": 1902.1614878692142,
+        "blmd": "費用管理",
+        "blmdID": "Module00046",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外包费用单",
+      "t": {
+        "x": 1773.9026119069335,
+        "y": 1487.7760211596376,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "費用管理",
+      "belongModuleID": "Module00046",
+      "source": "菲林外包_散单/返单延误<>費用管理",
+      "s": {
+        "x": 2231.205952392118,
+        "y": 1811.9358311541628,
+        "blmd": "費用管理",
+        "blmdID": "Module00046",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外包费用单",
+      "t": {
+        "x": 1773.9026119069335,
+        "y": 1487.7760211596376,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "费用结报单申请",
+      "s": {
+        "x": 1639.0074193982568,
+        "y": 1475.9774779088918,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      },
+      "target": "费用结报单打印报表",
+      "t": {
+        "x": 1530.8123279106994,
+        "y": 1678.4378129141696,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "费用结报单申请",
+      "s": {
+        "x": 1639.0074193982568,
+        "y": 1475.9774779088918,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      },
+      "target": "费用结报确认与现金日记帐查询",
+      "t": {
+        "x": 1497.058981730162,
+        "y": 1100.7742288810557,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "费用结报单申请",
+      "s": {
+        "x": 1639.0074193982568,
+        "y": 1475.9774779088918,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 3
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "加貿設備管理",
+      "belongModuleID": "Module00089",
+      "source": "进口货物设备报关单<>加貿設備管理",
+      "s": {
+        "x": 2127.4287751393226,
+        "y": 1033.9886983717179,
+        "blmd": "加貿設備管理",
+        "blmdID": "Module00089",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收",
+      "t": {
+        "x": 1273.678657138832,
+        "y": 1106.2712441374042,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购",
+      "s": {
+        "x": 1489.4620008042293,
+        "y": 1220.0324960294872,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 2
+      },
+      "target": "工程验收新",
+      "t": {
+        "x": 1271.2773814777172,
+        "y": 1201.640155539705,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购",
+      "s": {
+        "x": 1489.4620008042293,
+        "y": 1220.0324960294872,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 2
+      },
+      "target": "设备验收",
+      "t": {
+        "x": 1273.678657138832,
+        "y": 1106.2712441374042,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单",
+      "s": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      },
+      "target": "生成项目采购",
+      "t": {
+        "x": 1157.3941873953872,
+        "y": 1587.1742021170799,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单",
+      "s": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      },
+      "target": "用印申请",
+      "t": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单",
+      "s": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单",
+      "s": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      },
+      "target": "项目采购变更",
+      "t": {
+        "x": 1110.4374671688445,
+        "y": 1198.8878635725516,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单",
+      "s": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      },
+      "target": "资本支出费用申请明细维护",
+      "t": {
+        "x": 725.5550931601263,
+        "y": 1354.7508474486876,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单",
+      "s": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      },
+      "target": "签订合约",
+      "t": {
+        "x": 1136.264592006864,
+        "y": 1342.9903908065116,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "会计科目维护<>財務基礎資料",
+      "s": {
+        "x": 2358.4688341761757,
+        "y": 1506.8632747061713,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "会计科目维护<>財務基礎資料",
+      "s": {
+        "x": 2358.4688341761757,
+        "y": 1506.8632747061713,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "会计科目维护<>財務基礎資料",
+      "s": {
+        "x": 2358.4688341761757,
+        "y": 1506.8632747061713,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "营业计划总预算提交",
+      "t": {
+        "x": 1795.535084532231,
+        "y": 1723.1218891145177,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "生成项目采购",
+      "t": {
+        "x": 1157.3941873953872,
+        "y": 1587.1742021170799,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "用印申请",
+      "t": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "设备验收",
+      "t": {
+        "x": 1273.678657138832,
+        "y": 1106.2712441374042,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "资本支出执行申请",
+      "t": {
+        "x": 1282.682871904114,
+        "y": 1255.8502261992837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "资本支出费用申请明细维护",
+      "t": {
+        "x": 725.5550931601263,
+        "y": 1354.7508474486876,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出申请",
+      "s": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      },
+      "target": "签订合约",
+      "t": {
+        "x": 1136.264592006864,
+        "y": 1342.9903908065116,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "资本支出计划<>財務基礎資料",
+      "s": {
+        "x": 2450.484349035227,
+        "y": 1194.39694124491,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出费用维护",
+      "t": {
+        "x": 861.0817404541181,
+        "y": 1346.3978059899155,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出计划申请",
+      "s": {
+        "x": 1629.7479865170792,
+        "y": 1318.430135814547,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      },
+      "target": "项目采购",
+      "t": {
+        "x": 1489.4620008042293,
+        "y": 1220.0324960294872,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出计划申请",
+      "s": {
+        "x": 1629.7479865170792,
+        "y": 1318.430135814547,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 2
+      },
+      "target": "资本支出申请",
+      "t": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "资本支出费用维护",
+      "s": {
+        "x": 861.0817404541181,
+        "y": 1346.3978059899155,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 1
+      },
+      "target": "资本支出费用申请明细维护",
+      "t": {
+        "x": 725.5550931601263,
+        "y": 1354.7508474486876,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "资本支出预算金额<>財務基礎資料",
+      "s": {
+        "x": 2365.566950406892,
+        "y": 1231.4515373933903,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出申请",
+      "t": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "资本类别维护<>財務基礎資料",
+      "s": {
+        "x": 2379.4749914579206,
+        "y": 1295.1194780682843,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "资本类别维护<>財務基礎資料",
+      "s": {
+        "x": 2379.4749914579206,
+        "y": 1295.1194780682843,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出申请",
+      "t": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "零用金申请",
+      "s": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "零用金申请",
+      "s": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      },
+      "target": "会计修改识别码",
+      "t": {
+        "x": 1342.5560420100624,
+        "y": 1758.2325302525162,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "零用金申请",
+      "s": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      },
+      "target": "零用金及事务性费用申请单",
+      "t": {
+        "x": 1332.8552548401428,
+        "y": 1656.6531084720145,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "零用金类别维护<>財務基礎資料",
+      "s": {
+        "x": 2368.1957598659837,
+        "y": 1448.8828716576706,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "外包费用单",
+      "t": {
+        "x": 1773.9026119069335,
+        "y": 1487.7760211596376,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "用印申请",
+      "t": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收",
+      "t": {
+        "x": 1273.678657138832,
+        "y": 1106.2712441374042,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目采购变更",
+      "t": {
+        "x": 1110.4374671688445,
+        "y": 1198.8878635725516,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出申请",
+      "t": {
+        "x": 1502.6076814529729,
+        "y": 1337.1382948912612,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 8
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出执行申请",
+      "t": {
+        "x": 1282.682871904114,
+        "y": 1255.8502261992837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金及事务性费用申请单",
+      "t": {
+        "x": 1332.8552548401428,
+        "y": 1656.6531084720145,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2373.8493422723695,
+        "y": 1059.2214753219698,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "签订合约",
+      "t": {
+        "x": 1136.264592006864,
+        "y": 1342.9903908065116,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2213.3132140876255,
+        "y": 1431.3885866885018,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2213.3132140876255,
+        "y": 1431.3885866885018,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印章借出申请单",
+      "t": {
+        "x": 1794.6676262685432,
+        "y": 1569.783477069005,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2213.3132140876255,
+        "y": 1431.3885866885018,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2213.3132140876255,
+        "y": 1431.3885866885018,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2213.3132140876255,
+        "y": 1431.3885866885018,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "机器设备验收报告填写",
+      "t": {
+        "x": 1754.721819775993,
+        "y": 1122.1779397145988,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2213.3132140876255,
+        "y": 1431.3885866885018,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "薪资预算申请",
+      "t": {
+        "x": 1768.055628785848,
+        "y": 1195.905709850229,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料<>倉庫管理",
+      "s": {
+        "x": 2210.354727920517,
+        "y": 950.8677156003788,
+        "blmd": "倉庫管理",
+        "blmdID": "Module00022",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 2592.58656811411,
+        "y": 1249.2978874949467,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设施/设备营缮工程申请",
+      "t": {
+        "x": 1268.6729846066323,
+        "y": 1011.0897554150206,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 2592.58656811411,
+        "y": 1249.2978874949467,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 0
+      },
+      "target": "超预算明细查看",
+      "t": {
+        "x": 1327.0453518959487,
+        "y": 1553.7301179761546,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 2592.58656811411,
+        "y": 1249.2978874949467,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 0
+      },
+      "target": "会计修改识别码",
+      "t": {
+        "x": 1342.5560420100624,
+        "y": 1758.2325302525162,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人力需求计划",
+      "t": {
+        "x": 1751.927915554108,
+        "y": 1345.479178139805,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印信使用申请书",
+      "t": {
+        "x": 1801.5872892280627,
+        "y": 1650.2359739824844,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "印章借出申请单",
+      "t": {
+        "x": 1794.6676262685432,
+        "y": 1569.783477069005,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "设备验收单",
+      "t": {
+        "x": 1129.0194635130906,
+        "y": 1470.6080540123953,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目采购单",
+      "t": {
+        "x": 1310.660799565884,
+        "y": 1331.4022847024837,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 6
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "零用金申请",
+      "t": {
+        "x": 1500.3347366273883,
+        "y": 1502.0657490928434,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "机器设备验收报告填写",
+      "t": {
+        "x": 1754.721819775993,
+        "y": 1122.1779397145988,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2187.826649518872,
+        "y": 1303.9987142534787,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "薪资预算申请",
+      "t": {
+        "x": 1768.055628785848,
+        "y": 1195.905709850229,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "签订合约",
+      "s": {
+        "x": 1136.264592006864,
+        "y": 1342.9903908065116,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 2
+      },
+      "target": "用印申请",
+      "t": {
+        "x": 995.2717863218518,
+        "y": 1350.0811439018555,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "签订合约",
+      "s": {
+        "x": 1136.264592006864,
+        "y": 1342.9903908065116,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 2,
+        "out": 2
+      },
+      "target": "资本支出费用申请明细维护",
+      "t": {
+        "x": 725.5550931601263,
+        "y": 1354.7508474486876,
+        "blmd": "",
+        "blmdID": "Module00028",
+        "in": 4,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

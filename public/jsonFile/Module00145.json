@@ -1,0 +1,533 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "SOP執行力稽核",
+      "belongModuleID": "Module00145",
+      "source": "IPQC查检表稽核人维护",
+      "s": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      },
+      "target": "IPQC查检表维护",
+      "t": {
+        "x": 2262.2072094369173,
+        "y": 1386.1356399624103,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "SOP執行力稽核",
+      "belongModuleID": "Module00145",
+      "source": "SOP执行力稽核事项录入",
+      "s": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      },
+      "target": "SOP执行力稽核事项查询",
+      "t": {
+        "x": 2113.8281141852767,
+        "y": 1672.9574425144517,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "SOP執行力稽核",
+      "belongModuleID": "Module00145",
+      "source": "SOP执行力稽核事项录入",
+      "s": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      },
+      "target": "SOP执行力稽核汇总表",
+      "t": {
+        "x": 2120.847510919279,
+        "y": 1496.57778134079,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "SOP執行力稽核",
+      "belongModuleID": "Module00145",
+      "source": "SOP执行力稽核事项录入",
+      "s": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      },
+      "target": "新SOP执行力稽核汇总",
+      "t": {
+        "x": 2109.8670611914486,
+        "y": 1404.3419003596987,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "人员转班<>考勤管理",
+      "s": {
+        "x": 2816.41912701153,
+        "y": 1273.4572470195326,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      },
+      "target": "IPQC查检表稽核人维护",
+      "t": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2704.1541615134474,
+        "y": 1540.3021776512978,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "IPQC查检表稽核人维护",
+      "t": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2704.1541615134474,
+        "y": 1540.3021776512978,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核事项查询",
+      "t": {
+        "x": 2113.8281141852767,
+        "y": 1672.9574425144517,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2704.1541615134474,
+        "y": 1540.3021776512978,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核事项录入",
+      "t": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2704.1541615134474,
+        "y": 1540.3021776512978,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核汇总表",
+      "t": {
+        "x": 2120.847510919279,
+        "y": 1496.57778134079,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2704.1541615134474,
+        "y": 1540.3021776512978,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "新SOP执行力稽核汇总",
+      "t": {
+        "x": 2109.8670611914486,
+        "y": 1404.3419003596987,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2700.9783212721127,
+        "y": 1360.996560330793,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "IPQC查检表稽核人维护",
+      "t": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2696.390942817973,
+        "y": 1679.1516550012673,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "IPQC查检表稽核人维护",
+      "t": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2696.390942817973,
+        "y": 1679.1516550012673,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核事项查询",
+      "t": {
+        "x": 2113.8281141852767,
+        "y": 1672.9574425144517,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2696.390942817973,
+        "y": 1679.1516550012673,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核事项录入",
+      "t": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2696.390942817973,
+        "y": 1679.1516550012673,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核汇总表",
+      "t": {
+        "x": 2120.847510919279,
+        "y": 1496.57778134079,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2696.390942817973,
+        "y": 1679.1516550012673,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "项目责任部门维护",
+      "t": {
+        "x": 2454.7329628187736,
+        "y": 1604.4656696603204,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2696.390942817973,
+        "y": 1679.1516550012673,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "新SOP执行力稽核汇总",
+      "t": {
+        "x": 2109.8670611914486,
+        "y": 1404.3419003596987,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "SOP執行力稽核",
+      "belongModuleID": "Module00145",
+      "source": "项目责任部门维护",
+      "s": {
+        "x": 2454.7329628187736,
+        "y": 1604.4656696603204,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      },
+      "target": "SOP执行力稽核事项录入",
+      "t": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2696.2405327660076,
+        "y": 1449.5415898737162,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "IPQC查检表稽核人维护",
+      "t": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "奖惩提报单<>文檔管理",
+      "s": {
+        "x": 2719.9883421862646,
+        "y": 1788.278296567758,
+        "blmd": "文檔管理",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核事项录入",
+      "t": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2708.56989805363,
+        "y": 1613.239163406016,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "IPQC查检表稽核人维护",
+      "t": {
+        "x": 2423.8564871222716,
+        "y": 1375.3366967633121,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2708.56989805363,
+        "y": 1613.239163406016,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "SOP执行力稽核事项录入",
+      "t": {
+        "x": 2281.602857197635,
+        "y": 1574.5229743903542,
+        "blmd": "",
+        "blmdID": "Module00145",
+        "in": 1,
+        "out": 3
+      }
+    }
+  ],
+  "nodes": {}
+}

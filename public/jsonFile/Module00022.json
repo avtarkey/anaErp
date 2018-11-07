@@ -1,0 +1,6293 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "機修管理",
+      "belongModuleID": "Module00050",
+      "source": "工务领料<>機修管理",
+      "s": {
+        "x": 3820.2992077867984,
+        "y": 392.06804604235634,
+        "blmd": "機修管理",
+        "blmdID": "Module00050",
+        "in": 0,
+        "out": 2
+      },
+      "target": "工务/样品发料",
+      "t": {
+        "x": 3494.2145960686307,
+        "y": 121.16707599635515,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "機修管理",
+      "belongModuleID": "Module00050",
+      "source": "工务领料<>機修管理",
+      "s": {
+        "x": 3820.2992077867984,
+        "y": 392.06804604235634,
+        "blmd": "機修管理",
+        "blmdID": "Module00050",
+        "in": 0,
+        "out": 2
+      },
+      "target": "请购物料请领表",
+      "t": {
+        "x": 2823.465976254117,
+        "y": 622.5182421687641,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "工务旧配件报废",
+      "s": {
+        "x": 3037.447458325376,
+        "y": 500.02700563979874,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 1
+      },
+      "target": "工务旧配件报废确认",
+      "t": {
+        "x": 2825.717936369871,
+        "y": 486.50734553450945,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "公司基本资料<>系統基礎資料",
+      "s": {
+        "x": 3857.901847860102,
+        "y": 260.4350605223076,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 1
+      },
+      "target": "自制材料录入",
+      "t": {
+        "x": 3292.335537512592,
+        "y": 150.56743800434492,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "月结物料供应商维护<>采購基礎資料",
+      "s": {
+        "x": 3805.61790682381,
+        "y": 1068.4176218727744,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 3
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "月结物料供应商维护<>采購基礎資料",
+      "s": {
+        "x": 3805.61790682381,
+        "y": 1068.4176218727744,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 3
+      },
+      "target": "月结料处理审核",
+      "t": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "月结物料供应商维护<>采購基礎資料",
+      "s": {
+        "x": 3805.61790682381,
+        "y": 1068.4176218727744,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 3
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "月结料送货申请审核",
+      "s": {
+        "x": 3062.6671607161843,
+        "y": 1130.4426686898805,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "月结料处理审核",
+      "s": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "月结料询价取消<>采購管理",
+      "s": {
+        "x": 3780.9176369963207,
+        "y": 770.9156764029553,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "月结料询价取消<>采購管理",
+      "s": {
+        "x": 3780.9176369963207,
+        "y": 770.9156764029553,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "月结料询价单<>采購管理",
+      "s": {
+        "x": 3798.401963697727,
+        "y": 951.1526981723061,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 4
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "月结料询价单<>采購管理",
+      "s": {
+        "x": 3798.401963697727,
+        "y": 951.1526981723061,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 4
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "月结料询价单<>采購管理",
+      "s": {
+        "x": 3798.401963697727,
+        "y": 951.1526981723061,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 4
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "月结料询价单<>采購管理",
+      "s": {
+        "x": 3798.401963697727,
+        "y": 951.1526981723061,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 4
+      },
+      "target": "月结料送货申请审核",
+      "t": {
+        "x": 3062.6671607161843,
+        "y": 1130.4426686898805,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053",
+      "source": "外出申请<>門禁管理",
+      "s": {
+        "x": 4407.590743718156,
+        "y": 404.84442987475586,
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "in": 0,
+        "out": 1
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "生产产能归类维护<>生管基礎資料",
+      "s": {
+        "x": 4292.391034708707,
+        "y": 1466.7011547107059,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 1
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "各部门基本资料设置",
+      "s": {
+        "x": 3052.6004211357053,
+        "y": 966.5555574578209,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 1
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "扣款工衣维护<>倉庫基礎資料",
+      "s": {
+        "x": 3687.4788069532256,
+        "y": 886.233816765206,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 1
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "免费物品请领",
+      "s": {
+        "x": 3047.2807114540065,
+        "y": 887.5264132355351,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      },
+      "target": "免费物品发料",
+      "t": {
+        "x": 2825.068337944585,
+        "y": 675.4594700459759,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "呆料参数定义<>倉庫基礎資料",
+      "s": {
+        "x": 3749.9137965341133,
+        "y": 1383.007632495498,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 1
+      },
+      "target": "材料呆料表",
+      "t": {
+        "x": 3475.2189524082883,
+        "y": 2077.6154969686227,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表<>材料商品管理",
+      "s": {
+        "x": 4152.487084780564,
+        "y": 1089.0040713904368,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184",
+      "source": "材料商品出货表<>材料商品管理",
+      "s": {
+        "x": 4152.487084780564,
+        "y": 1089.0040713904368,
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结料处理审核",
+      "t": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "材料报废申请审核",
+      "s": {
+        "x": 3051.926122481737,
+        "y": 800.207708874328,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 2
+      },
+      "target": "材料报废申请",
+      "t": {
+        "x": 2829.0180545332296,
+        "y": 735.5893160563539,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "材料报废申请审核",
+      "s": {
+        "x": 3051.926122481737,
+        "y": 800.207708874328,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 2
+      },
+      "target": "材料报废申请财务确认",
+      "t": {
+        "x": 2841.463184488676,
+        "y": 788.7019151308327,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "供貨及對帳管理",
+      "belongModuleID": "Module00154",
+      "source": "供应商拒收订单审核<>供貨及對帳管理",
+      "s": {
+        "x": 4161.966490579058,
+        "y": 1154.7288102000305,
+        "blmd": "供貨及對帳管理",
+        "blmdID": "Module00154",
+        "in": 0,
+        "out": 1
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "手动输条形码和检验报告",
+      "t": {
+        "x": 3087.531501665949,
+        "y": 1484.5178163807273,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结料送货申请审核",
+      "t": {
+        "x": 3062.6671607161843,
+        "y": 1130.4426686898805,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结料退货",
+      "t": {
+        "x": 3408.44122449146,
+        "y": 2109.156295376034,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "月结料处理审核",
+      "t": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "供应商空桶回收确认",
+      "t": {
+        "x": 3515.502975525007,
+        "y": 2154.321140071548,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "物料条形码转仓",
+      "t": {
+        "x": 3270.868139623343,
+        "y": 2151.3447674873373,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "物料需求计划审核",
+      "t": {
+        "x": 3046.050381330797,
+        "y": 574.1267349340205,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "进料退回",
+      "t": {
+        "x": 3098.082105588297,
+        "y": 1538.3898220562094,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "管制药水空桶回仓申请",
+      "t": {
+        "x": 3201.3682415890635,
+        "y": 2158.0625716451086,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "管控物料入库点收",
+      "t": {
+        "x": 3506.318849198546,
+        "y": 53.363496287160615,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "领料退回确认",
+      "t": {
+        "x": 2575.8735714995173,
+        "y": 1494.0948091106618,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 3785.728544138517,
+        "y": 836.2536799646541,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 19
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "供应商报价1<>采購管理",
+      "s": {
+        "x": 3789.6501273624885,
+        "y": 1012.5118520704423,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "供应商报价1<>采購管理",
+      "s": {
+        "x": 3789.6501273624885,
+        "y": 1012.5118520704423,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结料处理审核",
+      "t": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "协力商维护<>業務基礎資料",
+      "s": {
+        "x": 4219.680710816345,
+        "y": 826.676255638318,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "供貨及對帳管理",
+      "belongModuleID": "Module00154",
+      "source": "物料出货检验报告<>供貨及對帳管理",
+      "s": {
+        "x": 4122.173879515802,
+        "y": 408.6744690799096,
+        "blmd": "供貨及對帳管理",
+        "blmdID": "Module00154",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "供貨及對帳管理",
+      "belongModuleID": "Module00154",
+      "source": "物料出货检验报告<>供貨及對帳管理",
+      "s": {
+        "x": 4122.173879515802,
+        "y": 408.6744690799096,
+        "blmd": "供貨及對帳管理",
+        "blmdID": "Module00154",
+        "in": 0,
+        "out": 2
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "工务/样品发料",
+      "t": {
+        "x": 3494.2145960686307,
+        "y": 121.16707599635515,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "工务旧配件报废",
+      "t": {
+        "x": 3037.447458325376,
+        "y": 500.02700563979874,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "手动输条形码和检验报告",
+      "t": {
+        "x": 3087.531501665949,
+        "y": 1484.5178163807273,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结物料入库",
+      "t": {
+        "x": 2596.793444161027,
+        "y": 1795.4883848086847,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结料送货申请审核",
+      "t": {
+        "x": 3062.6671607161843,
+        "y": 1130.4426686898805,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结料退货",
+      "t": {
+        "x": 3408.44122449146,
+        "y": 2109.156295376034,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结料处理审核",
+      "t": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "月结料需求调整审核",
+      "t": {
+        "x": 3112.457075017039,
+        "y": 1909.0011748181396,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "自制材料录入",
+      "t": {
+        "x": 3292.335537512592,
+        "y": 150.56743800434492,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "自请购物料领料",
+      "t": {
+        "x": 2584.450414145154,
+        "y": 823.4971108728055,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "材料月转存",
+      "t": {
+        "x": 3111.930157445179,
+        "y": 1771.4145416507708,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "材料报废申请",
+      "t": {
+        "x": 2829.0180545332296,
+        "y": 735.5893160563539,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "材料实存设定",
+      "t": {
+        "x": 3112.1846376869335,
+        "y": 2099.63968114804,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "材料盘点实存设置",
+      "t": {
+        "x": 3335.340557331396,
+        "y": 2131.426637388021,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "材料盘点转存",
+      "t": {
+        "x": 3127.6764305592674,
+        "y": 1967.31268344192,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "拒收退单确认",
+      "t": {
+        "x": 3106.8408649186354,
+        "y": 1851.118492536003,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "物料条形码转仓",
+      "t": {
+        "x": 3270.868139623343,
+        "y": 2151.3447674873373,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "物料需求拆批调整1",
+      "t": {
+        "x": 3123.4773768467103,
+        "y": 2222.647988145728,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "物料需求计划审核",
+      "t": {
+        "x": 3046.050381330797,
+        "y": 574.1267349340205,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "物料需求计算",
+      "t": {
+        "x": 3096.8521380818706,
+        "y": 182.4100750521684,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "物料需求量调整",
+      "t": {
+        "x": 3103.0309597435885,
+        "y": 2162.7433278523513,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "非月结物料盘点单",
+      "t": {
+        "x": 3084.180828412066,
+        "y": 1408.6552523159257,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "仓库备料",
+      "t": {
+        "x": 2585.204188680297,
+        "y": 1282.5611572928096,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "原材料转商品",
+      "t": {
+        "x": 2586.8390939868436,
+        "y": 1565.9360475645456,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "常备物料计算",
+      "t": {
+        "x": 2841.0691271148876,
+        "y": 865.3468553041307,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "常备物料计算审核",
+      "t": {
+        "x": 3058.9829487105553,
+        "y": 1052.1396712498004,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "进料退回",
+      "t": {
+        "x": 3098.082105588297,
+        "y": 1538.3898220562094,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "管制药水空桶回仓申请",
+      "t": {
+        "x": 3201.3682415890635,
+        "y": 2158.0625716451086,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "管控物料入库点收",
+      "t": {
+        "x": 3506.318849198546,
+        "y": 53.363496287160615,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "领料退回作业",
+      "t": {
+        "x": 2585.1133041382004,
+        "y": 1720.4809739804766,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "领料退回确认",
+      "t": {
+        "x": 2575.8735714995173,
+        "y": 1494.0948091106618,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "领料单作废",
+      "t": {
+        "x": 2570.3974324934984,
+        "y": 502.95470973050783,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "领料单批量审核",
+      "t": {
+        "x": 3040.183730991577,
+        "y": 396.14260908840197,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "请购物料请领表",
+      "t": {
+        "x": 2823.465976254117,
+        "y": 622.5182421687641,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "灯管信息维护",
+      "t": {
+        "x": 3124.0216910706963,
+        "y": 2032.7936418748977,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3689.612121060488,
+        "y": 943.9314640974924,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 48
+      },
+      "target": "联络单厂内料号物料替代维护",
+      "t": {
+        "x": 3075.734310746392,
+        "y": 1333.5892070430111,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "物料逾期验收审核",
+      "s": {
+        "x": 3050.8802378366036,
+        "y": 723.686614986407,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "物料需求计划审核",
+      "s": {
+        "x": 3046.050381330797,
+        "y": 574.1267349340205,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 1
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "物料编号申请_V1<>采購管理",
+      "s": {
+        "x": 3795.7111875135333,
+        "y": 689.6821970076637,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 3
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "物料编号申请_V1<>采購管理",
+      "s": {
+        "x": 3795.7111875135333,
+        "y": 689.6821970076637,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 3
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "物料编号申请_V1<>采購管理",
+      "s": {
+        "x": 3795.7111875135333,
+        "y": 689.6821970076637,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 3
+      },
+      "target": "联络单厂内料号物料替代维护",
+      "t": {
+        "x": 3075.734310746392,
+        "y": 1333.5892070430111,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "公共表單",
+      "belongModuleID": "Module00119",
+      "source": "表单个人条件设置<>公共表單",
+      "s": {
+        "x": 4116.960904673761,
+        "y": 606.4388125049388,
+        "blmd": "公共表單",
+        "blmdID": "Module00119",
+        "in": 0,
+        "out": 1
+      },
+      "target": "领料单批量审核",
+      "t": {
+        "x": 3040.183730991577,
+        "y": 396.14260908840197,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "軟件管理",
+      "belongModuleID": "Module00078",
+      "source": "表单默认条件设置<>軟件管理",
+      "s": {
+        "x": 4232.754075987547,
+        "y": 606.4585700766146,
+        "blmd": "軟件管理",
+        "blmdID": "Module00078",
+        "in": 0,
+        "out": 1
+      },
+      "target": "领料单批量审核",
+      "t": {
+        "x": 3040.183730991577,
+        "y": 396.14260908840197,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "采购订单<>采購管理",
+      "s": {
+        "x": 3787.01120853006,
+        "y": 523.0551266751957,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "采购订单<>采購管理",
+      "s": {
+        "x": 3787.01120853006,
+        "y": 523.0551266751957,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "采购订单取消<>采購管理",
+      "s": {
+        "x": 3789.019233081822,
+        "y": 577.9856568546287,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 1
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "采购联络函审核<>采購管理",
+      "s": {
+        "x": 3813.8307139142003,
+        "y": 1130.5249087653888,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "采购联络函审核<>采購管理",
+      "s": {
+        "x": 3813.8307139142003,
+        "y": 1130.5249087653888,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 2
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "采购类别<>采購基礎資料",
+      "s": {
+        "x": 3786.5427379219077,
+        "y": 894.4660334830294,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 1
+      },
+      "target": "物料需求计划审核",
+      "t": {
+        "x": 3046.050381330797,
+        "y": 574.1267349340205,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息<>業務基礎資料",
+      "s": {
+        "x": 4212.053650322379,
+        "y": 742.2357292730638,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 1
+      },
+      "target": "物料需求计算",
+      "t": {
+        "x": 3096.8521380818706,
+        "y": 182.4100750521684,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "订单明细维护<>業務管理",
+      "s": {
+        "x": 3908.9950914859423,
+        "y": 1101.8385288966363,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 3
+      },
+      "target": "物料点检",
+      "t": {
+        "x": 3103.775024455084,
+        "y": 1701.2779825497178,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "订单明细维护<>業務管理",
+      "s": {
+        "x": 3908.9950914859423,
+        "y": 1101.8385288966363,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 3
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "订单明细维护<>業務管理",
+      "s": {
+        "x": 3908.9950914859423,
+        "y": 1101.8385288966363,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 3
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "工务/样品发料",
+      "t": {
+        "x": 3494.2145960686307,
+        "y": 121.16707599635515,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "月结物料入库",
+      "t": {
+        "x": 2596.793444161027,
+        "y": 1795.4883848086847,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "月结料送货申请审核",
+      "t": {
+        "x": 3062.6671607161843,
+        "y": 1130.4426686898805,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "回收个人物品价格确认",
+      "t": {
+        "x": 2559.398161143393,
+        "y": 585.8836570305457,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "自制材料录入",
+      "t": {
+        "x": 3292.335537512592,
+        "y": 150.56743800434492,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "免费物品收货",
+      "t": {
+        "x": 3241.994045798909,
+        "y": 147.19951026233184,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "免费物品发料",
+      "t": {
+        "x": 2825.068337944585,
+        "y": 675.4594700459759,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "免费物品请领",
+      "t": {
+        "x": 3047.2807114540065,
+        "y": 887.5264132355351,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "材料报废申请审核",
+      "t": {
+        "x": 3051.926122481737,
+        "y": 800.207708874328,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "物料逾期验收审核",
+      "t": {
+        "x": 3050.8802378366036,
+        "y": 723.686614986407,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "物料需求计算",
+      "t": {
+        "x": 3096.8521380818706,
+        "y": 182.4100750521684,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "非月结物料盘点单",
+      "t": {
+        "x": 3084.180828412066,
+        "y": 1408.6552523159257,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "待发领料单处理",
+      "t": {
+        "x": 3430.2842071284385,
+        "y": 142.11936652122313,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "常备物料计算审核",
+      "t": {
+        "x": 3058.9829487105553,
+        "y": 1052.1396712498004,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "进料验收管理",
+      "t": {
+        "x": 3187.542740369231,
+        "y": 149.79382117972796,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "资本支出点收",
+      "t": {
+        "x": 3583.5616801501938,
+        "y": 2138.69466264053,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "管控物料入库点收",
+      "t": {
+        "x": 3506.318849198546,
+        "y": 53.363496287160615,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "领料单作废",
+      "t": {
+        "x": 2570.3974324934984,
+        "y": 502.95470973050783,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3554.3402209215233,
+        "y": 707.0741528367853,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 27
+      },
+      "target": "请购物料请领表",
+      "t": {
+        "x": 2823.465976254117,
+        "y": 622.5182421687641,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位维护<>倉庫基礎資料",
+      "s": {
+        "x": 3707.1873763392123,
+        "y": 1199.031748652068,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 6
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位维护<>倉庫基礎資料",
+      "s": {
+        "x": 3707.1873763392123,
+        "y": 1199.031748652068,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 6
+      },
+      "target": "物料条形码转仓",
+      "t": {
+        "x": 3270.868139623343,
+        "y": 2151.3447674873373,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位维护<>倉庫基礎資料",
+      "s": {
+        "x": 3707.1873763392123,
+        "y": 1199.031748652068,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 6
+      },
+      "target": "仓库备料",
+      "t": {
+        "x": 2585.204188680297,
+        "y": 1282.5611572928096,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位维护<>倉庫基礎資料",
+      "s": {
+        "x": 3707.1873763392123,
+        "y": 1199.031748652068,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 6
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位维护<>倉庫基礎資料",
+      "s": {
+        "x": 3707.1873763392123,
+        "y": 1199.031748652068,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 6
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位维护<>倉庫基礎資料",
+      "s": {
+        "x": 3707.1873763392123,
+        "y": 1199.031748652068,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 6
+      },
+      "target": "领料单作废",
+      "t": {
+        "x": 2570.3974324934984,
+        "y": 502.95470973050783,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位权限维护<>倉庫基礎資料",
+      "s": {
+        "x": 3721.6829248610493,
+        "y": 1313.636695580824,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "仓位权限维护<>倉庫基礎資料",
+      "s": {
+        "x": 3721.6829248610493,
+        "y": 1313.636695580824,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "常备物料计算审核",
+      "s": {
+        "x": 3058.9829487105553,
+        "y": 1052.1396712498004,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      },
+      "target": "常备物料计算",
+      "t": {
+        "x": 2841.0691271148876,
+        "y": 865.3468553041307,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "清單管理",
+      "belongModuleID": "Module00074",
+      "source": "清单明细（进口）<>清單管理",
+      "s": {
+        "x": 3902.0886215159553,
+        "y": 407.36565016023684,
+        "blmd": "清單管理",
+        "blmdID": "Module00074",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "清單管理",
+      "belongModuleID": "Module00074",
+      "source": "清单明细（进口）<>清單管理",
+      "s": {
+        "x": 3902.0886215159553,
+        "y": 407.36565016023684,
+        "blmd": "清單管理",
+        "blmdID": "Module00074",
+        "in": 0,
+        "out": 2
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "产品构成一览表<>工藝管理",
+      "s": {
+        "x": 4020.010103252765,
+        "y": 1472.1794179830356,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 1
+      },
+      "target": "联络单厂内料号物料替代维护",
+      "t": {
+        "x": 3075.734310746392,
+        "y": 1333.5892070430111,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "手动输条形码和检验报告",
+      "t": {
+        "x": 3087.531501665949,
+        "y": 1484.5178163807273,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "月结物料入库",
+      "t": {
+        "x": 2596.793444161027,
+        "y": 1795.4883848086847,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "各部门基本资料设置",
+      "t": {
+        "x": 3052.6004211357053,
+        "y": 966.5555574578209,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "自请购物料领料",
+      "t": {
+        "x": 2584.450414145154,
+        "y": 823.4971108728055,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "免费物品收货",
+      "t": {
+        "x": 3241.994045798909,
+        "y": 147.19951026233184,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "免费物品发料",
+      "t": {
+        "x": 2825.068337944585,
+        "y": 675.4594700459759,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "免费物品请领",
+      "t": {
+        "x": 3047.2807114540065,
+        "y": 887.5264132355351,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "材料报废申请审核",
+      "t": {
+        "x": 3051.926122481737,
+        "y": 800.207708874328,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "物料逾期验收审核",
+      "t": {
+        "x": 3050.8802378366036,
+        "y": 723.686614986407,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "物料需求计划审核",
+      "t": {
+        "x": 3046.050381330797,
+        "y": 574.1267349340205,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "待发领料单处理",
+      "t": {
+        "x": 3430.2842071284385,
+        "y": 142.11936652122313,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "常备物料计算审核",
+      "t": {
+        "x": 3058.9829487105553,
+        "y": 1052.1396712498004,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "领料单作废",
+      "t": {
+        "x": 2570.3974324934984,
+        "y": 502.95470973050783,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3564.8986184764635,
+        "y": 824.0880289829192,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 22
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "设备验收单<>預算管理",
+      "s": {
+        "x": 3894.4793563101975,
+        "y": 1456.9705466259397,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      },
+      "target": "资本支出点收",
+      "t": {
+        "x": 3583.5616801501938,
+        "y": 2138.69466264053,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "途程加工选项设置<>生管基礎資料",
+      "s": {
+        "x": 4286.660026355876,
+        "y": 1419.296904539527,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 1
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门项目维护<>倉庫基礎資料",
+      "s": {
+        "x": 3687.6007493338075,
+        "y": 829.1418258201746,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 1
+      },
+      "target": "各部门基本资料设置",
+      "t": {
+        "x": 3052.6004211357053,
+        "y": 966.5555574578209,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "月结物料入库",
+      "t": {
+        "x": 2596.793444161027,
+        "y": 1795.4883848086847,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "自请购物料领料",
+      "t": {
+        "x": 2584.450414145154,
+        "y": 823.4971108728055,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "领料退回作业",
+      "t": {
+        "x": 2585.1133041382004,
+        "y": 1720.4809739804766,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "部门领料转换控制维护<>倉庫基礎資料",
+      "s": {
+        "x": 3690.2097426064643,
+        "y": 1008.0525162786298,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 10
+      },
+      "target": "请购物料请领表",
+      "t": {
+        "x": 2823.465976254117,
+        "y": 622.5182421687641,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定<>系統基礎資料",
+      "s": {
+        "x": 4103.736937431482,
+        "y": 217.4596002743346,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 1
+      },
+      "target": "免费物品收货",
+      "t": {
+        "x": 3241.994045798909,
+        "y": 147.19951026233184,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "发料拆批维护<>倉庫基礎資料",
+      "s": {
+        "x": 3715.2764126557854,
+        "y": 1256.001177177848,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 1
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "報關單管理",
+      "belongModuleID": "Module00064",
+      "source": "进口货物报关单<>報關單管理",
+      "s": {
+        "x": 3993.157513839242,
+        "y": 410.1012481314623,
+        "blmd": "報關單管理",
+        "blmdID": "Module00064",
+        "in": 0,
+        "out": 2
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "報關單管理",
+      "belongModuleID": "Module00064",
+      "source": "进口货物报关单<>報關單管理",
+      "s": {
+        "x": 3993.157513839242,
+        "y": 410.1012481314623,
+        "blmd": "報關單管理",
+        "blmdID": "Module00064",
+        "in": 0,
+        "out": 2
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "IQC管理",
+      "belongModuleID": "Module00039",
+      "source": "进料检验报告填写<>IQC管理",
+      "s": {
+        "x": 4283.0861354540575,
+        "y": 402.60669786990206,
+        "blmd": "IQC管理",
+        "blmdID": "Module00039",
+        "in": 0,
+        "out": 3
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "IQC管理",
+      "belongModuleID": "Module00039",
+      "source": "进料检验报告填写<>IQC管理",
+      "s": {
+        "x": 4283.0861354540575,
+        "y": 402.60669786990206,
+        "blmd": "IQC管理",
+        "blmdID": "Module00039",
+        "in": 0,
+        "out": 3
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "IQC管理",
+      "belongModuleID": "Module00039",
+      "source": "进料检验报告填写<>IQC管理",
+      "s": {
+        "x": 4283.0861354540575,
+        "y": 402.60669786990206,
+        "blmd": "IQC管理",
+        "blmdID": "Module00039",
+        "in": 0,
+        "out": 3
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "量产作业指导--内层<>工藝管理",
+      "s": {
+        "x": 4035.917056568255,
+        "y": 1646.9641136683804,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 1
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "量产作业指导--防焊<>工藝管理",
+      "s": {
+        "x": 4026.301152184926,
+        "y": 1599.4961196070299,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 1
+      },
+      "target": "物料点检",
+      "t": {
+        "x": 3103.775024455084,
+        "y": 1701.2779825497178,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "量产作业指导--测试<>工藝管理",
+      "s": {
+        "x": 4017.621520323529,
+        "y": 1536.9886019692394,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 1
+      },
+      "target": "物料点检",
+      "t": {
+        "x": 3103.775024455084,
+        "y": 1701.2779825497178,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "量产作业指导--开料<>工藝管理",
+      "s": {
+        "x": 4005.2837072421416,
+        "y": 1405.292588650596,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 3
+      },
+      "target": "订单占用内层干膜料号",
+      "t": {
+        "x": 3091.867548451266,
+        "y": 1618.200782874108,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "量产作业指导--开料<>工藝管理",
+      "s": {
+        "x": 4005.2837072421416,
+        "y": 1405.292588650596,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 3
+      },
+      "target": "领料退回作业",
+      "t": {
+        "x": 2585.1133041382004,
+        "y": 1720.4809739804766,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工藝管理",
+      "belongModuleID": "Module00035",
+      "source": "量产作业指导--开料<>工藝管理",
+      "s": {
+        "x": 4005.2837072421416,
+        "y": 1405.292588650596,
+        "blmd": "工藝管理",
+        "blmdID": "Module00035",
+        "in": 0,
+        "out": 3
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "量产联络单<>業務管理",
+      "s": {
+        "x": 3903.6055229614726,
+        "y": 1037.0073971608608,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 5
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "量产联络单<>業務管理",
+      "s": {
+        "x": 3903.6055229614726,
+        "y": 1037.0073971608608,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 5
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "量产联络单<>業務管理",
+      "s": {
+        "x": 3903.6055229614726,
+        "y": 1037.0073971608608,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 5
+      },
+      "target": "领料退回作业",
+      "t": {
+        "x": 2585.1133041382004,
+        "y": 1720.4809739804766,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "量产联络单<>業務管理",
+      "s": {
+        "x": 3903.6055229614726,
+        "y": 1037.0073971608608,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 5
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "量产联络单<>業務管理",
+      "s": {
+        "x": 3903.6055229614726,
+        "y": 1037.0073971608608,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 5
+      },
+      "target": "联络单厂内料号物料替代维护",
+      "t": {
+        "x": 3075.734310746392,
+        "y": 1333.5892070430111,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "預算管理",
+      "belongModuleID": "Module00028",
+      "source": "项目采购单<>預算管理",
+      "s": {
+        "x": 3823.848387899119,
+        "y": 1457.1823292209724,
+        "blmd": "預算管理",
+        "blmdID": "Module00028",
+        "in": 0,
+        "out": 1
+      },
+      "target": "资本支出点收",
+      "t": {
+        "x": 3583.5616801501938,
+        "y": 2138.69466264053,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 4101.226421044256,
+        "y": 142.87879568938968,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 1
+      },
+      "target": "自制材料录入",
+      "t": {
+        "x": 3292.335537512592,
+        "y": 150.56743800434492,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "月结物料收货",
+      "t": {
+        "x": 3066.245127651653,
+        "y": 1235.8749793428885,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "月结料退货",
+      "t": {
+        "x": 3408.44122449146,
+        "y": 2109.156295376034,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "领料退回确认",
+      "t": {
+        "x": 2575.8735714995173,
+        "y": 1494.0948091106618,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制物料备案申请<>倉庫基礎資料",
+      "s": {
+        "x": 3703.799525238609,
+        "y": 1085.2645014571517,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 9
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制药水桶基本资料维护<>倉庫基礎資料",
+      "s": {
+        "x": 3705.061185722186,
+        "y": 1140.9399761317575,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 3
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制药水桶基本资料维护<>倉庫基礎資料",
+      "s": {
+        "x": 3705.061185722186,
+        "y": 1140.9399761317575,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 3
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "管制药水桶基本资料维护<>倉庫基礎資料",
+      "s": {
+        "x": 3705.061185722186,
+        "y": 1140.9399761317575,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 3
+      },
+      "target": "管制药水空桶回仓申请",
+      "t": {
+        "x": 3201.3682415890635,
+        "y": 2158.0625716451086,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "月结物料入库",
+      "t": {
+        "x": 2596.793444161027,
+        "y": 1795.4883848086847,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "月结料处理",
+      "t": {
+        "x": 2402.769628387907,
+        "y": 995.1478911935324,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "月结料处理审核",
+      "t": {
+        "x": 2600.3162215059047,
+        "y": 986.9305550850193,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "回收个人物品价格确认",
+      "t": {
+        "x": 2559.398161143393,
+        "y": 585.8836570305457,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "自请购物料领料",
+      "t": {
+        "x": 2584.450414145154,
+        "y": 823.4971108728055,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "仓库备料",
+      "t": {
+        "x": 2585.204188680297,
+        "y": 1282.5611572928096,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "原材料转商品",
+      "t": {
+        "x": 2586.8390939868436,
+        "y": 1565.9360475645456,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "发料_按工号",
+      "t": {
+        "x": 2588.800654284966,
+        "y": 1217.7684953664182,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "领料退回作业",
+      "t": {
+        "x": 2585.1133041382004,
+        "y": 1720.4809739804766,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "领料退回确认",
+      "t": {
+        "x": 2575.8735714995173,
+        "y": 1494.0948091106618,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "领料单作废",
+      "t": {
+        "x": 2570.3974324934984,
+        "y": 502.95470973050783,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "领料",
+      "s": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "厂内料号编排<>點檢管理",
+      "s": {
+        "x": 4126.7524122612995,
+        "y": 1410.2956505604777,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 2
+      },
+      "target": "订单占用内层干膜料号",
+      "t": {
+        "x": 3091.867548451266,
+        "y": 1618.200782874108,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "厂内料号编排<>點檢管理",
+      "s": {
+        "x": 4126.7524122612995,
+        "y": 1410.2956505604777,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 2
+      },
+      "target": "发料",
+      "t": {
+        "x": 2583.435178390165,
+        "y": 1644.5267205636742,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 10,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "样品料号编排<>業務管理",
+      "s": {
+        "x": 3896.685017061089,
+        "y": 988.3390435137201,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 1
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "请购物料逾期未领料",
+      "s": {
+        "x": 3052.8983256900856,
+        "y": 652.7821401777439,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 2
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022",
+      "source": "请购物料逾期未领料",
+      "s": {
+        "x": 3052.8983256900856,
+        "y": 652.7821401777439,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 2
+      },
+      "target": "请购物料请领表",
+      "t": {
+        "x": 2823.465976254117,
+        "y": 622.5182421687641,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "手动输条形码和检验报告",
+      "t": {
+        "x": 3087.531501665949,
+        "y": 1484.5178163807273,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "月结物料送检",
+      "t": {
+        "x": 3036.5765036828575,
+        "y": 313.48752573584306,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "自请购物料领料",
+      "t": {
+        "x": 2584.450414145154,
+        "y": 823.4971108728055,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "物料逾期验收审核",
+      "t": {
+        "x": 3050.8802378366036,
+        "y": 723.686614986407,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "物料需求计划审核",
+      "t": {
+        "x": 3046.050381330797,
+        "y": 574.1267349340205,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 5,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "物料验收确认",
+      "t": {
+        "x": 2576.3103257666735,
+        "y": 691.007294178565,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "进料仓管审核",
+      "t": {
+        "x": 2587.2738879156377,
+        "y": 1426.9381140684427,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 7,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "进料退回",
+      "t": {
+        "x": 3098.082105588297,
+        "y": 1538.3898220562094,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "进料点收送检",
+      "t": {
+        "x": 3040.2982554016194,
+        "y": 225.5493767170176,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 14,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "管控物料入库点收",
+      "t": {
+        "x": 3506.318849198546,
+        "y": 53.363496287160615,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "请购物料收货",
+      "t": {
+        "x": 2598.7972142170875,
+        "y": 1116.5399362691348,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "请购物料逾期未领料",
+      "t": {
+        "x": 3052.8983256900856,
+        "y": 652.7821401777439,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 1,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購管理",
+      "belongModuleID": "Module00021",
+      "source": "请购单<>采購管理",
+      "s": {
+        "x": 3780.8785682351136,
+        "y": 633.5616242787867,
+        "blmd": "采購管理",
+        "blmdID": "Module00021",
+        "in": 0,
+        "out": 13
+      },
+      "target": "请购物料请领表",
+      "t": {
+        "x": 2823.465976254117,
+        "y": 622.5182421687641,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 6,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3556.8838767767397,
+        "y": 766.2115736652629,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 3
+      },
+      "target": "免费物品请领",
+      "t": {
+        "x": 3047.2807114540065,
+        "y": 887.5264132355351,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3556.8838767767397,
+        "y": 766.2115736652629,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 3
+      },
+      "target": "材料报废申请审核",
+      "t": {
+        "x": 3051.926122481737,
+        "y": 800.207708874328,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 2
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3556.8838767767397,
+        "y": 766.2115736652629,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 3
+      },
+      "target": "常备物料计算审核",
+      "t": {
+        "x": 3058.9829487105553,
+        "y": 1052.1396712498004,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 4,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职人员手续办理<>人事管理",
+      "s": {
+        "x": 3553.4779784562015,
+        "y": 638.7526889507673,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 1
+      },
+      "target": "回收个人物品价格确认",
+      "t": {
+        "x": 2559.398161143393,
+        "y": 585.8836570305457,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职申请<>人事管理",
+      "s": {
+        "x": 3565.74192352663,
+        "y": 888.9993572932558,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 2
+      },
+      "target": "领料",
+      "t": {
+        "x": 2841.719874022339,
+        "y": 980.0175214133501,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 12,
+        "out": 16
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职申请<>人事管理",
+      "s": {
+        "x": 3565.74192352663,
+        "y": 888.9993572932558,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 2
+      },
+      "target": "标准用量管控领料",
+      "t": {
+        "x": 2580.912966341357,
+        "y": 1360.297216267979,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 11,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "鑽嘴供应商优先级审核<>倉庫基礎資料",
+      "s": {
+        "x": 3688.792516305368,
+        "y": 776.2580641835798,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 1
+      },
+      "target": "月结料送货申请",
+      "t": {
+        "x": 2825.260041521987,
+        "y": 551.9715147122779,
+        "blmd": "",
+        "blmdID": "Module00022",
+        "in": 8,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

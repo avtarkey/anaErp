@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 1.5px;
+        }
+
+        #licensing {
+            fill: green;
+        }
+
+        .link.licensing {
+            stroke: green;
+        }
+
+        .link.resolved {
+            stroke-dasharray: 0, 2 1;
+        }
+
+        circle {
+            fill: #ccc;
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            font: 12px Microsoft YaHei;
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+        }
+
+        .linetext {
+            font-size: 12px Microsoft YaHei;
+        }
+
+        .women {
+            border: 7px solide rgb(226, 24, 24);
+            display: float
+        }
+    </style>
+
+    <!-- 自己定义的css -->
+    <style>
+        #tree {
+            position: absolute;
+            overflow: hidden
+        }
+
+        #dia {
+            overflow: hidden;
+            position: absolute !important;
+            left: 330px;
+            top: 0px;
+            height: 3000px;
+            width: 5000px;
+        }
+    </style>
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://localhost:3000/static/javascripts/md5.js"></script>
+
+    <script src="http://localhost:3000/static/javascripts/d3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/demo/demo.css">
+    <script type="text/javascript" src="http://localhost:3000/static/easyUI/jquery.min.js"></script>
+    <script type="text/javascript" src="http://localhost:3000/static/easyUI/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+    <script>
+    </script>
+            
+
+    <!-- 树形菜单html -->
+    <div id='tree'>
+        <h2>CheckBox Tree</h2>
+        <p>Tree nodes with check boxes.</p>
+        <button onclick="saveData()">Save It!</button>
+
+        <button onclick="myFunction()">Click me</button>
+
+        <div style="margin:20px 0;">
+            <a href="#" class="easyui-linkbutton" onclick="getChecked()">GetChecked</a>
+        </div>
+        <div style="margin:10px 0">
+            <input type="checkbox" onchange="$('#tt').tree({cascadeCheck:$(this).is(':checked')})">CascadeCheck
+            <input type="checkbox" onchange="$('#tt').tree({onlyLeafCheck:$(this).is(':checked')})">OnlyLeafCheck
+        </div>
+        <div class="easyui-panel" style="padding:5px" height="1000" width="300">
+            <ul id="tt"></ul>
+        </div>
+
+
+    </div>
+
+    <!-- 力图显示html -->
+    <div id='dia' style="border: 3px solid #010101;">
+        <div id='diamond'></div>
+    </div>
+
+    <!-- 这个是树形图的js -->
+    <script type="text/javascript">
+        var slfmd; //本页面显示的是哪个模块
+
+        $('#tt').tree({
+            url: 'static/jsonFile/tree_data.json',
+            method: 'get',
+            animate: true,
+            checkbox: true
+        });
+
+        function getChecked() {
+            var nodes = $('#tt').tree('getChecked');
+            var s = '';
+            var postData = [];//提交到数据库的json
+
+            for (var i = 0; i < nodes.length; i++) {
+                if (s != '') s += ',';
+                s += nodes[i].text+nodes[i].id;
+
+                let temp = Object();
+                temp.id = nodes[i].id;
+                temp.text = nodes[i].text;
+
+                postData.push(temp);
+                slfmd=nodes[i].id;
+            }
+           // alert(postData[0].id);          
+           alert(postData);       
+            
+          /*   console.dir(postData);
+            if (nodes.length > 1) {
+                alert('请输入一个');
+                return;
+            } */
+
+
+            $.ajax({
+                type: "post",
+                url: "http://localhost:3000/third/process_get",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(postData),
+                dataType: "json",
+                success: function (resultJson) {
+                    console.dir(resultJson);
+                    console.log('8888888')
+                    if(resultJson.isExist==0){
+                        console.dir(resultJson.body);
+                        let a = cht2zh(resultJson.body);//交给百度翻译
+                        a.then(
+                            (value) => {
+                                let a=new Object();
+
+
+                                a.isExist=resultJson.isExist;
+                                a.body=value;
+                                console.log('这个是返回的数据')// 这个是最后的返回
+                                console.dir(a);
+                                console.log('返回打印结束')
+                                showForceGraph(a);
+                            }
+                        )
+                    }else{
+                        showForceGraph(resultJson);
+                    }                    
+                },
+                error: function (message) {
+                    alert('获取数据失败！');
+                }
+            });
+        }
+     
+    </script>
+
+
+    <!-- 这个是力导图的js -->
+    <script>
+        let sendData=new Object();
+            
+        sendData.dt={}; //发送数据对象
+        let myFun; //保存是需要执行的函数
+            
+        function saveData(){  
+                myFun();             
+                alert('發送');
+               // console.dir(sendData)
+
+                $.ajax({
+                    type: "post",
+                    url: "http://localhost:3000/formal/saveData",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(sendData),
+                    dataType: "json",
+                    success: function (resultJson) {
+                    alert('OK!')
+                    // console.dir(dt);
+                    },
+                    error: function (message) {
+                        alert('获取数据失败！');
+                    }
+                });
+
+            }
+       
+       
+        var flg='0';//是否透明的标志
+       
+        //这个是连线透明函数
+       var  myFunction=()=>{
+            d3.selectAll(".edgepath").filter(function(d, i) { 
+                let a=d.target;
+                if(a.in!=0 && a.out==0){
+                    return 1
+                }
+                if(d.sgn=='0'){
+                    return 0
+                }
+              
+            })
+                .attr({
+                    'stroke-opacity':function(d){
+                        if(flg=='0'){
+                            return '0';
+                        }
+                        if(flg=='1'){
+                            return '1';
+                        }
+                    }
+                });
+                if(flg=='0'){
+                    flg= '1';
+                }
+                else{
+                    flg= '0';
+                }
+                alert('flg:'+flg);
+
+             
+        }
+
+        let showForceGraph = (flinks) => {
+                             
+           let mylinks=new Array();
+
+            if(flinks.isExist==0){ //不存在
+                 mylinks = flinks.body
+            }
+            else{//存在
+                 mylinks = flinks.body.links
+            }
+           
+            
+            //过滤非模块节点
+         /* (function () {
+                mylinks = [];
+                let a = new Set();
+
+                flinks.forEach(function (link) {
+                    a.add(link.target);
+                })
+                flinks.forEach(function (link) {
+                    if (a.has(link.source)) {
+                        mylinks.push(link);
+                    }
+                })
+            })(); */
+
+            var links = mylinks; //是一个数组           
+            var mdSet=new Set();//存储links模块的集合
+            links.forEach(function(link){
+                if(link.belongModuleID!=slfmd){
+                    mdSet.add(link.belongModule)
+                }
+            })
+            
+            var colorMap=new Map()
+            let i=0
+            for (let item of mdSet) {
+                colorMap.set(item,i);
+                i+=1;
+            }
+            var colorNum=new Array();
+            colorNum=['5adbe5','93f6c2','b4f693','df97d8','d2a6a8','b8eed9','e0eeb8','d6e36e','e4f206','f27106','ee8a8a','e3caca','f4f4ea','c2d1ec','c1f4de']
+            
+
+            let graph=new Object();
+            
+            //开始进行判断
+            if(flinks.isExist==0){ //如果不存在
+                links.forEach(function(link){
+                    if(link.belongModuleID!=slfmd){
+                        link.source=link.source+'<>'+link.belongModule;
+                    }
+
+                })
+                var nodes = {}; //是一个对象            
+                var tmpTargetNodes = {};//保存目标节点            
+
+                links.forEach(function (link) {
+                    tmpTargetNodes[link.target] = link.target = nodes[link.target] || (nodes[link.target] = { name: link.target, selfModu: '0',blmdID:slfmd ,blmd:''});
+                    if(!nodes[link.target.name].hasOwnProperty('in')){
+                        nodes[link.target.name].in=0;
+                    } 
+                    if(!nodes[link.target.name].hasOwnProperty('out')){
+                        nodes[link.target.name].out=0;
+                    } 
+                    
+                    
+                    if(link.belongModuleID==slfmd){
+                       
+                        if(nodes[link.target.name].hasOwnProperty('in')){
+                            nodes[link.target.name].in+=1;
+                        }
+                     
+                    }
+                  
+                  
+                });
+
+                links.forEach(function (link) {
+                    link.source = tmpTargetNodes[link.source] || (link.rela = '上位产品', nodes[link.source]) || (link.rela = '上位产品', nodes[link.source] = { name: link.source, selfModu: '1',blmd:link.belongModule,blmdID:link.belongModuleID });
+                    
+                    if(!nodes[link.source.name].hasOwnProperty('out')){
+                        nodes[link.source.name].out=0;
+                    }
+                                
+                    if(!nodes[link.source.name].hasOwnProperty('in')){
+                        nodes[link.source.name].in=0;
+                    } 
+                    if(link.belongModuleID==slfmd){
+                       
+                        if(nodes[link.source.name].hasOwnProperty('out')){
+                        nodes[link.source.name].out+=1;
+                    }  
+                    
+                   }
+
+
+                    
+                });
+
+
+
+                graph.nodes=nodes;//對象
+                graph.links=links; //數組           
+            }
+            else{ //如果存在
+                
+                var myNodes = {}; //是一个对象   
+                var myLinks=flinks.body.links;
+
+                myLinks.forEach(function(link){
+                    link.target = myNodes[link.target] || (myNodes[link.target] = { name: link.target,blmd:link.t.blmd,blmdID:link.t.blmdID,x:link.t.x,y:link.t.y,in:link.t.in,out:link.t.out })
+                    link.source = myNodes[link.source] || (myNodes[link.source] = { name: link.source,blmd:link.s.blmd,blmdID:link.s.blmdID,x:link.s.x,y:link.s.y,in:link.s.in,out:link.s.out })
+                });
+                graph.nodes=myNodes;//對象
+                graph.links=myLinks; //數組
+            }
+
+
+
+            var width = 5000,
+                height = 3000;
+
+            var force = d3.layout.force()//layout将json格式转化为力学图可用的格式
+                .nodes(d3.values(graph.nodes))//设定节点数组
+                .links(graph.links)//设定连线数组
+                .size([width, height])//作用域的大小
+                .linkDistance(100)//连接线长度
+                .charge(-3000)//顶点的电荷数。该参数决定是排斥还是吸引，数值越小越互相排斥
+                .on("tick", tick)//指时间间隔，隔一段时间刷新一次画面
+                .on('end',function(){
+                })
+                if(flinks.isExist==1){
+                    for(n in graph.nodes){
+                    graph.nodes[n].fixed = 1
+                  } 
+                }
+
+              
+
+                //force.linkDistance(function (d) { return d.length })
+        
+                console.dir(d3.values(graph.nodes))
+             
+                force.start();//开始转换
+
+
+            var svg = d3.select("#diamond").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+
+            //箭头
+            var marker =
+                svg.append("marker")
+                    //.attr("id", function(d) { return d; })
+                    .attr("id", "resolved")
+                    .attr("markerUnits","strokeWidth")//设置为strokeWidth箭头会随着线的粗细发生变化
+                    .attr("markerUnits", "userSpaceOnUse")
+                    .attr("viewBox", "0 -5 10 10")//坐标系的区域
+                    .attr("refX", 33)//箭头坐标
+                    .attr("refY", 0)
+                    .attr("markerWidth", 12)//标识的大小
+                    .attr("markerHeight", 12)
+                    .attr("orient", "auto")//绘制方向，可设定为：auto（自动确认方向）和 角度值
+                    .attr("stroke-width", 2)//箭头宽度
+                    .append("path")
+                    .attr("d", "M0,-5L10,0L0,5")//箭头的路径
+                    .attr('fill', '#000000');//箭头颜色
+//设置连接线    
+            var edges_line = svg.selectAll(".edgepath")
+                .data(force.links())
+                .enter()
+                .append("path")
+                .attr({
+                    'd': function (d) { return 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y },
+                    'class': 'edgepath',
+                    //'fill-opacity':0,
+                    'stroke-opacity':1,
+                    //'fill':'blue',
+                    //'stroke':'red',
+                    'id': function (d, i) { return 'edgepath' + i; },
+                   /*  'sgn':function(d, i) { 
+                            let a=nodes[d.target.name];
+                            if(a.in!=0 && a.out==0){
+                                return 1; 
+                            }
+                                return 0;                        
+                        } */
+                })
+                .style("stroke", function (d) {
+                    var lineColor;
+                    //根据关系的不同设置线条颜色
+                    if (d.rela == "上位产品") { //外部的连线
+                        lineColor = "#4bc110";
+                    } else if (d.rela == "主营产品") {//内部连线
+                        lineColor = "#f96959";
+                    }
+                    return lineColor;
+                })
+                .style("pointer-events", "none")
+                .style("stroke-width", 2)//线条粗细
+                .attr("marker-end", "url(#resolved)");//根据箭头标记的id号标记箭头
+//edge文字开始
+            var edges_text = svg.append("g").selectAll(".edgelabel")
+                .data(force.links())
+                .enter()
+                .append("text")
+                .style("pointer-events", "none")
+                //.attr("class","linetext")
+                .attr({
+                    'class': 'edgelabel',
+                    'id': function (d, i) { return 'edgepath' + i; },
+                    'dx': 80,
+                    'dy': 0
+                    //'font-size':10,
+                    //'fill':'#aaa'
+                });
+
+            //设置线条上的文字
+            edges_text.append('textPath')
+                .attr('xlink:href', function (d, i) { return '#edgepath' + i })
+                .style("pointer-events", "none")
+                .text(function (d) {
+                    //return d.rela;
+                    return;
+
+                });
+
+
+//圆圈
+            var circle = svg.append("g").selectAll("circle")
+                .data(force.nodes())//表示使用force.nodes数据
+                .enter().append("circle")
+                .style("fill", function (node) {
+                    var color;//圆圈背景色
+                    var link = links[node.index];
+                    
+                   if(node.in!=0 && node.out!=0) {
+                        color = "#F9EBF9";//中间节点
+                    }else if(node.in==0 && node.out!=0){
+                        color='#70bbdf'//开始节点
+
+                    }else if(node.in!=0 && node.out==0){
+                        color='#a784d4'//终结点
+
+                    }else if (node.selfModu == '1') {
+                        //console.dir(node)
+                       //color = '#bdeba5'//本模块
+                    }
+                    else if(node.selfModu == '0'){
+                        //非本模块
+
+                    }else{
+
+                    }
+//外模块的颜色                   
+                    if(node.blmdID!=slfmd) 
+                    {
+                        let a=colorMap.get(node.blmd);
+                        color='#'+colorNum[a] || '#06e6ec';
+                    }
+                    return color;
+                })
+                .style('stroke', function (node) {
+                    var color;//圆圈线条的颜色
+                    var link = links[node.index];
+                    /* try{ link.rela 
+                    }catch(e){
+                        console.dir(link);
+                        console.dir(node);
+                        console.dir(node.index);
+                        console.dir(links)
+                        console.dir(links[node.index])
+
+                    }finally{
+                      
+                    } */
+                })
+                .attr("r", 28)//设置圆圈半径
+                .on("click", function (node) {
+                    //单击时让连接线加粗
+                    edges_line.style("stroke-width", function (line) {
+                        //console.log(line);
+                        if (line.source.name == node.name || line.target.name == node.name) {
+                            return 5;
+                        } else {
+                            return 2;
+                        }
+                        
+                    });
+                    edges_line.style("stroke", function (line) {
+                       // console.log(line);
+                       var color;
+                       if (line.source.name == node.name || line.target.name == node.name) {
+                            color = '#f22828' //选中是的颜色
+                        }
+                        else{
+                            if (line.rela == "上位产品") { //外部的连线
+                                color = "#4bc110";
+                            } else if (line.rela == "主营产品") {//内部连线
+                                color = "#f96959";
+                            
+                    }                           
+                        } 
+                        return color;
+                    });
+
+
+
+
+                })
+                .call(force.drag)//将当前选中的元素传到drag函数中，使顶点可以被拖动
+
+                .on("mouseover", function (d, i) {
+                })
+
+            //鼠标移出时通过ID移除标签
+
+
+//圆圈文字
+            var text = svg.append("g").selectAll("text")
+                .data(force.nodes())
+                //返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
+                .enter()
+                .append("text")
+                .attr("dy", ".35em")
+                .attr("text-anchor", "middle")//在圆圈中加上数据  
+                .style('fill', function (node) {
+                    var color;//文字颜色
+                    var link = links[node.index];
+                    if (node.selfModu == '1') {
+                        //console.dir(node)
+                        color = "#B43232";
+                    }
+                    else {
+                        color = "#A254A2";
+                    }
+                    return color;
+                }).attr('x', function (d) {
+                    // console.log(d.name+"---"+ d.name.length);
+                    var re_en = /[a-zA-Z]+/g;
+                    //如果是全英文，不换行
+                    if (d.name.match(re_en)) {
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', 2)
+                            .text(
+
+                                function () { return d.name; }
+                            );
+                    }
+                    //如果小于四个字符，不换行
+                    else if (d.name.length <= 4) {
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', 2)
+                            .text(function () { return d.name; });
+                    } else {
+                        var top = d.name.substring(0, 4);
+                        var bot = d.name.substring(4, d.name.length);
+
+                        d3.select(this).text(function () { return ''; });
+
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', -7)
+                            .text(function () { return top; });
+
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', 10)
+                            .text(function () { return bot; });
+                    }
+
+                })
+              
+
+
+
+            function tick() {
+                //path.attr("d", linkArc);//连接线
+                circle.attr("transform", transform1);//圆圈
+                text.attr("transform", transform2);//顶点文字
+                edges_line.attr('d', function (d) {
+                    var path = 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y;
+                    return path;
+                });
+
+                edges_text.attr('transform', function (d, i) {
+                   // console.dir(d)
+                    if (d.target.x < d.source.x) {
+                        bbox = this.getBBox();
+                        rx = bbox.x + bbox.width / 2;
+                        ry = bbox.y + bbox.height / 2;
+                        return 'rotate(180 ' + rx + ' ' + ry + ')';
+                    }
+                    else {
+                        return 'rotate(0)';
+                    }
+                });
+            }
+
+            //设置连接线的坐标,使用椭圆弧路径段双向编码
+            function linkArc(d) {
+                return 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y
+            }
+            //设置圆圈和文字的坐标
+            function transform1(d) {
+                return "translate(" + d.x + "," + d.y + ")";
+            }
+            function transform2(d) {
+                return "translate(" + (d.x) + "," + d.y + ")";
+            }
+
+
+            //定义拖拽事件处理函数
+            var drag = force.drag()
+                .on("dragstart", function (d, i) {
+                    // console.log("拖拽状态：開始");
+                })
+                .on("dragend", function (d, i) {
+                    d.fixed = true;
+                    // console.log("拖拽状态：结束");
+                })
+                .on("drag", function (d, i) {
+                    // console.log("拖拽状态：进行中");
+                });
+                
+            
+            let gps=()=>{
+
+                let ibm=new Array();
+                graph.links.forEach(function(item){
+                    let tmp=new Object();
+                   /*  console.dir(graph.links);
+                    console.dir(item) */
+                    
+                    
+
+                    tmp.type=item.type;
+                    tmp.rela=item.rela;
+                    tmp.belongModule=item.belongModule;
+                    tmp.belongModuleID=item.belongModuleID;
+                    
+                    tmp.source=item.source.name;
+                    tmp.s=new Object();
+                    tmp.s.x=item.source.x;
+                    tmp.s.y=item.source.y;
+                    tmp.s.blmd=item.source.blmd;
+                    tmp.s.blmdID=item.source.blmdID;
+                    tmp.s.in=item.source.in;
+                    tmp.s.out=item.source.out;
+
+                    tmp.target=item.target.name;
+                    tmp.t=new Object();
+                    tmp.t.x=item.target.x;
+                    tmp.t.y=item.target.y;
+                    tmp.t.blmd=item.target.blmd;
+                    tmp.t.blmdID=item.target.blmdID;
+                    tmp.t.in=item.target.in;
+                    tmp.t.out=item.target.out;
+
+
+
+                    ibm.push(tmp);
+
+                }
+
+                )
+
+
+                sendData.dt.links=ibm;
+                sendData.dt.nodes={};
+                sendData.ModuleID=slfmd;
+                console.dir(sendData); 
+              }
+              
+            myFun=gps;
+            console.dir(force.nodes())
+       }
+    </script>
+
+
+
+    <!--  这个是翻译简体 -->
+
+    <!-- 向百度发送信息 -->
+    <script type="text/javascript">
+        let trans = (queryString) => {
+
+            //console.log(queryString);
+            return new Promise(function (resoleve, reject) {
+                var appid = '20180819000195969';
+                var key = 'qaA1Cm97ErLyyXKNn0ti';
+                var salt = (new Date).getTime();
+                var query = queryString.replace(/\r\n/g, '');
+                // 多个query可以用\n连接  如 query='apple\norange\nbanana\npear'
+                var from = 'cht';
+                var to = 'zh';
+                var str1 = appid + query + salt + key;
+                var sign = MD5(str1);
+                $.ajax({
+                    url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
+                    type: 'post',
+                    dataType: 'jsonp',
+                    data: {
+                        q: query,
+                        appid: appid,
+                        salt: salt,
+                        from: from,
+                        to: to,
+                        sign: sign
+                    },
+                    success: function (data) {
+                        //console.dir(query);
+
+                        //console.dir(data.trans_result);
+                        resoleve(data.trans_result[0].dst);
+                    }
+                });
+
+            });
+        }
+    </script>
+
+    <!--  中间处理 -->
+    <script>
+        let cht2zh = (resultJson) => {
+
+            return new Promise((resolve, reject) => {
+                let myArray = new Array(); //临时数组中转
+                let myStr = new String(); //发送字符串
+                let getArray = new Array(); //返回后转换为数组
+
+                let result = new Array(); //最后返回的结果数组
+
+
+                //添加到临时数组
+                for (let key in resultJson) {
+                    myArray.push(resultJson[key].source);
+                    myArray.push(resultJson[key].target);
+                }
+
+                let disperse = (myArray) => {
+                    let returnPromiseArray = new Array();
+                    let i = 0;
+                    let temStr = new String(); //临时字符串
+                    for (let key in myArray) {
+                        temStr += myArray[key] + 'gbm'
+
+                        if (i == 10) {
+                            let p = trans(temStr);
+                            i = 0;
+                            temStr = '';
+                            returnPromiseArray.push(p);
+                        }
+                        i += 1;
+                    }
+                    let p = trans(temStr);
+                    i = 0;
+                    temStr = '';
+                    returnPromiseArray.push(p);
+                    return returnPromiseArray;
+
+                }
+
+                let Ar = disperse(myArray);
+                //接受所有的返回
+                let p = Promise.all(Ar);
+
+                //将所有的Promise值，汇聚
+                p.then((value) => {
+                    console.log('汇聚value的类型：' + typeof (value));
+                    console.log('汇聚value的每个单元的值：');
+                    console.dir(value);
+
+                    let myValue = new String();
+                    for (let key in value) {
+                        myValue += value[key];
+                    }
+
+
+                    let getArray = myValue.split('gbm');
+                    console.log('汇聚用gbm分割后的数组：');
+                    console.dir(getArray);
+                    for (let i = 0; i <= getArray.length - 3; i += 2) {
+                        let tem = new Object();
+                        tem.source = getArray[i];
+                        tem.target = getArray[i + 1];
+                        tem.type = resultJson[i / 2].type;
+                        tem.rela = resultJson[i / 2].rela;
+                        tem.belongModule=resultJson[i / 2].belongModule;
+                        tem.belongModuleID=resultJson[i / 2].belongModuleID
+                        result.push(tem);
+                    }
+                    console.log('cht2zh的返回值：')
+                    // console.dir(result);
+                    resolve(result);
+                })
+
+            })
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "工程交样<>業務管理",
+      "s": {
+        "x": 2783.441864176711,
+        "y": 1428.6306839253336,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出口成品与厂内料号归并",
+      "t": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "出口成品申请备案清单",
+      "s": {
+        "x": 2434.2760443077714,
+        "y": 1360.2423287007052,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      },
+      "target": "出口成品与厂内料号合并",
+      "t": {
+        "x": 2101.3727227005425,
+        "y": 1376.7657024571924,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "出口成品申请备案清单",
+      "s": {
+        "x": 2434.2760443077714,
+        "y": 1360.2423287007052,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      },
+      "target": "出口成品与厂内料号归并",
+      "t": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "出口成品申请备案清单",
+      "s": {
+        "x": 2434.2760443077714,
+        "y": 1360.2423287007052,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      },
+      "target": "消耗备案清单",
+      "t": {
+        "x": 2271.0428337067415,
+        "y": 1263.1884056229728,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "出口成品与厂内料号归并",
+      "s": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      },
+      "target": "出口成品与厂内料号合并",
+      "t": {
+        "x": 2101.3727227005425,
+        "y": 1376.7657024571924,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商地址维护<>采購基礎資料",
+      "s": {
+        "x": 1987.1992796114052,
+        "y": 1724.0812050098677,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "关封转厂供应商数据",
+      "t": {
+        "x": 1491.1770684599437,
+        "y": 1748.5592117474534,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 1991.373397744229,
+        "y": 1784.0077228068728,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "关封转厂供应商数据",
+      "t": {
+        "x": 1491.1770684599437,
+        "y": 1748.5592117474534,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071",
+      "source": "物料基本信息维护<>倉庫基礎資料",
+      "s": {
+        "x": 3032.646727915405,
+        "y": 1360.8567460804716,
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "in": 0,
+        "out": 0
+      },
+      "target": "进口料件与物料品归并",
+      "t": {
+        "x": 2261.8482657746094,
+        "y": 1130.9995666761731,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息<>業務基礎資料",
+      "s": {
+        "x": 1878.0448260328858,
+        "y": 1943.2527530228456,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 0
+      },
+      "target": "关封转厂客户资料",
+      "t": {
+        "x": 1496.3551591322546,
+        "y": 1933.872400143281,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "消耗备案清单",
+      "s": {
+        "x": 2271.0428337067415,
+        "y": 1263.1884056229728,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 1
+      },
+      "target": "单耗基础资料Excel导入",
+      "t": {
+        "x": 2100.220687902169,
+        "y": 1260.1327172464137,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "海关代码库",
+      "s": {
+        "x": 1495.5386915742747,
+        "y": 1835.121041953364,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 2
+      },
+      "target": "转厂供应商合同数据",
+      "t": {
+        "x": 1340.307980445047,
+        "y": 1804.278734605952,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "海关代码库",
+      "s": {
+        "x": 1495.5386915742747,
+        "y": 1835.121041953364,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 2
+      },
+      "target": "转厂客户合同数据",
+      "t": {
+        "x": 1343.3597892607575,
+        "y": 1896.2826542823605,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "送货公司（子公司）明细<>業務基礎資料",
+      "s": {
+        "x": 1874.9008509374041,
+        "y": 1885.786856173262,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 0
+      },
+      "target": "关封转厂客户资料",
+      "t": {
+        "x": 1496.3551591322546,
+        "y": 1933.872400143281,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "备案申请表头信息",
+      "s": {
+        "x": 2604.9894670693875,
+        "y": 1253.5725827960894,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 6
+      },
+      "target": "出口成品申请备案清单",
+      "t": {
+        "x": 2434.2760443077714,
+        "y": 1360.2423287007052,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "备案申请表头信息",
+      "s": {
+        "x": 2604.9894670693875,
+        "y": 1253.5725827960894,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 6
+      },
+      "target": "出口成品与厂内料号合并",
+      "t": {
+        "x": 2101.3727227005425,
+        "y": 1376.7657024571924,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "备案申请表头信息",
+      "s": {
+        "x": 2604.9894670693875,
+        "y": 1253.5725827960894,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 6
+      },
+      "target": "出口成品与厂内料号归并",
+      "t": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "备案申请表头信息",
+      "s": {
+        "x": 2604.9894670693875,
+        "y": 1253.5725827960894,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 6
+      },
+      "target": "消耗备案清单",
+      "t": {
+        "x": 2271.0428337067415,
+        "y": 1263.1884056229728,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "备案申请表头信息",
+      "s": {
+        "x": 2604.9894670693875,
+        "y": 1253.5725827960894,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 6
+      },
+      "target": "进口料件与物料品归并",
+      "t": {
+        "x": 2261.8482657746094,
+        "y": 1130.9995666761731,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "备案申请表头信息",
+      "s": {
+        "x": 2604.9894670693875,
+        "y": 1253.5725827960894,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 6
+      },
+      "target": "进口料件申请备案清单",
+      "t": {
+        "x": 2415.786806916698,
+        "y": 1257.1337461064084,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "进口料件申请备案清单",
+      "s": {
+        "x": 2415.786806916698,
+        "y": 1257.1337461064084,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      },
+      "target": "消耗备案清单",
+      "t": {
+        "x": 2271.0428337067415,
+        "y": 1263.1884056229728,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "进口料件申请备案清单",
+      "s": {
+        "x": 2415.786806916698,
+        "y": 1257.1337461064084,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      },
+      "target": "进口料件与物料品归并",
+      "t": {
+        "x": 2261.8482657746094,
+        "y": 1130.9995666761731,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "进口料件申请备案清单",
+      "s": {
+        "x": 2415.786806916698,
+        "y": 1257.1337461064084,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 3
+      },
+      "target": "损耗基础数据",
+      "t": {
+        "x": 2262.322683638846,
+        "y": 1034.0795425591523,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "进口料件与物料品号归并",
+      "s": {
+        "x": 2592.0558785621347,
+        "y": 1133.4945353053258,
+        "blmd": "關務基礎資料",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      },
+      "target": "进口料件与物料品归并",
+      "t": {
+        "x": 2261.8482657746094,
+        "y": 1130.9995666761731,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 3,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "廢棄物管理",
+      "belongModuleID": "Module00161",
+      "source": "废弃物种类维护<>廢棄物管理",
+      "s": {
+        "x": 1997.7359840288332,
+        "y": 2012.2776632180276,
+        "blmd": "廢棄物管理",
+        "blmdID": "Module00161",
+        "in": 0,
+        "out": 0
+      },
+      "target": "残次品比率维护",
+      "t": {
+        "x": 1501.5893656649178,
+        "y": 2028.5740529410655,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "點檢管理",
+      "belongModuleID": "Module00037",
+      "source": "厂内料号编排<>點檢管理",
+      "s": {
+        "x": 2905.052645259436,
+        "y": 1361.4928323167883,
+        "blmd": "點檢管理",
+        "blmdID": "Module00037",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出口成品与厂内料号归并",
+      "t": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "厂外料号添加<>業務管理",
+      "s": {
+        "x": 2784.326000187678,
+        "y": 1485.9705088623127,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出口成品与厂内料号归并",
+      "t": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務管理",
+      "belongModuleID": "Module00020",
+      "source": "样品料号编排<>業務管理",
+      "s": {
+        "x": 2780.347804286612,
+        "y": 1369.8875335192088,
+        "blmd": "業務管理",
+        "blmdID": "Module00020",
+        "in": 0,
+        "out": 0
+      },
+      "target": "出口成品与厂内料号归并",
+      "t": {
+        "x": 2283.442343189356,
+        "y": 1371.7799335337772,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "关封转厂供应商数据",
+      "s": {
+        "x": 1491.1770684599437,
+        "y": 1748.5592117474534,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      },
+      "target": "转厂供应商合同数据",
+      "t": {
+        "x": 1340.307980445047,
+        "y": 1804.278734605952,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "關務基礎資料",
+      "belongModuleID": "Module00068",
+      "source": "关封转厂客户资料",
+      "s": {
+        "x": 1496.3551591322546,
+        "y": 1933.872400143281,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 0,
+        "out": 1
+      },
+      "target": "转厂客户合同数据",
+      "t": {
+        "x": 1343.3597892607575,
+        "y": 1896.2826542823605,
+        "blmd": "",
+        "blmdID": "Module00068",
+        "in": 2,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

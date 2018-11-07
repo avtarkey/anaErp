@@ -1,0 +1,629 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "成本分摊方式维护",
+      "s": {
+        "x": 2254.0924685248274,
+        "y": 2054.055040202458,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 2
+      },
+      "target": "站别费用分摊方式",
+      "t": {
+        "x": 2054.0364158315947,
+        "y": 2097.5390153617955,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "成本分摊方式维护",
+      "s": {
+        "x": 2254.0924685248274,
+        "y": 2054.055040202458,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 2
+      },
+      "target": "部门费用分摊方式",
+      "t": {
+        "x": 2052.488035707988,
+        "y": 2012.1550353203975,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "成本类别维护",
+      "s": {
+        "x": 2249.8741618801723,
+        "y": 1939.2326642272817,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 3
+      },
+      "target": "物料成本类别维护",
+      "t": {
+        "x": 2054.23932456141,
+        "y": 1931.5816716575382,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "成本类别维护",
+      "s": {
+        "x": 2249.8741618801723,
+        "y": 1939.2326642272817,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 3
+      },
+      "target": "站别费用分摊方式",
+      "t": {
+        "x": 2054.0364158315947,
+        "y": 2097.5390153617955,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "成本类别维护",
+      "s": {
+        "x": 2249.8741618801723,
+        "y": 1939.2326642272817,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 3
+      },
+      "target": "部门费用分摊方式",
+      "t": {
+        "x": 2052.488035707988,
+        "y": 2012.1550353203975,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2771.546725607905,
+        "y": 1124.3732412038553,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "川亿与精永物料对应维护",
+      "t": {
+        "x": 2209.975633683852,
+        "y": 1156.6756795370156,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "采購基礎資料",
+      "belongModuleID": "Module00070",
+      "source": "供应商基本资料<>采購基礎資料",
+      "s": {
+        "x": 2771.546725607905,
+        "y": 1124.3732412038553,
+        "blmd": "采購基礎資料",
+        "blmdID": "Module00070",
+        "in": 0,
+        "out": 0
+      },
+      "target": "供应商财务分组",
+      "t": {
+        "x": 2201.7498816936422,
+        "y": 1094.8985476541047,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2639.2666612691473,
+        "y": 1236.2695208741868,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "川亿与精永物料对应维护",
+      "t": {
+        "x": 2209.975633683852,
+        "y": 1156.6756795370156,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "物料基本信息维护<>已禁用功能",
+      "s": {
+        "x": 2639.2666612691473,
+        "y": 1236.2695208741868,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "物料成本类别维护",
+      "t": {
+        "x": 2054.23932456141,
+        "y": 1931.5816716575382,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "已禁用功能",
+      "belongModuleID": "Module00236",
+      "source": "采购类别<>已禁用功能",
+      "s": {
+        "x": 2641.5136648765915,
+        "y": 1168.776274724199,
+        "blmd": "已禁用功能",
+        "blmdID": "Module00236",
+        "in": 0,
+        "out": 0
+      },
+      "target": "川亿与精永物料对应维护",
+      "t": {
+        "x": 2209.975633683852,
+        "y": 1156.6756795370156,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "業務基礎資料",
+      "belongModuleID": "Module00069",
+      "source": "客户基本信息<>業務基礎資料",
+      "s": {
+        "x": 2800.0708747745293,
+        "y": 1511.4144500660389,
+        "blmd": "業務基礎資料",
+        "blmdID": "Module00069",
+        "in": 0,
+        "out": 0
+      },
+      "target": "多格式报表维护",
+      "t": {
+        "x": 2231.3047695604905,
+        "y": 1501.0858307346189,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "川亿与精永物料对应维护",
+      "t": {
+        "x": 2209.975633683852,
+        "y": 1156.6756795370156,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "材料消耗表与金蝶科目对应",
+      "t": {
+        "x": 2221.399221546792,
+        "y": 1363.3048119581144,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "金碟ERP部门对应关系维护",
+      "t": {
+        "x": 2050.159097492235,
+        "y": 1845.1460660724529,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "核算部门维护",
+      "t": {
+        "x": 2219.3424163529785,
+        "y": 1300.4582826338421,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "会计科目对照表",
+      "t": {
+        "x": 2042.4586293063376,
+        "y": 1533.9316079984847,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出计划",
+      "t": {
+        "x": 2228.4034600140067,
+        "y": 1425.1152446418319,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "管理部门维护",
+      "t": {
+        "x": 2211.5668658045693,
+        "y": 1226.879756512732,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2549.379801747674,
+        "y": 1411.103172875492,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "营业计划目标值项目设置",
+      "t": {
+        "x": 2061.01817128027,
+        "y": 1762.1501470450037,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "部门类型维护",
+      "s": {
+        "x": 2249.5549410819513,
+        "y": 1832.022383689527,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 1
+      },
+      "target": "金碟ERP部门对应关系维护",
+      "t": {
+        "x": 2050.159097492235,
+        "y": 1845.1460660724529,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "会计科目维护",
+      "s": {
+        "x": 2241.5434116557035,
+        "y": 1576.434795591192,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 2
+      },
+      "target": "会计科目对照表",
+      "t": {
+        "x": 2042.4586293063376,
+        "y": 1533.9316079984847,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "会计科目维护",
+      "s": {
+        "x": 2241.5434116557035,
+        "y": 1576.434795591192,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 2
+      },
+      "target": "资产类别设置",
+      "t": {
+        "x": 2044.9893995972334,
+        "y": 1640.6862849657543,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "资本预算类别维护",
+      "s": {
+        "x": 2241.4007354699747,
+        "y": 1691.3274796165756,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 1
+      },
+      "target": "资本支出预算金额",
+      "t": {
+        "x": 2039.8910192207863,
+        "y": 1694.3906193183223,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "资产类别设置",
+      "s": {
+        "x": 2044.9893995972334,
+        "y": 1640.6862849657543,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 1
+      },
+      "target": "耐用年限基础维护",
+      "t": {
+        "x": 1885.676329306334,
+        "y": 1647.87355362275,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2699.207983502806,
+        "y": 1516.2394326057574,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "资本支出预算金额",
+      "t": {
+        "x": 2039.8910192207863,
+        "y": 1694.3906193183223,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "財務基礎資料",
+      "belongModuleID": "Module00004",
+      "source": "营业计划项目类别设置",
+      "s": {
+        "x": 2249.2118188253876,
+        "y": 1759.3727220505625,
+        "blmd": "財務基礎資料",
+        "blmdID": "Module00004",
+        "in": 0,
+        "out": 1
+      },
+      "target": "营业计划目标值项目设置",
+      "t": {
+        "x": 2061.01817128027,
+        "y": 1762.1501470450037,
+        "blmd": "",
+        "blmdID": "Module00004",
+        "in": 1,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

@@ -1,0 +1,1335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 1.5px;
+        }
+
+        #licensing {
+            fill: green;
+        }
+
+        .link.licensing {
+            stroke: green;
+        }
+
+        .link.resolved {
+            stroke-dasharray: 0, 2 1;
+        }
+
+        circle {
+            fill: #ccc;
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            font: 12px Microsoft YaHei;
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+        }
+
+        .linetext {
+            font-size: 12px Microsoft YaHei;
+        }
+
+        .women {
+            border: 7px solide rgb(226, 24, 24);
+            display: float
+        }
+    </style>
+    <!-- 自己定义的css -->
+    <style>
+        #tree {
+            position: absolute;
+            overflow: hidden
+        }
+
+        #dia {
+            overflow: hidden;
+            position: absolute !important;
+            left: 330px;
+            top: 0px;
+            height: 3000px;
+            width: 5000px;
+        }
+    </style>
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://localhost:3000/static/javascripts/md5.js"></script>
+
+    <script src="http://localhost:3000/static/javascripts/d3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/demo/demo.css">
+    <script type="text/javascript" src="http://localhost:3000/static/easyUI/jquery.min.js"></script>
+    <script type="text/javascript" src="http://localhost:3000/static/easyUI/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+    <!-- 力图显示 -->
+    <button onclick="showForceGraph">saved</button>
+    <div id='dia' style="border: 3px solid #010101;">
+        <div id='diamond'></div>
+    </div>
+    <!-- 这个是力导图的js -->
+    <script>
+    var slfmd=''
+
+        
+
+        var flg='0';
+       
+        //这个是连线透明函数
+       var  myFunction=()=>{
+            d3.selectAll(".edgepath").filter(function(d, i) { 
+                let a=d.target;
+                if(a.in!=0 && a.out==0){
+                    return 1
+                }
+                if(d.sgn=='0'){
+                    return 0
+                }
+              
+            })
+                .attr({
+                    'stroke-opacity':function(d){
+                        if(flg=='0'){
+                            return '0';
+                        }
+                        if(flg=='1'){
+                            return '1';
+                        }
+                    }
+                });
+                if(flg=='0'){
+                    flg= '1';
+                }
+                else{
+                    flg= '0';
+                }
+                alert('flg:'+flg);
+
+             
+        }
+
+        let showForceGraph = (flinks) => {
+            let mylinks = flinks;
+            
+ 
+
+
+
+            var links = mylinks.links; //是一个数组
+
+           
+            var mdSet=new Set();//存储links模块的集合
+            links.forEach(function(link){
+                if(link.belongModuleID!=slfmd){
+                    mdSet.add(link.belongModule)
+                }
+            })
+            
+            var colorMap=new Map()
+            let i=0
+            for (let item of mdSet) {
+                colorMap.set(item,i);
+                i+=1;
+            }
+            
+            var colorNum=new Array();
+            colorNum=['5adbe5','93f6c2','b4f693','df97d8','d2a6a8','b8eed9','e0eeb8','d6e36e','e4f206','f27106','ee8a8a','e3caca','f4f4ea','c2d1ec','c1f4de']
+
+            
+
+
+
+            var nodes =flinks.nodes ; //是一个对象
+            
+            var tmpTargetNodes = {};//保存目标节点 
+
+             links.forEach(function (link) {
+                tmpTargetNodes[link.target] = link.target
+            });
+
+            
+
+       
+
+
+            var width = 5000,
+                height = 3000;
+
+            var force = d3.layout.force()//layout将json格式转化为力学图可用的格式
+                .nodes(d3.values(nodes))//设定节点数组
+                .links(links)//设定连线数组
+                .size([width, height])//作用域的大小
+                .linkDistance(100)//连接线长度
+                .charge(-3000)//顶点的电荷数。该参数决定是排斥还是吸引，数值越小越互相排斥
+                .on("tick", tick)//指时间间隔，隔一段时间刷新一次画面
+                .start();//开始转换
+
+
+            var svg = d3.select("#diamond").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+          
+
+
+
+
+
+            //箭头
+            var marker =
+                svg.append("marker")
+                    //.attr("id", function(d) { return d; })
+                    .attr("id", "resolved")
+                    .attr("markerUnits","strokeWidth")//设置为strokeWidth箭头会随着线的粗细发生变化
+                    .attr("markerUnits", "userSpaceOnUse")
+                    .attr("viewBox", "0 -5 10 10")//坐标系的区域
+                    .attr("refX", 33)//箭头坐标
+                    .attr("refY", 0)
+                    .attr("markerWidth", 12)//标识的大小
+                    .attr("markerHeight", 12)
+                    .attr("orient", "auto")//绘制方向，可设定为：auto（自动确认方向）和 角度值
+                    .attr("stroke-width", 2)//箭头宽度
+                    .append("path")
+                    .attr("d", "M0,-5L10,0L0,5")//箭头的路径
+                    .attr('fill', '#000000');//箭头颜色
+
+
+
+
+            //设置连接线    
+            var edges_line = svg.selectAll(".edgepath")
+                .data(force.links())
+                .enter()
+                .append("path")
+                .attr({
+                    'd': function (d) { return 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y },
+                    'class': 'edgepath',
+                    //'fill-opacity':0,
+                    'stroke-opacity':1,
+                    //'fill':'blue',
+                    //'stroke':'red',
+                    'id': function (d, i) { return 'edgepath' + i; },
+                   /*  'sgn':function(d, i) { 
+                            let a=nodes[d.target.name];
+                            if(a.in!=0 && a.out==0){
+                                return 1; 
+                            }
+                                return 0;                        
+                        } */
+                })
+                .style("stroke", function (d) {
+                    var lineColor;
+                    //根据关系的不同设置线条颜色
+                    if (d.rela == "上位产品") { //外部的连线
+                        lineColor = "#4bc110";
+                    } else if (d.rela == "主营产品") {//内部连线
+                        lineColor = "#f96959";
+                    }
+                    return lineColor;
+                })
+                .style("pointer-events", "none")
+                .style("stroke-width", 2)//线条粗细
+                .attr("marker-end", "url(#resolved)");//根据箭头标记的id号标记箭头
+
+            var edges_text = svg.append("g").selectAll(".edgelabel")
+                .data(force.links())
+                .enter()
+                .append("text")
+                .style("pointer-events", "none")
+                //.attr("class","linetext")
+                .attr({
+                    'class': 'edgelabel',
+                    'id': function (d, i) { return 'edgepath' + i; },
+                    'dx': 80,
+                    'dy': 0
+                    //'font-size':10,
+                    //'fill':'#aaa'
+                });
+
+            //设置线条上的文字
+            edges_text.append('textPath')
+                .attr('xlink:href', function (d, i) { return '#edgepath' + i })
+                .style("pointer-events", "none")
+                .text(function (d) {
+                    //return d.rela;
+                    return;
+
+                });
+
+
+            //圆圈
+            var circle = svg.append("g").selectAll("circle")
+                .data(force.nodes())//表示使用force.nodes数据
+                .enter().append("circle")
+                .style("fill", function (node) {
+                    var color;//圆圈背景色
+                    var link = links[node.index];
+                    
+                   if(node.in!=0 && node.out!=0) {
+                        color = "#F9EBF9";//中间节点
+                    }else if(node.in==0 && node.out!=0){
+                        color='#70bbdf'//开始节点
+
+                    }else if(node.in!=0 && node.out==0){
+                        color='#a784d4'//终结点
+
+                    }else if (node.selfModu == '1') {
+                        //console.dir(node)
+                       //color = '#bdeba5'//本模块
+                    }
+                    else if(node.selfModu == '0'){
+                        //非本模块
+
+                    }else{
+
+                    }
+                    
+                    if(node.blmdID!=slfmd)
+                    {
+                        let a=colorMap.get(node.blmd);
+                        color='#'+colorNum[a] || '#06e6ec';
+                    }
+                    return color;
+                })
+                .style('stroke', function (node) {
+                    var color;//圆圈线条的颜色
+                    var link = links[node.index];
+                    /* try{ link.rela 
+                    }catch(e){
+                        console.dir(link);
+                        console.dir(node);
+                        console.dir(node.index);
+                        console.dir(links)
+                        console.dir(links[node.index])
+
+                    }finally{
+                      
+                    } */
+                })
+                .attr("r", 28)//设置圆圈半径
+                .on("click", function (node) {
+                    //单击时让连接线加粗
+                    edges_line.style("stroke-width", function (line) {
+                        //console.log(line);
+                        if (line.source.name == node.name || line.target.name == node.name) {
+                            return 5;
+                        } else {
+                            return 2;
+                        }
+                        
+                    });
+                    edges_line.style("stroke", function (line) {
+                       // console.log(line);
+                       var color;
+                       if (line.source.name == node.name || line.target.name == node.name) {
+                            color = '#f22828' //选中是的颜色
+                        }
+                        else{
+                            if (line.rela == "上位产品") { //外部的连线
+                                color = "#4bc110";
+                            } else if (line.rela == "主营产品") {//内部连线
+                                color = "#f96959";
+                            
+                    }                           
+                        } 
+                        return color;
+                    });
+
+
+
+
+                })
+                .call(force.drag)//将当前选中的元素传到drag函数中，使顶点可以被拖动
+
+                .on("mouseover", function (d, i) {
+
+                })
+
+            //鼠标移出时通过ID移除标签
+
+
+
+            var text = svg.append("g").selectAll("text")
+                .data(force.nodes())
+                //返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
+                .enter()
+                .append("text")
+                .attr("dy", ".35em")
+                .attr("text-anchor", "middle")//在圆圈中加上数据  
+                .style('fill', function (node) {
+                    var color;//文字颜色
+                    var link = links[node.index];
+                    if (node.selfModu == '1') {
+                        //console.dir(node)
+                        color = "#B43232";
+                    }
+                    else {
+                        color = "#A254A2";
+                    }
+                    return color;
+                }).attr('x', function (d) {
+                    // console.log(d.name+"---"+ d.name.length);
+                    var re_en = /[a-zA-Z]+/g;
+                    //如果是全英文，不换行
+                    if (d.name.match(re_en)) {
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', 2)
+                            .text(
+
+                                function () { return d.name; }
+                            );
+                    }
+                    //如果小于四个字符，不换行
+                    else if (d.name.length <= 4) {
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', 2)
+                            .text(function () { return d.name; });
+                    } else {
+                        var top = d.name.substring(0, 4);
+                        var bot = d.name.substring(4, d.name.length);
+
+                        d3.select(this).text(function () { return ''; });
+
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', -7)
+                            .text(function () { return top; });
+
+                        d3.select(this).append('tspan')
+                            .attr('x', 0)
+                            .attr('y', 10)
+                            .text(function () { return bot; });
+                    }
+
+                })
+
+
+
+            function tick() {
+                //path.attr("d", linkArc);//连接线
+                circle.attr("transform", transform1);//圆圈
+                text.attr("transform", transform2);//顶点文字
+
+
+
+                edges_line.attr('d', function (d) {
+                    var path = 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y;
+                    return path;
+                });
+
+                edges_text.attr('transform', function (d, i) {
+                    if (d.target.x < d.source.x) {
+                        bbox = this.getBBox();
+                        rx = bbox.x + bbox.width / 2;
+                        ry = bbox.y + bbox.height / 2;
+                        return 'rotate(180 ' + rx + ' ' + ry + ')';
+                    }
+                    else {
+                        return 'rotate(0)';
+                    }
+                });
+            }
+
+            //设置连接线的坐标,使用椭圆弧路径段双向编码
+            function linkArc(d) {
+                return 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y
+            }
+            //设置圆圈和文字的坐标
+            function transform1(d) {
+                return "translate(" + d.x + "," + d.y + ")";
+            }
+            function transform2(d) {
+                return "translate(" + (d.x) + "," + d.y + ")";
+            }
+
+
+            //定义拖拽事件处理函数
+            var drag = force.drag()
+                .on("dragstart", function (d, i) {
+                    // console.log("拖拽状态：開始");
+                })
+                .on("dragend", function (d, i) {
+                    d.fixed = true;
+                    // console.log("拖拽状态：结束");
+                })
+                .on("drag", function (d, i) {
+                    // console.log("拖拽状态：进行中");
+                });
+        }
+
+    </script>
+
+    <script>
+    var kk= 
+    {
+  "links": [
+    {
+      "source": {
+        "name": "月结料处理审核<>倉庫管理",
+        "selfModu": "1",
+        "blmd": "倉庫管理",
+        "blmdID": "Module00022",
+        "out": 1,
+        "in": 0,
+        "index": 7,
+        "weight": 1,
+        "x": 2736.2060292573474,
+        "y": 1780.9286528116586,
+        "px": 2732.4422192401535,
+        "py": 1779.241777034155
+      },
+      "target": {
+        "name": "商品PO",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1,
+        "index": 0,
+        "weight": 4,
+        "x": 2617.645723512637,
+        "y": 1685.0984764209513,
+        "px": 2615.4082904243282,
+        "py": 1683.6799462140095
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫管理",
+      "belongModuleID": "Module00022"
+    },
+    {
+      "source": {
+        "name": "外出申请<>門禁管理",
+        "selfModu": "1",
+        "blmd": "門禁管理",
+        "blmdID": "Module00053",
+        "out": 1,
+        "in": 0,
+        "index": 8,
+        "weight": 1,
+        "x": 2404.8023412269117,
+        "y": 1509.6301495876407,
+        "px": 2407.3798015790235,
+        "py": 1509.036599472957
+      },
+      "target": {
+        "name": "材料商品出货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0,
+        "index": 1,
+        "weight": 4,
+        "x": 2568.1588409639853,
+        "y": 1525.6187750142426,
+        "px": 2567.4621996965243,
+        "py": 1525.4181428566671
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "門禁管理",
+      "belongModuleID": "Module00053"
+    },
+    {
+      "source": {
+        "name": "材料商品出货表",
+        "selfModu": "1",
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "out": 5,
+        "in": 0,
+        "index": 9,
+        "weight": 5,
+        "x": 2590.5918812542195,
+        "y": 1341.5832151232794,
+        "px": 2591.1245616912393,
+        "py": 1342.123484632244
+      },
+      "target": {
+        "name": "材料商品出货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0,
+        "index": 1,
+        "weight": 4,
+        "x": 2568.1588409639853,
+        "y": 1525.6187750142426,
+        "px": 2567.4621996965243,
+        "py": 1525.4181428566671
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "材料商品出货表",
+        "selfModu": "1",
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "out": 5,
+        "in": 0,
+        "index": 9,
+        "weight": 5,
+        "x": 2590.5918812542195,
+        "y": 1341.5832151232794,
+        "px": 2591.1245616912393,
+        "py": 1342.123484632244
+      },
+      "target": {
+        "name": "商品出货记录",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0,
+        "index": 2,
+        "weight": 2,
+        "x": 2466.967698547384,
+        "y": 1251.085142440691,
+        "px": 2470.4531676387046,
+        "py": 1252.2201090168992
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "材料商品出货表",
+        "selfModu": "1",
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "out": 5,
+        "in": 0,
+        "index": 9,
+        "weight": 5,
+        "x": 2590.5918812542195,
+        "y": 1341.5832151232794,
+        "px": 2591.1245616912393,
+        "py": 1342.123484632244
+      },
+      "target": {
+        "name": "商品出货发票维护",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 0,
+        "index": 3,
+        "weight": 1,
+        "x": 2744.481717335133,
+        "y": 1380.8972664431255,
+        "px": 2741.889708933966,
+        "py": 1381.778241216757
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "材料商品出货表",
+        "selfModu": "1",
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "out": 5,
+        "in": 0,
+        "index": 9,
+        "weight": 5,
+        "x": 2590.5918812542195,
+        "y": 1341.5832151232794,
+        "px": 2591.1245616912393,
+        "py": 1342.123484632244
+      },
+      "target": {
+        "name": "商品退货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 2,
+        "index": 4,
+        "weight": 3,
+        "x": 2575.0150614044665,
+        "y": 1182.9357370511489,
+        "px": 2576.6526307647277,
+        "py": 1186.3580266215706
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "材料商品出货表",
+        "selfModu": "1",
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "out": 5,
+        "in": 0,
+        "index": 9,
+        "weight": 5,
+        "x": 2590.5918812542195,
+        "y": 1341.5832151232794,
+        "px": 2591.1245616912393,
+        "py": 1342.123484632244
+      },
+      "target": {
+        "name": "商品销售统计表",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0,
+        "index": 5,
+        "weight": 2,
+        "x": 2695.3920926331516,
+        "y": 1222.1263230741638,
+        "px": 2694.2180347432713,
+        "py": 1225.1988403710905
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "物料基本信息维护<>倉庫基礎資料",
+        "selfModu": "1",
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "out": 2,
+        "in": 0,
+        "index": 10,
+        "weight": 2,
+        "x": 2486.9304795912817,
+        "y": 1653.5890976116646,
+        "px": 2488.038676071815,
+        "py": 1651.347260784336
+      },
+      "target": {
+        "name": "材料商品出货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0,
+        "index": 1,
+        "weight": 4,
+        "x": 2568.1588409639853,
+        "y": 1525.6187750142426,
+        "px": 2567.4621996965243,
+        "py": 1525.4181428566671
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071"
+    },
+    {
+      "source": {
+        "name": "物料基本信息维护<>倉庫基礎資料",
+        "selfModu": "1",
+        "blmd": "倉庫基礎資料",
+        "blmdID": "Module00071",
+        "out": 2,
+        "in": 0,
+        "index": 10,
+        "weight": 2,
+        "x": 2486.9304795912817,
+        "y": 1653.5890976116646,
+        "px": 2488.038676071815,
+        "py": 1651.347260784336
+      },
+      "target": {
+        "name": "商品PO",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1,
+        "index": 0,
+        "weight": 4,
+        "x": 2617.645723512637,
+        "y": 1685.0984764209513,
+        "px": 2615.4082904243282,
+        "py": 1683.6799462140095
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "倉庫基礎資料",
+      "belongModuleID": "Module00071"
+    },
+    {
+      "source": {
+        "name": "班组设置<>人事基礎資料",
+        "selfModu": "1",
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "out": 1,
+        "in": 0,
+        "index": 11,
+        "weight": 1,
+        "x": 407.995403010062,
+        "y": 1235.273834142714,
+        "px": 407.995403010062,
+        "py": 1235.273834142714,
+        "fixed": 1
+      },
+      "target": {
+        "name": "休息日出勤情况",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0,
+        "index": 6,
+        "weight": 5,
+        "x": 361.6120699000603,
+        "y": 831.3128933314001,
+        "px": 361.6120699000603,
+        "py": 831.3128933314001,
+        "fixed": 1
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001"
+    },
+    {
+      "source": {
+        "name": "商品PO",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1,
+        "index": 0,
+        "weight": 4,
+        "x": 2617.645723512637,
+        "y": 1685.0984764209513,
+        "px": 2615.4082904243282,
+        "py": 1683.6799462140095
+      },
+      "target": {
+        "name": "材料商品出货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 4,
+        "out": 0,
+        "index": 1,
+        "weight": 4,
+        "x": 2568.1588409639853,
+        "y": 1525.6187750142426,
+        "px": 2567.4621996965243,
+        "py": 1525.4181428566671
+      },
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "商品客户信息",
+        "selfModu": "1",
+        "blmd": "材料商品管理",
+        "blmdID": "Module00184",
+        "out": 1,
+        "in": 0,
+        "index": 12,
+        "weight": 1,
+        "x": 2552.0717751325274,
+        "y": 1828.8475600958795,
+        "px": 2551.1098785933873,
+        "py": 1825.3779230807393
+      },
+      "target": {
+        "name": "商品PO",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 3,
+        "out": 1,
+        "index": 0,
+        "weight": 4,
+        "x": 2617.645723512637,
+        "y": 1685.0984764209513,
+        "px": 2615.4082904243282,
+        "py": 1683.6799462140095
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "商品退货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 2,
+        "index": 4,
+        "weight": 3,
+        "x": 2575.0150614044665,
+        "y": 1182.9357370511489,
+        "px": 2576.6526307647277,
+        "py": 1186.3580266215706
+      },
+      "target": {
+        "name": "商品出货记录",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0,
+        "index": 2,
+        "weight": 2,
+        "x": 2466.967698547384,
+        "y": 1251.085142440691,
+        "px": 2470.4531676387046,
+        "py": 1252.2201090168992
+      },
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "商品退货单",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 1,
+        "out": 2,
+        "index": 4,
+        "weight": 3,
+        "x": 2575.0150614044665,
+        "y": 1182.9357370511489,
+        "px": 2576.6526307647277,
+        "py": 1186.3580266215706
+      },
+      "target": {
+        "name": "商品销售统计表",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 2,
+        "out": 0,
+        "index": 5,
+        "weight": 2,
+        "x": 2695.3920926331516,
+        "y": 1222.1263230741638,
+        "px": 2694.2180347432713,
+        "py": 1225.1988403710905
+      },
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "材料商品管理",
+      "belongModuleID": "Module00184"
+    },
+    {
+      "source": {
+        "name": "岗位数据维护<>人事基礎資料",
+        "selfModu": "1",
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "out": 1,
+        "in": 0,
+        "index": 13,
+        "weight": 1,
+        "x": 91.6624382241082,
+        "y": 817.5501481212535,
+        "px": 91.6624382241082,
+        "py": 817.5501481212535,
+        "fixed": 1
+      },
+      "target": {
+        "name": "休息日出勤情况",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0,
+        "index": 6,
+        "weight": 5,
+        "x": 361.6120699000603,
+        "y": 831.3128933314001,
+        "px": 361.6120699000603,
+        "py": 831.3128933314001,
+        "fixed": 1
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001"
+    },
+    {
+      "source": {
+        "name": "组织架构<>人事基礎資料",
+        "selfModu": "1",
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "out": 1,
+        "in": 0,
+        "index": 14,
+        "weight": 1,
+        "x": 390.76666802866157,
+        "y": 605.6489315529468,
+        "px": 390.76666802866157,
+        "py": 605.6489315529468,
+        "fixed": 1
+      },
+      "target": {
+        "name": "休息日出勤情况",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0,
+        "index": 6,
+        "weight": 5,
+        "x": 361.6120699000603,
+        "y": 831.3128933314001,
+        "px": 361.6120699000603,
+        "py": 831.3128933314001,
+        "fixed": 1
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001"
+    },
+    {
+      "source": {
+        "name": "职务维护<>人事基礎資料",
+        "selfModu": "1",
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "out": 1,
+        "in": 0,
+        "index": 15,
+        "weight": 1,
+        "x": 916.6660183756753,
+        "y": 823.261530200737,
+        "px": 916.6660183756753,
+        "py": 823.261530200737,
+        "fixed": 1
+      },
+      "target": {
+        "name": "休息日出勤情况",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0,
+        "index": 6,
+        "weight": 5,
+        "x": 361.6120699000603,
+        "y": 831.3128933314001,
+        "px": 361.6120699000603,
+        "py": 831.3128933314001,
+        "fixed": 1
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001"
+    },
+    {
+      "source": {
+        "name": "离职申请<>人事管理",
+        "selfModu": "1",
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "out": 1,
+        "in": 0,
+        "index": 16,
+        "weight": 1,
+        "x": 371.42050810979197,
+        "y": 1899.2256192037692,
+        "px": 371.42050810979197,
+        "py": 1899.2256192037692,
+        "fixed": true
+      },
+      "target": {
+        "name": "休息日出勤情况",
+        "selfModu": "0",
+        "blmdID": "Module00184",
+        "in": 5,
+        "out": 0,
+        "index": 6,
+        "weight": 5,
+        "x": 361.6120699000603,
+        "y": 831.3128933314001,
+        "px": 361.6120699000603,
+        "py": 831.3128933314001,
+        "fixed": 1
+      },
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029"
+    }
+  ],
+  "nodes": {
+    "商品PO": {
+      "name": "商品PO",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 3,
+      "out": 1,
+      "index": 0,
+      "weight": 4,
+      "x": 2617.645723512637,
+      "y": 1685.0984764209513,
+      "px": 2615.4082904243282,
+      "py": 1683.6799462140095
+    },
+    "材料商品出货单": {
+      "name": "材料商品出货单",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 4,
+      "out": 0,
+      "index": 1,
+      "weight": 4,
+      "x": 2568.1588409639853,
+      "y": 1525.6187750142426,
+      "px": 2567.4621996965243,
+      "py": 1525.4181428566671
+    },
+    "商品出货记录": {
+      "name": "商品出货记录",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 2,
+      "out": 0,
+      "index": 2,
+      "weight": 2,
+      "x": 2466.967698547384,
+      "y": 1251.085142440691,
+      "px": 2470.4531676387046,
+      "py": 1252.2201090168992
+    },
+    "商品出货发票维护": {
+      "name": "商品出货发票维护",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 1,
+      "out": 0,
+      "index": 3,
+      "weight": 1,
+      "x": 2744.481717335133,
+      "y": 1380.8972664431255,
+      "px": 2741.889708933966,
+      "py": 1381.778241216757
+    },
+    "商品退货单": {
+      "name": "商品退货单",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 1,
+      "out": 2,
+      "index": 4,
+      "weight": 3,
+      "x": 2575.0150614044665,
+      "y": 1182.9357370511489,
+      "px": 2576.6526307647277,
+      "py": 1186.3580266215706
+    },
+    "商品销售统计表": {
+      "name": "商品销售统计表",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 2,
+      "out": 0,
+      "index": 5,
+      "weight": 2,
+      "x": 2695.3920926331516,
+      "y": 1222.1263230741638,
+      "px": 2694.2180347432713,
+      "py": 1225.1988403710905
+    },
+    "休息日出勤情况": {
+      "name": "休息日出勤情况",
+      "selfModu": "0",
+      "blmdID": "Module00184",
+      "in": 5,
+      "out": 0,
+      "index": 6,
+      "weight": 5,
+      "x": 361.6120699000603,
+      "y": 831.3128933314001,
+      "px": 361.6120699000603,
+      "py": 831.3128933314001,
+      "fixed": 1
+    },
+    "月结料处理审核<>倉庫管理": {
+      "name": "月结料处理审核<>倉庫管理",
+      "selfModu": "1",
+      "blmd": "倉庫管理",
+      "blmdID": "Module00022",
+      "out": 1,
+      "in": 0,
+      "index": 7,
+      "weight": 1,
+      "x": 2736.2060292573474,
+      "y": 1780.9286528116586,
+      "px": 2732.4422192401535,
+      "py": 1779.241777034155
+    },
+    "外出申请<>門禁管理": {
+      "name": "外出申请<>門禁管理",
+      "selfModu": "1",
+      "blmd": "門禁管理",
+      "blmdID": "Module00053",
+      "out": 1,
+      "in": 0,
+      "index": 8,
+      "weight": 1,
+      "x": 2404.8023412269117,
+      "y": 1509.6301495876407,
+      "px": 2407.3798015790235,
+      "py": 1509.036599472957
+    },
+    "材料商品出货表": {
+      "name": "材料商品出货表",
+      "selfModu": "1",
+      "blmd": "材料商品管理",
+      "blmdID": "Module00184",
+      "out": 5,
+      "in": 0,
+      "index": 9,
+      "weight": 5,
+      "x": 2590.5918812542195,
+      "y": 1341.5832151232794,
+      "px": 2591.1245616912393,
+      "py": 1342.123484632244
+    },
+    "物料基本信息维护<>倉庫基礎資料": {
+      "name": "物料基本信息维护<>倉庫基礎資料",
+      "selfModu": "1",
+      "blmd": "倉庫基礎資料",
+      "blmdID": "Module00071",
+      "out": 2,
+      "in": 0,
+      "index": 10,
+      "weight": 2,
+      "x": 2486.9304795912817,
+      "y": 1653.5890976116646,
+      "px": 2488.038676071815,
+      "py": 1651.347260784336
+    },
+    "班组设置<>人事基礎資料": {
+      "name": "班组设置<>人事基礎資料",
+      "selfModu": "1",
+      "blmd": "人事基礎資料",
+      "blmdID": "Module00001",
+      "out": 1,
+      "in": 0,
+      "index": 11,
+      "weight": 1,
+      "x": 407.995403010062,
+      "y": 1235.273834142714,
+      "px": 407.995403010062,
+      "py": 1235.273834142714,
+      "fixed": 1
+    },
+    "商品客户信息": {
+      "name": "商品客户信息",
+      "selfModu": "1",
+      "blmd": "材料商品管理",
+      "blmdID": "Module00184",
+      "out": 1,
+      "in": 0,
+      "index": 12,
+      "weight": 1,
+      "x": 2552.0717751325274,
+      "y": 1828.8475600958795,
+      "px": 2551.1098785933873,
+      "py": 1825.3779230807393
+    },
+    "岗位数据维护<>人事基礎資料": {
+      "name": "岗位数据维护<>人事基礎資料",
+      "selfModu": "1",
+      "blmd": "人事基礎資料",
+      "blmdID": "Module00001",
+      "out": 1,
+      "in": 0,
+      "index": 13,
+      "weight": 1,
+      "x": 91.6624382241082,
+      "y": 817.5501481212535,
+      "px": 91.6624382241082,
+      "py": 817.5501481212535,
+      "fixed": 1
+    },
+    "组织架构<>人事基礎資料": {
+      "name": "组织架构<>人事基礎資料",
+      "selfModu": "1",
+      "blmd": "人事基礎資料",
+      "blmdID": "Module00001",
+      "out": 1,
+      "in": 0,
+      "index": 14,
+      "weight": 1,
+      "x": 390.76666802866157,
+      "y": 605.6489315529468,
+      "px": 390.76666802866157,
+      "py": 605.6489315529468,
+      "fixed": 1
+    },
+    "职务维护<>人事基礎資料": {
+      "name": "职务维护<>人事基礎資料",
+      "selfModu": "1",
+      "blmd": "人事基礎資料",
+      "blmdID": "Module00001",
+      "out": 1,
+      "in": 0,
+      "index": 15,
+      "weight": 1,
+      "x": 916.6660183756753,
+      "y": 823.261530200737,
+      "px": 916.6660183756753,
+      "py": 823.261530200737,
+      "fixed": 1
+    },
+    "离职申请<>人事管理": {
+      "name": "离职申请<>人事管理",
+      "selfModu": "1",
+      "blmd": "人事管理",
+      "blmdID": "Module00029",
+      "out": 1,
+      "in": 0,
+      "index": 16,
+      "weight": 1,
+      "x": 371.42050810979197,
+      "y": 1899.2256192037692,
+      "px": 371.42050810979197,
+      "py": 1899.2256192037692,
+      "fixed": true
+    }
+  }
+}
+   
+    
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "links":[  {
+    "source": 
+       "外出申请"
+     
+    ,
+    "target":
+       "材料商品出货单"
+     
+    ,
+    "type": "resolved",
+    "rela": "上位产品",
+    "belongModule": "門禁管理",
+    "belongModuleID": "Module00053"
+  }]
+}

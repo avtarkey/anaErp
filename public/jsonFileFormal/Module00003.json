@@ -1,0 +1,389 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "SPC报表归类",
+      "s": {
+        "x": 1880.8146448627801,
+        "y": 1606.7636414168328,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "管制特性设定",
+      "t": {
+        "x": 1673.1680392512694,
+        "y": 1597.157269818244,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "SPC检验项目设置",
+      "s": {
+        "x": 1889.0905065614352,
+        "y": 1735.6822721413357,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "管制界限设定",
+      "t": {
+        "x": 1494.0555888910112,
+        "y": 1606.616213044154,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "SPC检验类别",
+      "s": {
+        "x": 1874.7443286070124,
+        "y": 1542.0262662874115,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "管制特性设定",
+      "t": {
+        "x": 1673.1680392512694,
+        "y": 1597.157269818244,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "不良原因维护",
+      "s": {
+        "x": 1871.2200217359032,
+        "y": 1296.1773760139022,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "产出品各站不良原因维护",
+      "t": {
+        "x": 1654.792624698459,
+        "y": 1267.1434241837887,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "生产站别作业参数维护<>生管基礎資料",
+      "s": {
+        "x": 1959.5115471764711,
+        "y": 964.816309403943,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 0
+      },
+      "target": "各站报废原因维护",
+      "t": {
+        "x": 1650.048380139358,
+        "y": 1123.019042658876,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "品保站别设置",
+      "s": {
+        "x": 1873.4070916471628,
+        "y": 1384.3302060258113,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "品保制程设置",
+      "t": {
+        "x": 1664.908231277148,
+        "y": 1412.5888853552624,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "站别名称维护<>工程基礎資料",
+      "s": {
+        "x": 2087.4190678536906,
+        "y": 1051.5791270624193,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "各站报废原因维护",
+      "t": {
+        "x": 1650.048380139358,
+        "y": 1123.019042658876,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "工程基礎資料",
+      "belongModuleID": "Module00002",
+      "source": "站别名称维护<>工程基礎資料",
+      "s": {
+        "x": 2087.4190678536906,
+        "y": 1051.5791270624193,
+        "blmd": "工程基礎資料",
+        "blmdID": "Module00002",
+        "in": 0,
+        "out": 0
+      },
+      "target": "品保站别设置",
+      "t": {
+        "x": 1873.4070916471628,
+        "y": 1384.3302060258113,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "站别数据维护<>生管基礎資料",
+      "s": {
+        "x": 1962.1309794999688,
+        "y": 1111.1506974845954,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 0
+      },
+      "target": "品保站别设置",
+      "t": {
+        "x": 1873.4070916471628,
+        "y": 1384.3302060258113,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2236.45632881051,
+        "y": 1053.4908042179586,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "各站报废原因维护",
+      "t": {
+        "x": 1650.048380139358,
+        "y": 1123.019042658876,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2236.45632881051,
+        "y": 1053.4908042179586,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "产出品各站不良原因维护",
+      "t": {
+        "x": 1654.792624698459,
+        "y": 1267.1434241837887,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "报废原因维护",
+      "s": {
+        "x": 1854.984444134214,
+        "y": 1228.4192144034564,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "各站报废原因维护",
+      "t": {
+        "x": 1650.048380139358,
+        "y": 1123.019042658876,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据<>系統基礎資料",
+      "s": {
+        "x": 2089.069152679449,
+        "y": 1451.0627225554097,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      },
+      "target": "预算成本单价维护",
+      "t": {
+        "x": 1874.5145101968824,
+        "y": 1468.3835027436016,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "管制特性设定",
+      "s": {
+        "x": 1673.1680392512694,
+        "y": 1597.157269818244,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 3,
+        "out": 1
+      },
+      "target": "管制界限设定",
+      "t": {
+        "x": 1494.0555888910112,
+        "y": 1606.616213044154,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "品質基礎資料",
+      "belongModuleID": "Module00003",
+      "source": "管制项目设定",
+      "s": {
+        "x": 1882.5756411529094,
+        "y": 1673.375267818461,
+        "blmd": "品質基礎資料",
+        "blmdID": "Module00003",
+        "in": 0,
+        "out": 1
+      },
+      "target": "管制特性设定",
+      "t": {
+        "x": 1673.1680392512694,
+        "y": 1597.157269818244,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 3,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "生管基礎資料",
+      "belongModuleID": "Module00007",
+      "source": "厂别数据维护<>生管基礎資料",
+      "s": {
+        "x": 1959.7672433150954,
+        "y": 1037.3078604836137,
+        "blmd": "生管基礎資料",
+        "blmdID": "Module00007",
+        "in": 0,
+        "out": 0
+      },
+      "target": "各站报废原因维护",
+      "t": {
+        "x": 1650.048380139358,
+        "y": 1123.019042658876,
+        "blmd": "",
+        "blmdID": "Module00003",
+        "in": 1,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

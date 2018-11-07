@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Checkbox in DataList - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+</head>
+
+<body>
+	<h2>Checkbox in DataList</h2>
+	<p>Each item in the DataList has a checkbox.</p>
+	<!-- 	<div style="margin:20px 0"></div>
+	
+		
+			<div id="dd" class="easyui-draggable easyui-resizable" data-options="handle:'#mytitle'" style="width:200px;height:150px;border:1px solid #ccc">
+					<div id="mytitle" style="background:#ddd;padding:5px;">Title</div>
+					<div  class="easyui-datalist" title="Checkbox in DataList" style="width:400px;height:250px" data-options="
+					url: 'datalist_data1.json',
+					method: 'get',
+					checkbox: true,
+					selectOnCheck: false,
+					onBeforeSelect: function(){return false;}
+					">
+				</div>
+
+				<input id="cc" style="width:200px" />
+
+
+	</div> -->
+	<!-- <div id="dd" style="border:8px solid #0101">
+
+
+
+		
+</div> -->
+	<div id="dd" style="width:100px;height:100px;">
+		<div id="title" style="background:#ccc;">.</div>
+		<div id="rr" style="width:100px;height:100px; position:float;overflow:hidden;border: solid #ccc;">
+
+
+
+
+
+			<div id="mytitle" style="background:#ddd;padding:5px;">Title</div>
+			<div class="easyui-datalist" title="Checkbox in DataList" style="width:400px;height:250px" data-options="
+	url: 'datalist_data1.json',
+	method: 'get',
+	checkbox: true,
+	selectOnCheck: false,
+	onBeforeSelect: function(){return false;}
+	">
+
+
+				
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		//	$('#dd1').draggable();
+
+		$('#rr').resizable({
+
+		});
+		$('#dd').draggable({
+			handle: '#title'
+		});
+
+
+	</script>
+
+
+
+
+
+</body>
+
+</html>

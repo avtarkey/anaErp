@@ -1,0 +1,149 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2604.817293992491,
+        "y": 1636.4283534158728,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "对外系统联络信息维护",
+      "t": {
+        "x": 2403.1677984447247,
+        "y": 1547.7863958382923,
+        "blmd": "",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2599.6370752095827,
+        "y": 1469.9981476235946,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "对外系统联络信息维护",
+      "t": {
+        "x": 2403.1677984447247,
+        "y": 1547.7863958382923,
+        "blmd": "",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "单位设定",
+      "s": {
+        "x": 2404.93387486071,
+        "y": 1656.4743230509976,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 1
+      },
+      "target": "单位换算",
+      "t": {
+        "x": 2161.7366281802856,
+        "y": 1641.9095701547396,
+        "blmd": "",
+        "blmdID": "Module00005",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据",
+      "s": {
+        "x": 2397.091738892835,
+        "y": 1770.4031840730463,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 2
+      },
+      "target": "公司基本资料",
+      "t": {
+        "x": 2157.7052060307583,
+        "y": 1734.7546262939845,
+        "blmd": "",
+        "blmdID": "Module00005",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "系統基礎資料",
+      "belongModuleID": "Module00005",
+      "source": "币别数据",
+      "s": {
+        "x": 2397.091738892835,
+        "y": 1770.4031840730463,
+        "blmd": "系統基礎資料",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 2
+      },
+      "target": "币别汇率维护",
+      "t": {
+        "x": 2162.85865018746,
+        "y": 1813.695260971934,
+        "blmd": "",
+        "blmdID": "Module00005",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2591.55289187741,
+        "y": 1534.7847972715808,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "对外系统联络信息维护",
+      "t": {
+        "x": 2403.1677984447247,
+        "y": 1547.7863958382923,
+        "blmd": "",
+        "blmdID": "Module00005",
+        "in": 0,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

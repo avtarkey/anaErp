@@ -1,0 +1,245 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 784.9701694576684,
+        "y": 585.485987711611,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "工作站数据录入",
+      "t": {
+        "x": 453.4494410593338,
+        "y": 533.3139366504736,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 784.9701694576684,
+        "y": 585.485987711611,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "平台任务分配表",
+      "t": {
+        "x": 458.56360732726444,
+        "y": 842.6021947883085,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 784.9701694576684,
+        "y": 585.485987711611,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "服务器录入",
+      "t": {
+        "x": 457.7889442876128,
+        "y": 460.04929822457757,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 784.9701694576684,
+        "y": 585.485987711611,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "软件数据录入",
+      "t": {
+        "x": 455.9569095092402,
+        "y": 603.2994607480542,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 794.7007538219805,
+        "y": 710.0259626256021,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "平台任务分配表",
+      "t": {
+        "x": 458.56360732726444,
+        "y": 842.6021947883085,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 796.0829251757292,
+        "y": 829.7836537672528,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "平台任务分配表",
+      "t": {
+        "x": 458.56360732726444,
+        "y": 842.6021947883085,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 799.8657530333993,
+        "y": 897.4646814004918,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "平台任务分配表",
+      "t": {
+        "x": 458.56360732726444,
+        "y": 842.6021947883085,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 799.8657530333993,
+        "y": 897.4646814004918,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "各部门KPI指标项目维护",
+      "t": {
+        "x": 471.65868071581144,
+        "y": 921.7155169925711,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 799.1220696453121,
+        "y": 774.5570183504235,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "平台任务分配表",
+      "t": {
+        "x": 458.56360732726444,
+        "y": 842.6021947883085,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 789.927051150197,
+        "y": 653.3630157359444,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "平台任务分配表",
+      "t": {
+        "x": 458.56360732726444,
+        "y": 842.6021947883085,
+        "blmd": "",
+        "blmdID": "Module00079",
+        "in": 0,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

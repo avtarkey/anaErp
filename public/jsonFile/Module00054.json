@@ -1,0 +1,2381 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "人员转班",
+      "s": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "人员转班",
+      "s": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "人员转班",
+      "s": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "上班天数小时数基础数据<>人事基礎資料",
+      "s": {
+        "x": 3288.878037559609,
+        "y": 1137.6705655252613,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "公共节假日<>人事基礎資料",
+      "s": {
+        "x": 3293.67778030881,
+        "y": 1204.1888999819917,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "公共节假日<>人事基礎資料",
+      "s": {
+        "x": 3293.67778030881,
+        "y": 1204.1888999819917,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "月考勤计算结果",
+      "s": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      },
+      "target": "考勤惩罚",
+      "t": {
+        "x": 2745.3583703819354,
+        "y": 1105.686930600522,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "加班申请",
+      "s": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "教育培訓",
+      "belongModuleID": "Module00032",
+      "source": "外训申请<>教育培訓",
+      "s": {
+        "x": 3151.551219591795,
+        "y": 1017.3298735552107,
+        "blmd": "教育培訓",
+        "blmdID": "Module00032",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤惩罚",
+      "t": {
+        "x": 2745.3583703819354,
+        "y": 1105.686930600522,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "考勤计算结果",
+      "s": {
+        "x": 2892.591278190387,
+        "y": 1197.1697550162366,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 4
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "考勤计算结果",
+      "s": {
+        "x": 2892.591278190387,
+        "y": 1197.1697550162366,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 4
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "考勤计算结果",
+      "s": {
+        "x": 2892.591278190387,
+        "y": 1197.1697550162366,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 4
+      },
+      "target": "考勤惩罚",
+      "t": {
+        "x": 2745.3583703819354,
+        "y": 1105.686930600522,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "考勤计算结果",
+      "s": {
+        "x": 2892.591278190387,
+        "y": 1197.1697550162366,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 4
+      },
+      "target": "提交考勤异常",
+      "t": {
+        "x": 2741.924425901516,
+        "y": 1207.7865151571757,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人员转班",
+      "t": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "上班时间调整",
+      "t": {
+        "x": 2931.8819531758245,
+        "y": 1944.5848587451296,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "手动排班设定",
+      "t": {
+        "x": 2932.8592463968876,
+        "y": 1994.8036430514412,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月转排班设定",
+      "t": {
+        "x": 2937.964506355872,
+        "y": 2055.291369004002,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "固定排班设定",
+      "t": {
+        "x": 2898.602473361126,
+        "y": 1460.1102372823448,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工上班天数调整",
+      "t": {
+        "x": 2917.3288518572326,
+        "y": 1786.6140246489513,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息归类<>人事基礎資料",
+      "s": {
+        "x": 3310.010204069334,
+        "y": 1574.3751578268138,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "信息类别维护<>人事基礎資料",
+      "s": {
+        "x": 3320.4913169494666,
+        "y": 1641.537369580533,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人员转班",
+      "t": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人员转班",
+      "t": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "上班时间调整",
+      "t": {
+        "x": 2931.8819531758245,
+        "y": 1944.5848587451296,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "手动排班设定",
+      "t": {
+        "x": 2932.8592463968876,
+        "y": 1994.8036430514412,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月考勤计算结果",
+      "t": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月转排班设定",
+      "t": {
+        "x": 2937.964506355872,
+        "y": 2055.291369004002,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "休假申请",
+      "t": {
+        "x": 2910.4486381406305,
+        "y": 1623.736232544006,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤惩罚",
+      "t": {
+        "x": 2745.3583703819354,
+        "y": 1105.686930600522,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "固定排班设定",
+      "t": {
+        "x": 2898.602473361126,
+        "y": 1460.1102372823448,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "订餐特殊人员维护",
+      "t": {
+        "x": 2929.7635897424425,
+        "y": 1888.9591320060767,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工上班天数调整",
+      "t": {
+        "x": 2917.3288518572326,
+        "y": 1786.6140246489513,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "排班初始化",
+      "t": {
+        "x": 2910.508301597205,
+        "y": 1568.0950147096862,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "提交考勤异常",
+      "t": {
+        "x": 2741.924425901516,
+        "y": 1207.7865151571757,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假统计",
+      "t": {
+        "x": 2924.0220424441636,
+        "y": 1836.8583925015312,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "销假申请",
+      "t": {
+        "x": 2905.4550815066505,
+        "y": 1516.080437597485,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "销假审核管理",
+      "t": {
+        "x": 2913.983968084447,
+        "y": 1731.1614313018767,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 3303.648516634007,
+        "y": 1513.180188879272,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "临时就餐手工录入",
+      "t": {
+        "x": 2913.9720110190224,
+        "y": 1678.8075806491602,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "员工轮休维护<>人事基礎資料",
+      "s": {
+        "x": 3330.470602336871,
+        "y": 1757.9474841488484,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人员转班",
+      "t": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "上班时间调整",
+      "t": {
+        "x": 2931.8819531758245,
+        "y": 1944.5848587451296,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "手动排班设定",
+      "t": {
+        "x": 2932.8592463968876,
+        "y": 1994.8036430514412,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月考勤计算结果",
+      "t": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月转排班设定",
+      "t": {
+        "x": 2937.964506355872,
+        "y": 2055.291369004002,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "休假申请",
+      "t": {
+        "x": 2910.4486381406305,
+        "y": 1623.736232544006,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "固定排班设定",
+      "t": {
+        "x": 2898.602473361126,
+        "y": 1460.1102372823448,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 3298.0782196969535,
+        "y": 1395.105432283544,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月考勤计算结果",
+      "t": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "休假申请",
+      "t": {
+        "x": 2910.4486381406305,
+        "y": 1623.736232544006,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 3283.131773318247,
+        "y": 1076.432157547761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "销假申请",
+      "t": {
+        "x": 2905.4550815066505,
+        "y": 1516.080437597485,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "人员转班",
+      "t": {
+        "x": 2903.5425729633016,
+        "y": 1339.210624466662,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 3
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "上班时间调整",
+      "t": {
+        "x": 2931.8819531758245,
+        "y": 1944.5848587451296,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "手动排班设定",
+      "t": {
+        "x": 2932.8592463968876,
+        "y": 1994.8036430514412,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月考勤计算结果",
+      "t": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月转排班设定",
+      "t": {
+        "x": 2937.964506355872,
+        "y": 2055.291369004002,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "休假申请",
+      "t": {
+        "x": 2910.4486381406305,
+        "y": 1623.736232544006,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤惩罚",
+      "t": {
+        "x": 2745.3583703819354,
+        "y": 1105.686930600522,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "固定排班设定",
+      "t": {
+        "x": 2898.602473361126,
+        "y": 1460.1102372823448,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工上班天数调整",
+      "t": {
+        "x": 2917.3288518572326,
+        "y": 1786.6140246489513,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "排班初始化",
+      "t": {
+        "x": 2910.508301597205,
+        "y": 1568.0950147096862,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "提交考勤异常",
+      "t": {
+        "x": 2741.924425901516,
+        "y": 1207.7865151571757,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "销假申请",
+      "t": {
+        "x": 2905.4550815066505,
+        "y": 1516.080437597485,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 3301.4847881282835,
+        "y": 1456.6931702626862,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "临时就餐手工录入",
+      "t": {
+        "x": 2913.9720110190224,
+        "y": 1678.8075806491602,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织层级<>人事基礎資料",
+      "s": {
+        "x": 3330.5238439338214,
+        "y": 1699.5314466369412,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工上班天数调整",
+      "t": {
+        "x": 2917.3288518572326,
+        "y": 1786.6140246489513,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织层级<>人事基礎資料",
+      "s": {
+        "x": 3330.5238439338214,
+        "y": 1699.5314466369412,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "轮休申请",
+      "t": {
+        "x": 2525.356710499651,
+        "y": 1422.7100626228128,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "提交考勤异常",
+      "s": {
+        "x": 2741.924425901516,
+        "y": 1207.7865151571757,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 3296.171627692268,
+        "y": 1263.5576549213845,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月考勤计算结果",
+      "t": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 3296.171627692268,
+        "y": 1263.5576549213845,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "休假申请",
+      "t": {
+        "x": 2910.4486381406305,
+        "y": 1623.736232544006,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 3296.171627692268,
+        "y": 1263.5576549213845,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 3296.171627692268,
+        "y": 1263.5576549213845,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 3296.171627692268,
+        "y": 1263.5576549213845,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "请假管理",
+      "s": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "薪資管理",
+      "belongModuleID": "Module00033",
+      "source": "职员岗位按工时计薪维护<>薪資管理",
+      "s": {
+        "x": 3034.7252168483446,
+        "y": 1013.4998802719608,
+        "blmd": "薪資管理",
+        "blmdID": "Module00033",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "月考勤计算结果",
+      "t": {
+        "x": 2890.1756331765228,
+        "y": 1104.2692587469626,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "加班申请",
+      "t": {
+        "x": 2762.2429912277785,
+        "y": 1401.2333190864329,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "休假申请",
+      "t": {
+        "x": 2910.4486381406305,
+        "y": 1623.736232544006,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤异常调整",
+      "t": {
+        "x": 2523.9370836089356,
+        "y": 1210.3651414638807,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "排班初始化",
+      "t": {
+        "x": 2910.508301597205,
+        "y": 1568.0950147096862,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "补假管理",
+      "t": {
+        "x": 2525.6295517050617,
+        "y": 1326.7315824437042,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "请假管理",
+      "t": {
+        "x": 2753.5133984572017,
+        "y": 1322.653859092838,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 3299.253673936133,
+        "y": 1330.9373461576536,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "销假申请",
+      "t": {
+        "x": 2905.4550815066505,
+        "y": 1516.080437597485,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "离职原因维护<>人事基礎資料",
+      "s": {
+        "x": 3279.117880576868,
+        "y": 1016.6655236253519,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "考勤惩罚",
+      "t": {
+        "x": 2745.3583703819354,
+        "y": 1105.686930600522,
+        "blmd": "",
+        "blmdID": "Module00054",
+        "in": 2,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}

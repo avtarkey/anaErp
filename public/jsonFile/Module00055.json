@@ -1,0 +1,1445 @@
+ {
+  "links": [
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "人事异动<>人事管理",
+      "s": {
+        "x": 2940.7158599570644,
+        "y": 1387.9703159171922,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "公告稿",
+      "s": {
+        "x": 2447.200916181761,
+        "y": 1135.9434931579785,
+        "blmd": "文檔管理",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 3
+      },
+      "target": "公告信息发布",
+      "t": {
+        "x": 1886.1142005209472,
+        "y": 1444.9425248812377,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "公告稿",
+      "s": {
+        "x": 2447.200916181761,
+        "y": 1135.9434931579785,
+        "blmd": "文檔管理",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 3
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "公告稿",
+      "s": {
+        "x": 2447.200916181761,
+        "y": 1135.9434931579785,
+        "blmd": "文檔管理",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 3
+      },
+      "target": "发布公告",
+      "t": {
+        "x": 2008.5386290674592,
+        "y": 1446.365303332171,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "考勤异常调整<>考勤管理",
+      "s": {
+        "x": 2676.2727772089784,
+        "y": 1308.918805361828,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "每日公告",
+      "s": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      },
+      "target": "发布公告",
+      "t": {
+        "x": 2008.5386290674592,
+        "y": 1446.365303332171,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "工伤报告申请",
+      "t": {
+        "x": 2450.259688720136,
+        "y": 1460.9518386423292,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "合同管理",
+      "t": {
+        "x": 2469.0486739113157,
+        "y": 1748.5664383025842,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日工作日志",
+      "t": {
+        "x": 2457.634054391437,
+        "y": 1583.2694096839666,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "刷卡申请",
+      "t": {
+        "x": 2452.691379663075,
+        "y": 1409.0915257899646,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工建议申请",
+      "t": {
+        "x": 2457.739117681288,
+        "y": 1523.5879091542465,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "记录申请刷卡人员",
+      "t": {
+        "x": 2448.608473580536,
+        "y": 1343.4923218400133,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "通讯录管理",
+      "t": {
+        "x": 2449.7681151794377,
+        "y": 1275.9789872227338,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "试用期学习心得",
+      "t": {
+        "x": 2464.4440520429475,
+        "y": 1698.8340570122957,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "数据外传申请表",
+      "t": {
+        "x": 2465.6312253187193,
+        "y": 1641.2379770430516,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "个人基本资料<>人事基礎資料",
+      "s": {
+        "x": 2605.199795493598,
+        "y": 1421.4692304947996,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "员工奖惩<>人事管理",
+      "s": {
+        "x": 2943.604510455167,
+        "y": 1324.3116463237018,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2610.1105632527538,
+        "y": 1602.042205096761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "刷卡申请",
+      "t": {
+        "x": 2452.691379663075,
+        "y": 1409.0915257899646,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2610.1105632527538,
+        "y": 1602.042205096761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "记录申请刷卡人员",
+      "t": {
+        "x": 2448.608473580536,
+        "y": 1343.4923218400133,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2610.1105632527538,
+        "y": 1602.042205096761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "班组设置<>人事基礎資料",
+      "s": {
+        "x": 2610.1105632527538,
+        "y": 1602.042205096761,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2607.660292722988,
+        "y": 1541.908887319884,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2607.660292722988,
+        "y": 1541.908887319884,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "刷卡申请",
+      "t": {
+        "x": 2452.691379663075,
+        "y": 1409.0915257899646,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2607.660292722988,
+        "y": 1541.908887319884,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "记录申请刷卡人员",
+      "t": {
+        "x": 2448.608473580536,
+        "y": 1343.4923218400133,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2607.660292722988,
+        "y": 1541.908887319884,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "数据外传申请表",
+      "t": {
+        "x": 2465.6312253187193,
+        "y": 1641.2379770430516,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2607.660292722988,
+        "y": 1541.908887319884,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "岗位数据维护<>人事基礎資料",
+      "s": {
+        "x": 2607.660292722988,
+        "y": 1541.908887319884,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "工伤报告申请",
+      "t": {
+        "x": 2450.259688720136,
+        "y": 1460.9518386423292,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "合同管理",
+      "t": {
+        "x": 2469.0486739113157,
+        "y": 1748.5664383025842,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "刷卡申请",
+      "t": {
+        "x": 2452.691379663075,
+        "y": 1409.0915257899646,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "员工建议申请",
+      "t": {
+        "x": 2457.739117681288,
+        "y": 1523.5879091542465,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "记录申请刷卡人员",
+      "t": {
+        "x": 2448.608473580536,
+        "y": 1343.4923218400133,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "试用期学习心得",
+      "t": {
+        "x": 2464.4440520429475,
+        "y": 1698.8340570122957,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "数据外传申请表",
+      "t": {
+        "x": 2465.6312253187193,
+        "y": 1641.2379770430516,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "组织架构<>人事基礎資料",
+      "s": {
+        "x": 2601.9104195071823,
+        "y": 1481.3637750961493,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "機修管理",
+      "belongModuleID": "Module00050",
+      "source": "设备完整性稽核整改表<>機修管理",
+      "s": {
+        "x": 2842.822574426809,
+        "y": 1416.1749268562512,
+        "blmd": "機修管理",
+        "blmdID": "Module00050",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "发布公告",
+      "s": {
+        "x": 2008.5386290674592,
+        "y": 1446.365303332171,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      },
+      "target": "公告信息发布",
+      "t": {
+        "x": 1886.1142005209472,
+        "y": 1444.9425248812377,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2619.747592477816,
+        "y": 1663.0869083514883,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "管理级别维护<>人事基礎資料",
+      "s": {
+        "x": 2619.747592477816,
+        "y": 1663.0869083514883,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "奖惩提报单",
+      "s": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "奖惩标准<>人事基礎資料",
+      "s": {
+        "x": 2591.039601851531,
+        "y": 1312.7349010899477,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "奖惩标准<>人事基礎資料",
+      "s": {
+        "x": 2591.039601851531,
+        "y": 1312.7349010899477,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "奖惩标准<>人事基礎資料",
+      "s": {
+        "x": 2591.039601851531,
+        "y": 1312.7349010899477,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "考勤管理",
+      "belongModuleID": "Module00054",
+      "source": "请假管理<>考勤管理",
+      "s": {
+        "x": 2670.804247348901,
+        "y": 1252.996264784023,
+        "blmd": "考勤管理",
+        "blmdID": "Module00054",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "主营产品",
+      "belongModule": "文檔管理",
+      "belongModuleID": "Module00055",
+      "source": "担保书",
+      "s": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "安全管理",
+      "belongModuleID": "Module00127",
+      "source": "隐患异常整改表<>安全管理",
+      "s": {
+        "x": 2748.3692772159284,
+        "y": 1251.435645437685,
+        "blmd": "安全管理",
+        "blmdID": "Module00127",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2594.432525633551,
+        "y": 1367.0131338113615,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2594.432525633551,
+        "y": 1367.0131338113615,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "刷卡申请",
+      "t": {
+        "x": 2452.691379663075,
+        "y": 1409.0915257899646,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2594.432525633551,
+        "y": 1367.0131338113615,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "记录申请刷卡人员",
+      "t": {
+        "x": 2448.608473580536,
+        "y": 1343.4923218400133,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2594.432525633551,
+        "y": 1367.0131338113615,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "数据外传申请表",
+      "t": {
+        "x": 2465.6312253187193,
+        "y": 1641.2379770430516,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2594.432525633551,
+        "y": 1367.0131338113615,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "奖惩提报单",
+      "t": {
+        "x": 2292.7235555936236,
+        "y": 1431.464874630731,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 1,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "职务维护<>人事基礎資料",
+      "s": {
+        "x": 2594.432525633551,
+        "y": 1367.0131338113615,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "担保书",
+      "t": {
+        "x": 2447.0435227550447,
+        "y": 1202.8107512033948,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事基礎資料",
+      "belongModuleID": "Module00001",
+      "source": "离职方式维护<>人事基礎資料",
+      "s": {
+        "x": 2593.703746474301,
+        "y": 1253.1429072725725,
+        "blmd": "人事基礎資料",
+        "blmdID": "Module00001",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职申请<>人事管理",
+      "s": {
+        "x": 2939.256961564375,
+        "y": 1258.6286304736377,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 0
+      },
+      "target": "每日公告",
+      "t": {
+        "x": 2150.723308052963,
+        "y": 1440.5343127003339,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 2,
+        "out": 1
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职申请<>人事管理",
+      "s": {
+        "x": 2939.256961564375,
+        "y": 1258.6286304736377,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 0
+      },
+      "target": "刷卡申请",
+      "t": {
+        "x": 2452.691379663075,
+        "y": 1409.0915257899646,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    },
+    {
+      "type": "resolved",
+      "rela": "上位产品",
+      "belongModule": "人事管理",
+      "belongModuleID": "Module00029",
+      "source": "离职申请<>人事管理",
+      "s": {
+        "x": 2939.256961564375,
+        "y": 1258.6286304736377,
+        "blmd": "人事管理",
+        "blmdID": "Module00029",
+        "in": 0,
+        "out": 0
+      },
+      "target": "记录申请刷卡人员",
+      "t": {
+        "x": 2448.608473580536,
+        "y": 1343.4923218400133,
+        "blmd": "",
+        "blmdID": "Module00055",
+        "in": 0,
+        "out": 0
+      }
+    }
+  ],
+  "nodes": {}
+}
