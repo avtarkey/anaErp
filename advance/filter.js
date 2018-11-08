@@ -384,7 +384,8 @@ let abc=async function(){
 
 //[ 'tblHR_DimissionReason', 'tblHR_MonthAttendance' ]
 abc()
-//   node advance/filter.js
+//   
+
 
 //console.dir(read(str))
 
