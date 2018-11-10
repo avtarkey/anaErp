@@ -1,3 +1,4 @@
+
 let queryFunc = require('./queryFuncDefine.js');
 let centerControl = require('./centerControl.js');
 let insertData = require('./insertDateBase.js')
@@ -19,6 +20,7 @@ let moduleDependence = async function (mdArray) {
 
     for (let module of mdArray) {
         let para = module.id;
+
         let queryStr = ` 
     declare @moduID nvarchar(100)          
     set @moduID='${para}';
@@ -116,7 +118,7 @@ let moduleDependence = async function (mdArray) {
 
     `
        
-        await queryFunc(queryStr);
+    await queryFunc(queryStr);
 
     }
 
@@ -145,7 +147,7 @@ let abc = async function (moduleArray) {
     await moduleDependence(moduleArray);
     console.dir('第二部')
   
-    await centerControl();
+   // await centerControl();
     return;
 
   
