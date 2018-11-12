@@ -10,7 +10,7 @@
 
 
 var queryFunc = require('./queryFuncDefine.js');
-var  builtInCURD  = require('./filter.js')
+var builtInCURD = require('./filter.js')
 var bulkCURD = require('./insert.js');
 
 
@@ -21,73 +21,46 @@ let t1=0; */
 
 let rowItem = async function (rows) {
     let item = rows[0]
-
     let output = { add: [], delete: [], update: [], select: [] }
-    console.dir('item:')
-    console.dir(item)
-
-    console.dir(item.type)
-    console.dir(item.type == 'esql')
-
-    /*   console.dir('*****************循环开始*****************************')
-      console.dir(item.Form_Taiwan_Name); */
-
-
-
-    if (item.type == 'tbl') { //如果是表
+    //如果是表
+    if (item.type == 'tbl') {
         console.dir('tbl')
         output.select.push(item.Table_Name);
-        // console.dir(item.Table_Name);
-        //console.dir(tmpArray);
-
-
-    } else if (item.type == 'vw') { //如果是视图
-        console.dir('vw')
-        // console.dir(item.Table_Name)
-
-        let viewDefineStrLine = await queryFunc('exec sp_helptext ' + item.Table_Name);//视图的定义语句是一行一行的
-
+    }
+    //如果是视图
+    else if (item.type == 'vw') {
+        //视图的定义语句是一行一行的
+        let viewDefineStrLine = await queryFunc('exec sp_helptext ' + item.Table_Name)
         let viewDefineStr = '';
         for (let i of viewDefineStrLine) {
             viewDefineStr += i.Text;
         }
-        // console.dir(viewDefineStr)
-        // console.dir('view:::'+viewDefineStr)
-        tmp = await builtInCURD (viewDefineStr);
-        output.select=output.select.concat(tmp.r)
-
-
-    } else if (item.type == 'esql') { //如果是方法
-        console.dir('esql +++++++++++++++++++++++++++++++++++++++++++++')
-        // console.dir(item.Table_Name)
-        tmp = await  builtInCURD(item.Table_Name)
-        console.dir('esql denpendency: ')
-        
+        tmp = await builtInCURD(viewDefineStr);
+        output.select = output.select.concat(tmp.r)
+    }
+    //如果是方法
+    else if (item.type == 'esql') {
+        tmp = await builtInCURD(item.Table_Name)
         output.add = output.add.concat(re.c);
         output.update = output.update.concat(re.u);
         output.select = output.select.concat(re.r);
         output.delete = output.delete.concat(re.d);
 
-        console.dir('______________________________________________________')
+    }
+    //表单自身的表
+    else if (item.type == 'self') {
 
-    } else if (item.type == 'self') {  //表单自身的表
-        console.dir('self')
         output.add.push(item.Table_Name);
     }
+    //什么都不是
     else {
-    }
-    console.dir('tmpre:')
-    console.dir(output)
-
-   // await bulkCURD(item.form_ID, tmpre)
-
-    // console.dir('*************************循环结束*********************************')
+    }   
 
 }
 
-let centerControl=async function () {
+let centerControl = async function () {
 
-//查询总行数
+    //查询总行数
     str = `select count(1) as total from ##allRank`
     let aa = await queryFunc(str);
     console.dir('333333')
@@ -95,13 +68,14 @@ let centerControl=async function () {
 
     console.dir(aa[0].total)
 
+    //根据总行数,一行一行的循环调用rowItem
     for (let i = 1; i <= total; i++) {
         str = `select * from ##allRank a where a.[No]='${i}'`
         let row = await queryFunc(str);
         console.dir(i)
         console.dir(row)
         rowItem(row);
-    return
+        return
 
         if (i == 3) {
             return;
@@ -110,6 +84,8 @@ let centerControl=async function () {
 }
 
 //module.exports = centerControl;
+
+
 
 let am = [{
     Form_ID: '20080305115642',
