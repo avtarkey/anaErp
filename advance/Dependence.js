@@ -7,6 +7,7 @@ let insertData = require('./insertDateBase.js')
 //根据模块ID数组,求出所有的依赖,并插入##all数据表
 let moduleDependence = async function (mdArray) {
 
+    //循环每个模块ID,把每个模块的以来插入##all表
     for (let module of mdArray) {
         let para = module.id;
         let queryStr = ` 
@@ -107,6 +108,7 @@ let moduleDependence = async function (mdArray) {
         await queryFunc(queryStr);
     }
 
+    //对##all表编号,插入##allRank
     str = `insert into ##allRank 
     select 
      a.Form_ID as Form_ID,
@@ -115,7 +117,7 @@ let moduleDependence = async function (mdArray) {
      row_number()over(order by (select 0)) as [No] 
     from ##all a`
 
-    console.dir('22222999999999999999999')
+
     await queryFunc(str);
 
 
@@ -130,9 +132,7 @@ let moduleDependence = async function (mdArray) {
 
 //总调用执行
 let abc = async function (moduleArray) {
-    console.dir('tttttttttttttttttttttttt')
-    console.dir(moduleArray)
-
+   
     await moduleDependence(moduleArray);
     console.dir('第二部')
 

@@ -33,7 +33,7 @@ let diff = async function (arr) {
     /**第二步,过滤非对象*/
 
     let dependencyObj = new Array();  //接受经过过滤的对象,第一阶段输出数组,过滤非数据库对象
-    console.dir(tmpDependencyObj)
+    //  console.dir(tmpDependencyObj)
     for (let element of tmpDependencyObj) { //这里将把select误添加的字段,进行过滤
         let para1 = `'` + element + `'`;
         let para2 = `'` + element + `'`;
@@ -95,9 +95,9 @@ let diff = async function (arr) {
 //名字修整,去掉空格和[]
 let proc = function (arr) { //这个函数是去掉 空格,[和]
     arr = arr.map(
-            v =>   v.split((/[\s]/))
-                    .filter( v => (v == '') ? false : true)
-                    .map(v => v.replace(/[\[\]]/g, ''))
+        v => v.split((/[\s]/))
+            .filter(v => (v == '') ? false : true)
+            .map(v => v.replace(/[\[\]]/g, ''))
     )
 
     arr = Array.prototype.concat.apply([], arr)
@@ -191,17 +191,18 @@ let add = function (str) {
 
 
     a = proc(a)
+   // console.dir(a)
 
     let u = []
-  /*   console.dir("******************************")
-    console.dir(a) */
+    /*   console.dir("******************************")
+      console.dir(a) */
     a.forEach((element, index, arr) => {
-        if (element != 'into' || index==arr.length-1) {
+        if (element != 'into' || index == arr.length - 1) {
             return;
         }
         let tmp = arr[index + 1]
-     /*    console.dir(element)
-        console.dir(index) */
+        /*    console.dir(element)
+           console.dir(index) */
 
         if (tmp.length <= 2) {
             for (let i = index + 2; i <= arr.length - 1; i++) {
@@ -215,6 +216,7 @@ let add = function (str) {
         }
     });
     u = u.map(v => v.split('.').pop())
+    u = u.filter(v => (v == 'into') ? false : true) //这里是过滤into,因为游标中的into,会导致into的误添加
 
     return u
 }
@@ -260,6 +262,7 @@ let generalSql = async function (str) {
     let union = new Set([...c, ...u, ...d]);
     let difference = new Set([...r].filter(x => !union.has(x)));    //在r中减去cud
     r = Array.from(difference);
+    
 
     //如果过滤之后还有剩
     if (r.length != 0) {
@@ -388,15 +391,15 @@ let builtInCURD = async function (str) {
             let m = str.match(reg)
             m = [m[2]] //m[2]产生的是一个字符串,但是proc是处理数组所以这里加[]           
             m = proc(m)
-           
+
 
             if (m != undefined || m != null || m.length != 0) {
-                console.dir(m)
-                console.dir('********************')
-                
+                /*  console.dir(m)
+                 console.dir('********************') */
+
                 m = await diff(m)
-               
-                m=m.nonTable //这里出来的结果只能是视图或者存储过程
+
+                m = m.nonTable //这里出来的结果只能是视图或者存储过程
                 if (m != []) {
                     for (let obj of m) {
                         let tmpLineStr = await queryFunc('exec sp_helptext ' + obj);
@@ -405,7 +408,7 @@ let builtInCURD = async function (str) {
                             tmpStr += i.Text;
                         }
                         // console.dir('>>>>>>>>>>>>>>>>>>>>>start:'+obj)
-                        console.dir(tmpStr)
+                        //   console.dir(tmpStr)
                         let r = await generalSql(tmpStr);//递归本身
                         // console.dir('<<<<<<<<<<<<<<<<<<<<<<<<<end:'+obj)
 

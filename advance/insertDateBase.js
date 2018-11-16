@@ -3,13 +3,26 @@
 var Connection = require('tedious').Connection,
     TYPES = require('tedious').TYPES;
 
+
+
+
+
+
+
+
 var connection = new Connection({
-    server: '192.168.1.212',
-    userName: 'test',
-    password: 'test'
+    server: '10.34.1.77',
+    userName: 'zxb',
+    password: 'zxb123',
+    options: {
+        port: 1433,
+        database: 'acticle',
+        rowCollectionOnDone: true,
+        encrypt:false
+    }
 });
 
-const table = '[dbo].[test_bulk]';
+const table = '[dbo].[absd]';
 
 function loadBulkData() {
     var option = { keepNulls: true }; // option to honor null
@@ -21,12 +34,12 @@ function loadBulkData() {
         connection.close();
     });
     // setup columns
-    bulkLoad.addColumn('c1', TYPES.Int, { nullable: true });
-    bulkLoad.addColumn('c2', TYPES.NVarChar, { length: 50, nullable: true });
+    bulkLoad.addColumn('formID',TYPES.NVarChar, { length: 50, nullable: true });
+    bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 50, nullable: true });
 
     // add rows
-    bulkLoad.addRow({ c2: 'hello' });
-    bulkLoad.addRow({ c2: 'bulkLoad' });
+    bulkLoad.addRow({ tableName: 'bulkLoad',formID: 'hello' });
+
 
     // perform bulk insert
     connection.execBulkLoad(bulkLoad);
@@ -39,3 +52,7 @@ connection.on('connect', function (err) {
     }
     loadBulkData();
 });
+
+module.exports = queryFunc
+
+// node advance/insertDateBase.js

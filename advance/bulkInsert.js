@@ -1,73 +1,107 @@
 
 var ConnectionPool = require('tedious-connection-pool');
-var Request = require('tedious').Request;
+var TYPES = require('tedious').TYPES;
 
+
+//批量插入函数
+
+
+
+//连接池配置
 var poolConfig = {
     min: 6,
     max: 8,
     log: false
 };
 
+//数据连接配置
 var connectionConfig = {
-    userName: 'cqread',
-    password: 'read123',
-    server: '10.34.1.70',
-
+    userName: 'zxb',
+    password: 'zxb123',
+    server: '10.34.1.77',
     options: {
         port: 1433,
-        database: 'cyerp',
-        rowCollectionOnDone: true
-
+        database: 'acticle',
+        rowCollectionOnDone: true,
+        encrypt: false
     }
-
 };
 
+//建立连接池实例
 var pool = new ConnectionPool(poolConfig, connectionConfig);
 
-pool.on('error', function (err) {
 
-    //console.error(err);
+//连接池开启
+pool.on('error', function (err) {
+    console.dir("连接池开启错误!")
+    console.error(err);
 });
 
 
+let ins = async function (arr) {
+    let flag = 0;
 
-pool.acquire(function (err, connection) {
 
+    pool.acquire(function (err, connection) {
+        if (err) {
+            console.dir('从连接池中获取连接错误!')
+            //console.error(err);
+            return;
+        }
 
-    if (err) {
+        function loadBulkData() {
 
-        console.dir('111111111connection1111111')
-        //console.error(err);
-        return;
-    }
+            const table = '[dbo].[absd]';
 
-    const table = '[dbo].[test_bulk]';
+            //批量插入配置
+            var option = { keepNulls: true }; // option to honor null
 
-    function loadBulkData() {
-        var option = { keepNulls: true }; // option to honor null
-        var bulkLoad = connection.newBulkLoad(table, option, function (err, rowCont) {
-            if (err) {
-                throw err;
+            //新建批量插入实例
+            var bulkLoad = connection.newBulkLoad(table, function (err, rowCont) {
+                if (err) {
+                    console.dir("批量插入实例新建错误!")
+                    throw err;
+                }
+                console.log('rows inserted :', rowCont);
+                connection.release();
+                flag = 1
+            });
+
+            // setup columns
+            bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 50, nullable: true });
+            bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 50, nullable: true });
+
+            // add rows
+            for (let item of arr) {
+                //  { tableName: 'bulkLoad', formID: 'hello' }
+                bulkLoad.addRow(item);
             }
-            console.log('rows inserted :', rowCont);
-            connection.release();
-        });
-        // setup columns
-        bulkLoad.addColumn('c1', TYPES.Int, { nullable: true });
-        bulkLoad.addColumn('c2', TYPES.NVarChar, { length: 50, nullable: true });
 
-        // add rows
-        bulkLoad.addRow({ c2: 'hello' });
-        bulkLoad.addRow({ c2: 'bulkLoad' });
 
-        // perform bulk insert
-        connection.execBulkLoad(bulkLoad);
+            // perform bulk insert
+            connection.execBulkLoad(bulkLoad);
+        }
+
+        loadBulkData();
+    })
+
+
+    while (flag === 0) { //一直循环等待，知道flg不等于0
+        require('deasync').runLoopOnce();
     }
+}
+//从连接池中获得一个连接
 
-    loadBulkData();
+// module.exports = bulkLoad
 
 
 
+// { tableName: 'bulkLoad', formID: 'hello' }
 
+// node advance/bulkInsert.js
+let a=[
+    { tableName: 'bulkLoad', formID: 'hello' },
+    { tableName: 'a', formID: 'b' }
+]
 
-})
+ins(a)

@@ -26,6 +26,7 @@ let rowItem = async function (rows) {
     if (item.type == 'tbl') {
         console.dir('tbl')
         output.select.push(item.Table_Name);
+      
     }
     //如果是视图
     else if (item.type == 'vw') {
@@ -41,10 +42,10 @@ let rowItem = async function (rows) {
     //如果是方法
     else if (item.type == 'esql') {
         tmp = await builtInCURD(item.Table_Name)
-        output.add = output.add.concat(re.c);
-        output.update = output.update.concat(re.u);
-        output.select = output.select.concat(re.r);
-        output.delete = output.delete.concat(re.d);
+        output.add = output.add.concat(tmp.c);
+        output.update = output.update.concat(tmp.u);
+        output.select = output.select.concat(tmp.r);
+        output.delete = output.delete.concat(tmp.d);
 
     }
     //表单自身的表
@@ -54,7 +55,9 @@ let rowItem = async function (rows) {
     }
     //什么都不是
     else {
-    }   
+    }
+    
+    console.dir(output)
 
 }
 
@@ -89,7 +92,8 @@ let centerControl = async function () {
 
 let am = [{
     Form_ID: '20080305115642',
-    Table_Name: 'ExecuteSQL(,cyerp.dbo.stHr_deptRelation)',
+    Table_Name: `ExecuteSQL(data,select  left(a.DEPTNAME,CHARINDEX('公安局',a.DEPTNAME)-1)
+     dept  from CyErp..readidcard a where a.IDCARD=[Form$.MainForm.TextBox10])`,
     type: 'esql',
     No: '2'
 }]
