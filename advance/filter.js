@@ -110,6 +110,7 @@ let read = function (str) {
     // from/join
     let Rreg = /(?<=(from|join)\s+\[?)([^,\s\(\)\[\]]+)(?=\]?[\s\(])/ig //查
     //查R
+    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" )
     let r = (str.match(Rreg) == null) ? [] : str.match(Rreg)
     r = proc(r)
 
@@ -124,6 +125,7 @@ let modify = function (str) {
     let Ureg = /(from|update|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^,\s\(\)\[\]]+)(?=[\s])/ig   // 改
 
     //改U
+    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" ) //删除游标
     let a = (str.match(Ureg) == null) ? [] : str.match(Ureg)
 
     a = proc(a)
@@ -154,31 +156,40 @@ let modify = function (str) {
 //正常的删除方法
 let dele = function (str) {
     //delete
-    let Dreg = /(from|delete|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^,\s\(\)\[\]]+)(?=[\s])/ig   //删
+    let Dreg = /(from|delete\s+from|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^,\s\(\)\[\]]+)(?=[\s])/ig   //删
     //删D
+    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" )
     let a = (str.match(Dreg) == null) ? [] : str.match(Dreg)
+   
     a = proc(a)
+    
 
     let u = []
     a.forEach((element, index, arr) => {
         if (element != 'delete') {
             return;
         }
-        let tmp = arr[index + 1]
+        if (arr[index + 1] != 'from') {
+            return;
+        }
+//前面两个delete,from 表示必须delete 后面挨着from 采可以 
+// 因为  ExecuteSQL(,delete from  cyerp..tblbase_hr_holiday  where id=[SYSVAR$.ID]  delete from cyerp..tblbase_hr_holiday_sub where parentid=[SYSVAR$.ID])
+        let tmp = arr[index + 2]
 
         if (tmp.length <= 2) {
-            for (let i = index + 2; i <= arr.length - 1; i++) {
+            for (let i = index + 3; i <= arr.length - 1; i++) {
                 if (arr[i + 1] == tmp) {
                     u.push(arr[i])
                     break
                 }
             }
         } else {
-            u.push(arr[index + 1])
+            u.push(arr[index + 2])
         }
     });
     u = u.map(v => v.split('.').pop())
 
+    
     return u
 }
 
@@ -187,11 +198,13 @@ let add = function (str) {
     //insert into
     let Creg = /(from|into|join)\s+\[?([^,\s\(\)\[\]]+)\]?(\s+([^,\s\(\)\[\]]+))?(?=[\(\s])/ig   // 增 
     //增C
+    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" )
+   
     let a = (str.match(Creg) == null) ? [] : str.match(Creg)
 
 
     a = proc(a)
-   // console.dir(a)
+   
 
     let u = []
     /*   console.dir("******************************")
@@ -259,12 +272,15 @@ let generalSql = async function (str) {
 
     //查询
     let r = read(str)
+  
+
     let union = new Set([...c, ...u, ...d]);
     let difference = new Set([...r].filter(x => !union.has(x)));    //在r中减去cud
     r = Array.from(difference);
+   
     
 
-    //如果过滤之后还有剩
+    //如果过滤之后还有剩  这里有一个需要注意的地方如果是非CyErp中的表,那么会被识别为非对象,进而不会保留!
     if (r.length != 0) {
         //因为只有查询才会有非表对象,或者非对象,所以进行过滤,并求递归依赖
         let k = await diff(r)   //只有在查询中存在非对象和非表对象,所以需要执行diff函数进行筛选和分类
@@ -327,7 +343,7 @@ let generalSql = async function (str) {
 }
 
 
-let builtInCURD = async function (str) {
+let parse = async function (str) {
 
     //返回结果
     let returnResult = { c: [], u: [], r: [], d: [] }
@@ -344,7 +360,7 @@ let builtInCURD = async function (str) {
     // executeSql 方法
     let Ereg = /^ExecuteSQL/
     //前面一个的子集,executeSql 里的直接执行视图或存储过程
-    let reg = /^ExecuteSQL\([^,]*,(exec)?\[?([^,\(\)\[\]]+)\]?[\s\(,\)]/
+    let reg = /^ExecuteSQL\([^,]*,(exec)?\s*\[?([^,\(\)\[\]]+)\]?[\s\(,\)]/
 
 
 
@@ -388,16 +404,26 @@ let builtInCURD = async function (str) {
             tmp = k   //执行这步说明是一般的executesql方法
         } else {
             //2.执行到这里说明是特殊的executesql
+           /*  console.dir('$$$$$$$$$$$$$$$$$')
+            console.dir(str) */
             let m = str.match(reg)
-            m = [m[2]] //m[2]产生的是一个字符串,但是proc是处理数组所以这里加[]           
+         
+
+            
+            m = [m.pop()] //m[2]产生的是一个字符串,但是proc是处理数组所以这里加[]     
+          
+            
+                  
             m = proc(m)
+            
 
 
             if (m != undefined || m != null || m.length != 0) {
                 /*  console.dir(m)
                  console.dir('********************') */
 
-                m = await diff(m)
+                m = await diff(m) //过滤非对象
+            
 
                 m = m.nonTable //这里出来的结果只能是视图或者存储过程
                 if (m != []) {
@@ -407,9 +433,11 @@ let builtInCURD = async function (str) {
                         for (let i of tmpLineStr) {
                             tmpStr += i.Text;
                         }
+                       
                         // console.dir('>>>>>>>>>>>>>>>>>>>>>start:'+obj)
                         //   console.dir(tmpStr)
                         let r = await generalSql(tmpStr);//递归本身
+                     
                         // console.dir('<<<<<<<<<<<<<<<<<<<<<<<<<end:'+obj)
 
                         //  console.dir('第几层:'+aa)
@@ -431,6 +459,7 @@ let builtInCURD = async function (str) {
         returnResult.d = returnResult.d.concat(tmp.d)
 
 
+
         return returnResult
 
 
@@ -439,30 +468,62 @@ let builtInCURD = async function (str) {
 
     //如果进行到了这一步,说明是不是表单中的方法,是视图定义
 
-    let t = generalSql(str)
+    
+
+    let t =await generalSql(str)
+  
+
     returnResult.c = returnResult.c.concat(t.c)
     returnResult.u = returnResult.u.concat(t.u)
     returnResult.r = returnResult.r.concat(t.r)
     returnResult.d = returnResult.d.concat(t.d)
-
     return returnResult;
 
 }
 
 
+let builtInCURD=async function(str){
+    let returnResult=await parse(str)
+    
 
-/* str = `DeleteData([tblWarehouse_MonthMateriel_Plan],[tblWarehouse_MonthMateriel_Plan.ID]=[Form$.MainForm.IntegerBox20])
- 
+    //过滤#号临时表
+    returnResult.c=returnResult.c.filter(v=>/\#/.test(v)?false:true)
+    returnResult.u=returnResult.u.filter(v=>/\#/.test(v)?false:true)
+    returnResult.r=returnResult.r.filter(v=>/\#/.test(v)?false:true)
+    returnResult.d=returnResult.d.filter(v=>/\#/.test(v)?false:true)
+
+
+    returnResult.c=Array.from(new Set( returnResult.c))
+    returnResult.u=Array.from(new Set( returnResult.u))
+    returnResult.r=Array.from(new Set( returnResult.r))
+    returnResult.d=Array.from(new Set(returnResult.d))
+
+    return returnResult
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ str = `ExecuteSQL(,delete from  cyerp..tblbase_hr_holiday  where id=[SYSVAR$.ID]  delete from cyerp..tblbase_hr_holiday_sub where parentid=[SYSVAR$.ID])
 `
 let abc=async function(){
-    let s = await builtInCURD(str);
- //  let s=await diff(['tblHR_MonthAttendance'])
+ //   let s = await builtInCURD(str);
+   let s= dele(str)
     console.dir('end result:')
     console.dir(s)
-} */
+}  
 
 //[ 'tblHR_DimissionReason', 'tblHR_MonthAttendance' ]
-//abc()
+ abc()  */
 
 
 //   node advance/filter.js
@@ -472,7 +533,7 @@ let abc=async function(){
 //console.dir(read(str))
 
 
-module.exports = builtInCURD
+ module.exports = builtInCURD
 
 
 

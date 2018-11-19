@@ -1,8 +1,18 @@
 
-let str='ExecuteSQL(,cyerp.dbo.stHr_deptRelation)'
-let reg = /^ExecuteSQL\([^,]*,(exec)?\[?([^,\(\)\[\]]+)\]?[\s\(,\)]/  
+let aa= [ 'tblHR_DefinitionPay_Salary',
+'tblHR_DefinitionPay_Salary',
+'tblHR_DefinitionPay_Salary',
+'tblHR_DefinitionPay_Salary',
+'tblHR_DefinitionPay_Salary',
+'tblHR_DefinitionPay_Salary',
+'tblHR_DefinitionPay_Salary' ]
 
-let a=str.match(reg)
-            console.dir(a)
+
+let c=Array.from(new Set(aa))
+console.dir(c)
+
+
+
+// node ./advance/tt.js
 
             

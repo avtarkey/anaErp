@@ -38,7 +38,9 @@ pool.on('error', function (err) {
 });
 
 
-let ins = async function (arr) {
+let ins = async function (formID,arr,table) {
+    console.dir('%%%%%%%%%%%%%%%%%')
+    console.dir(formID)
     let flag = 0;
 
 
@@ -51,7 +53,7 @@ let ins = async function (arr) {
 
         function loadBulkData() {
 
-            const table = '[dbo].[absd]';
+           // const table = '[dbo].[absd]';
 
             //批量插入配置
             var option = { keepNulls: true }; // option to honor null
@@ -74,7 +76,7 @@ let ins = async function (arr) {
             // add rows
             for (let item of arr) {
                 //  { tableName: 'bulkLoad', formID: 'hello' }
-                bulkLoad.addRow(item);
+                bulkLoad.addRow([formID,item]);
             }
 
 
@@ -92,16 +94,16 @@ let ins = async function (arr) {
 }
 //从连接池中获得一个连接
 
-// module.exports = bulkLoad
+ module.exports = ins
 
 
 
 // { tableName: 'bulkLoad', formID: 'hello' }
 
 // node advance/bulkInsert.js
-let a=[
+/* let a=[
     { tableName: 'bulkLoad', formID: 'hello' },
     { tableName: 'a', formID: 'b' }
 ]
 
-ins(a)
+ins(a) */

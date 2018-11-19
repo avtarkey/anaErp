@@ -1,7 +1,7 @@
 
-let queryFunc = require('./queryFuncDefine.js');
-let centerControl = require('./centerControl.js');
-let insertData = require('./insertDateBase.js')
+let queryFunc = require('./queryFuncDefine.js');  //这个是执行查询的函数
+let centerControl = require('./centerControl.js'); //这个是中间处理的
+
 
 
 //根据模块ID数组,求出所有的依赖,并插入##all数据表
