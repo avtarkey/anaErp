@@ -38,12 +38,10 @@ pool.on('error', function (err) {
 });
 
 
-let ins = async function (formID,arr,table) {
-  
+let ins = async function (formID, arr, table) {
+    // formID对应formID字段,arr对应tableName字段,table表示要插入哪个表
 
-    let flag = 0;
-
-
+    let flag = 0;//用于一部结束的标记
     pool.acquire(function (err, connection) {
         if (err) {
             console.dir('从连接池中获取连接错误!')
@@ -53,7 +51,7 @@ let ins = async function (formID,arr,table) {
 
         function loadBulkData() {
 
-           // const table = '[dbo].[absd]';
+            // const table = '[dbo].[absd]';
 
             //批量插入配置
             var option = { keepNulls: true }; // option to honor null
@@ -76,7 +74,7 @@ let ins = async function (formID,arr,table) {
             // add rows
             for (let item of arr) {
                 //  { tableName: 'bulkLoad', formID: 'hello' }
-                bulkLoad.addRow([formID,item]);
+                bulkLoad.addRow([formID, item]);
             }
 
 
@@ -94,7 +92,7 @@ let ins = async function (formID,arr,table) {
 }
 //从连接池中获得一个连接
 
- module.exports = ins
+module.exports = ins
 
 
 

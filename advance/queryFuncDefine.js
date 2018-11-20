@@ -4,12 +4,14 @@
 var ConnectionPool = require('tedious-connection-pool');
 var Request = require('tedious').Request;
 
+//连接池配置
 var poolConfig = {
   min: 10,
   max: 12,
   log: false
 };
 
+//连接配置
 var connectionConfig = {
   userName: 'cqread',
   password: 'read123',
@@ -29,9 +31,9 @@ var pool
 
 let a = 1
 let queryFunc = async (queryString) => {
-  console.dir('正在插入数据库.......')
+  console.dir('正在查询数据库.......')
  
-  if (a == 1) {
+  if (a == 1) {  //如果是第一次调用这个函数就新建连接池
     //create the pool
     pool = new ConnectionPool(poolConfig, connectionConfig);
 

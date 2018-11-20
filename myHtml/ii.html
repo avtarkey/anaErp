@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
 
-    <style>
+        <style>
         .link {
             fill: none;
             stroke: #666;
@@ -46,10 +46,11 @@
             border: 7px solide rgb(226, 24, 24);
             display: float
         }
+         
     </style>
+        <!-- 自己定义的css -->
 
-    <!-- 自己定义的css -->
-    <style>
+        <style>
         #tree {
             position: absolute;
             overflow: hidden
@@ -64,65 +65,73 @@
             width: 5000px;
         }
     </style>
+        <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://localhost:3000/static/javascripts/md5.js"></script>
+        <script src="http://localhost:3000/static/javascripts/d3.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="http://localhost:3000/static/easyUI/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css"
+            href="http://localhost:3000/static/easyUI/themes/icon.css">
+        <link rel="stylesheet" type="text/css"
+            href="http://localhost:3000/static/easyUI/demo/demo.css">
+        <script type="text/javascript"
+            src="http://localhost:3000/static/easyUI/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="http://localhost:3000/static/easyUI/jquery.easyui.min.js"></script>
+    </head>
 
-    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://localhost:3000/static/javascripts/md5.js"></script>
+    <body>
 
-    <script src="http://localhost:3000/static/javascripts/d3.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/themes/default/easyui.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/themes/icon.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/easyUI/demo/demo.css">
-    <script type="text/javascript" src="http://localhost:3000/static/easyUI/jquery.min.js"></script>
-    <script type="text/javascript" src="http://localhost:3000/static/easyUI/jquery.easyui.min.js"></script>
-</head>
 
-<body>
-    <script>
-    </script>
-            
 
-    <!-- 树形菜单html -->
-    <div id='tree'>
-        <h2>CheckBox Tree</h2>
-        <p>Tree nodes with check boxes.</p>
-        <button onclick="saveData()">Save It!</button>
+ <!-- 树形菜单html -->
+        <div id='tree'>
+            <h2>CheckBox Tree</h2>
+            <p>Tree nodes with check boxes.</p>
+            <button onclick="saveData()">Save It!</button>      <!--保存图形按钮-->
 
-        <button onclick="myFunction()">Click me</button>
+            <button onclick="myFunction()">Hide</button>    <!--隐藏终结点连线-->
 
-        <div style="margin:20px 0;">
-            <a href="#" class="easyui-linkbutton" onclick="getChecked()">GetChecked</a>
+            <div style="margin:20px 0;">                        <!--得到图形-->
+                <a href="#" class="easyui-linkbutton" onclick="getChecked()">GetChecked</a>
+            </div>
+
+            <div style="margin:10px 0">                         <!--是否级联选中和只叶子节点-->
+                <input type="checkbox"
+                    onchange="$('#tt').tree({cascadeCheck:$(this).is(':checked')})">CascadeCheck
+                <input type="checkbox"
+                    onchange="$('#tt').tree({onlyLeafCheck:$(this).is(':checked')})">OnlyLeafCheck
+            </div>
+
+
+            <div class="easyui-panel" style="padding:5px" height="1000"
+                width="300">                                    <!--设定图形的显示区域-->
+                <ul id="tt"></ul>
+            </div>
+
         </div>
-        <div style="margin:10px 0">
-            <input type="checkbox" onchange="$('#tt').tree({cascadeCheck:$(this).is(':checked')})">CascadeCheck
-            <input type="checkbox" onchange="$('#tt').tree({onlyLeafCheck:$(this).is(':checked')})">OnlyLeafCheck
-        </div>
-        <div class="easyui-panel" style="padding:5px" height="1000" width="300">
-            <ul id="tt"></ul>
+
+<!-- 力图显示html -->
+        <div id='dia' style="border: 3px solid #010101;">
+            <div id='diamond'></div>
         </div>
 
-
-    </div>
-
-    <!-- 力图显示html -->
-    <div id='dia' style="border: 3px solid #010101;">
-        <div id='diamond'></div>
-    </div>
-
-    <!-- 这个是树形图的js -->
-    <script type="text/javascript">
-        var slfmd; //本页面显示的是哪个模块
-
-        $('#tt').tree({
+<!-- 这个是树形图的js -->
+        <script type="text/javascript">
+        var slfmd;                  //本页面显示的是哪个模块
+        
+        $('#tt').tree({             //树形节点绑定数据
             url: 'static/jsonFile/tree_data.json',
             method: 'get',
             animate: true,
             checkbox: true
         });
 
-        function getChecked() {
+        
+        function getChecked() {     //按钮的点击事件方法
             var nodes = $('#tt').tree('getChecked');
             var s = '';
-            var postData = [];//提交到数据库的json
+            var postData = [];      //存储提交到数据库的json
 
             for (var i = 0; i < nodes.length; i++) {
                 if (s != '') s += ',';
@@ -135,10 +144,11 @@
                 postData.push(temp);
                 slfmd=nodes[i].id;
             }
+
             alert(postData[0].id);           
             
             console.dir(postData);
-            if (nodes.length > 1) {
+            if (nodes.length > 1) {     //如果选中的节点大于一个
                 alert('请输入一个');
                 return;
             }
@@ -148,25 +158,26 @@
                 type: "post",
                 url: "http://localhost:3000/users/process_get",
                 contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(postData),
+                data: JSON.stringify(postData),                     //postData是发送到后端的数据
                 dataType: "json",
-                success: function (resultJson) {
+                success: function (resultJson) {                    //resultJson是后端返回前端的结果
                     console.dir(resultJson);
                     console.log('8888888')
-                    if(resultJson.isExist==0){
+                    if(resultJson.isExist==0){                      //是否是以前查询过得
                         console.dir(resultJson.body);
-                        let a = cht2zh(resultJson.body);//交给百度翻译
+                        let a = cht2zh(resultJson.body);            //交给百度翻译
                         a.then(
                             (value) => {
-                                let a=new Object();
+                                let a=new Object();                 //这个是返回对象
 
 
-                                a.isExist=resultJson.isExist;
+                                a.isExist=resultJson.isExist;       //组装要返回的对象
                                 a.body=value;
-                                console.log('这个是返回的数据')// 这个是最后的返回
+
+                                console.log('这个是返回的数据')       // 这个是最后的返回
                                 console.dir(a);
                                 console.log('返回打印结束')
-                                showForceGraph(a);
+                                showForceGraph(a);                  //交给图形显示
                             }
                         )
                     }else{
@@ -182,15 +193,16 @@
     </script>
 
 
-    <!-- 这个是力导图的js -->
-    <script>
-        let sendData=new Object();
-            
-        sendData.dt={}; //发送数据对象
-        let myFun; //保存是需要执行的函数
-            
-        function saveData(){  
-                myFun();             
+<!-- 这个是力导图的js 函数库 -->
+        <script>
+
+        let sendData=new Object();            
+        sendData.dt={};                             //存储在保存是发送到后端的数据对象
+        let myFun;                                  //保存是需要执行的函数(将图形数据保存进全局变量sendData)
+           
+        
+        function saveData(){                        //保存图形的函数
+                myFun();                            //将图形数据保存进全局变量sendData
                 alert('發送');
                // console.dir(sendData)
 
@@ -212,13 +224,13 @@
             }
        
        
-        var flg='0';//是否透明的标志
-       
-        //这个是连线透明函数
-       var  myFunction=()=>{
-            d3.selectAll(".edgepath").filter(function(d, i) { 
-                let a=d.target;
-                if(a.in!=0 && a.out==0){
+        var flg='0';                                //记录当前是否透明的标志 
+        var  myFunction=()=>{                       //这个是连线透明函数
+
+
+            d3.selectAll(".edgepath").filter(function(d, i) {    //首先选中终结点
+                let a=d.target;                     //连线的目标节点
+                if(a.in!=0 && a.out==0){            //目标节点只进不出,也就是终节点
                     return 1
                 }
                 if(d.sgn=='0'){
@@ -226,7 +238,7 @@
                 }
               
             })
-                .attr({
+                .attr({                             //判断当前的透明全局透明状态,如果透明就切换到不透明,否则就透明
                     'stroke-opacity':function(d){
                         if(flg=='0'){
                             return '0';
@@ -246,15 +258,17 @@
 
              
         }
-
-        let showForceGraph = (flinks) => {
+     
+       
+     
+       let showForceGraph = (flinks) => {           //依据后端返回的数据显示图形
                              
            let mylinks=new Array();
 
-            if(flinks.isExist==0){ //不存在
+            if(flinks.isExist==0){                  //不存在
                  mylinks = flinks.body
             }
-            else{//存在
+            else{                                   //存在
                  mylinks = flinks.body.links
             }
            
@@ -295,7 +309,7 @@
             let graph=new Object();
             
             //开始进行判断
-            if(flinks.isExist==0){ //如果不存在
+            if(flinks.isExist==0){  //如果不存在
                 links.forEach(function(link){
                     if(link.belongModuleID!=slfmd){
                         link.source=link.source+'<>'+link.belongModule;
@@ -353,7 +367,7 @@
                 graph.nodes=nodes;//對象
                 graph.links=links; //數組           
             }
-            else{ //如果存在
+            else{                   //如果存在
                 
                 var myNodes = {}; //是一个对象   
                 var myLinks=flinks.body.links;
@@ -371,13 +385,13 @@
             var width = 5000,
                 height = 3000;
 
-            var force = d3.layout.force()//layout将json格式转化为力学图可用的格式
-                .nodes(d3.values(graph.nodes))//设定节点数组
-                .links(graph.links)//设定连线数组
-                .size([width, height])//作用域的大小
-                .linkDistance(100)//连接线长度
-                .charge(-3000)//顶点的电荷数。该参数决定是排斥还是吸引，数值越小越互相排斥
-                .on("tick", tick)//指时间间隔，隔一段时间刷新一次画面
+            var force = d3.layout.force()               //layout将json格式转化为力学图可用的格式
+                .nodes(d3.values(graph.nodes))          //设定节点数组
+                .links(graph.links)                     //设定连线数组
+                .size([width, height])                  //作用域的大小
+                .linkDistance(100)                      //连接线长度
+                .charge(-3000)                          //顶点的电荷数。该参数决定是排斥还是吸引，数值越小越互相排斥
+                .on("tick", tick)                       //指时间间隔，隔一段时间刷新一次画面
                 .on('end',function(){
                 })
                 if(flinks.isExist==1){
@@ -392,7 +406,7 @@
         
                 console.dir(d3.values(graph.nodes))
              
-                force.start();//开始转换
+                force.start();                          //开始转换
 
 
             var svg = d3.select("#diamond").append("svg")
@@ -404,19 +418,21 @@
                 svg.append("marker")
                     //.attr("id", function(d) { return d; })
                     .attr("id", "resolved")
-                    .attr("markerUnits","strokeWidth")//设置为strokeWidth箭头会随着线的粗细发生变化
+                    .attr("markerUnits","strokeWidth")          //设置为strokeWidth箭头会随着线的粗细发生变化
                     .attr("markerUnits", "userSpaceOnUse")
-                    .attr("viewBox", "0 -5 10 10")//坐标系的区域
-                    .attr("refX", 33)//箭头坐标
+                    .attr("viewBox", "0 -5 10 10")              //坐标系的区域
+                    .attr("refX", 33)                           //箭头坐标
                     .attr("refY", 0)
-                    .attr("markerWidth", 12)//标识的大小
+                    .attr("markerWidth", 12)                    //标识的大小
                     .attr("markerHeight", 12)
-                    .attr("orient", "auto")//绘制方向，可设定为：auto（自动确认方向）和 角度值
-                    .attr("stroke-width", 2)//箭头宽度
+                    .attr("orient", "auto")                     //绘制方向，可设定为：auto（自动确认方向）和 角度值
+                    .attr("stroke-width", 2)                    //箭头宽度
                     .append("path")
-                    .attr("d", "M0,-5L10,0L0,5")//箭头的路径
-                    .attr('fill', '#000000');//箭头颜色
-//设置连接线    
+                    .attr("d", "M0,-5L10,0L0,5")                //箭头的路径
+                    .attr('fill', '#000000');                   //箭头颜色
+
+
+            //设置连接线    
             var edges_line = svg.selectAll(".edgepath")
                 .data(force.links())
                 .enter()
@@ -440,17 +456,19 @@
                 .style("stroke", function (d) {
                     var lineColor;
                     //根据关系的不同设置线条颜色
-                    if (d.rela == "上位产品") { //外部的连线
+                    if (d.rela == "上位产品") {                 //外部的连线
                         lineColor = "#4bc110";
-                    } else if (d.rela == "主营产品") {//内部连线
+                    } else if (d.rela == "主营产品") {          //内部连线
                         lineColor = "#f96959";
                     }
                     return lineColor;
                 })
                 .style("pointer-events", "none")
-                .style("stroke-width", 2)//线条粗细
-                .attr("marker-end", "url(#resolved)");//根据箭头标记的id号标记箭头
-//edge文字开始
+                .style("stroke-width", 2)                       //线条粗细
+                .attr("marker-end", "url(#resolved)");          //根据箭头标记的id号标记箭头
+
+
+            //edge文字开始
             var edges_text = svg.append("g").selectAll(".edgelabel")
                 .data(force.links())
                 .enter()
@@ -477,21 +495,21 @@
                 });
 
 
-//圆圈
+            //圆圈
             var circle = svg.append("g").selectAll("circle")
-                .data(force.nodes())//表示使用force.nodes数据
+                .data(force.nodes())                            //表示使用force.nodes数据
                 .enter().append("circle")
                 .style("fill", function (node) {
-                    var color;//圆圈背景色
+                    var color;                                  //圆圈背景色
                     var link = links[node.index];
                     
                    if(node.in!=0 && node.out!=0) {
-                        color = "#F9EBF9";//中间节点
+                        color = "#F9EBF9";                      //中间节点
                     }else if(node.in==0 && node.out!=0){
-                        color='#70bbdf'//开始节点
+                        color='#70bbdf'                         //开始节点
 
                     }else if(node.in!=0 && node.out==0){
-                        color='#a784d4'//终结点
+                        color='#a784d4'                         //终结点
 
                     }else if (node.selfModu == '1') {
                         //console.dir(node)
@@ -503,7 +521,7 @@
                     }else{
 
                     }
-//外模块的颜色                   
+                    //外模块的颜色                   
                     if(node.blmdID!=slfmd) 
                     {
                         let a=colorMap.get(node.blmd);
@@ -512,7 +530,7 @@
                     return color;
                 })
                 .style('stroke', function (node) {
-                    var color;//圆圈线条的颜色
+                    var color;                              //圆圈线条的颜色
                     var link = links[node.index];
                     /* try{ link.rela 
                     }catch(e){
@@ -526,7 +544,7 @@
                       
                     } */
                 })
-                .attr("r", 28)//设置圆圈半径
+                .attr("r", 28)                              //设置圆圈半径
                 .on("click", function (node) {
                     //单击时让连接线加粗
                     edges_line.style("stroke-width", function (line) {
@@ -542,12 +560,12 @@
                        // console.log(line);
                        var color;
                        if (line.source.name == node.name || line.target.name == node.name) {
-                            color = '#f22828' //选中是的颜色
+                            color = '#f22828'                           //选中是的颜色
                         }
                         else{
-                            if (line.rela == "上位产品") { //外部的连线
+                            if (line.rela == "上位产品") {              //外部的连线
                                 color = "#4bc110";
-                            } else if (line.rela == "主营产品") {//内部连线
+                            } else if (line.rela == "主营产品") {       //内部连线
                                 color = "#f96959";
                             
                     }                           
@@ -559,7 +577,7 @@
 
 
                 })
-                .call(force.drag)//将当前选中的元素传到drag函数中，使顶点可以被拖动
+                .call(force.drag)                                       //将当前选中的元素传到drag函数中，使顶点可以被拖动
 
                 .on("mouseover", function (d, i) {
                 })
@@ -567,16 +585,16 @@
             //鼠标移出时通过ID移除标签
 
 
-//圆圈文字
+            //圆圈文字
             var text = svg.append("g").selectAll("text")
                 .data(force.nodes())
                 //返回缺失元素的占位对象（placeholder），指向绑定的数据中比选定元素集多出的一部分元素。
                 .enter()
                 .append("text")
                 .attr("dy", ".35em")
-                .attr("text-anchor", "middle")//在圆圈中加上数据  
+                .attr("text-anchor", "middle")                          //在圆圈中加上数据  
                 .style('fill', function (node) {
-                    var color;//文字颜色
+                    var color;                                          //文字颜色
                     var link = links[node.index];
                     if (node.selfModu == '1') {
                         //console.dir(node)
@@ -627,10 +645,10 @@
 
 
 
-            function tick() {
-                //path.attr("d", linkArc);//连接线
-                circle.attr("transform", transform1);//圆圈
-                text.attr("transform", transform2);//顶点文字
+            function tick() {                                   //D3.js呈现
+                //path.attr("d", linkArc);                      //连接线
+                circle.attr("transform", transform1);           //圆圈
+                text.attr("transform", transform2);             //顶点文字
                 edges_line.attr('d', function (d) {
                     var path = 'M ' + d.source.x + ' ' + d.source.y + ' L ' + d.target.x + ' ' + d.target.y;
                     return path;
@@ -677,7 +695,7 @@
                 });
                 
             
-            let gps=()=>{
+            let gps=()=>{           //把图形数据存储进全局变量sendData
 
                 let ibm=new Array();
                 graph.links.forEach(function(item){
@@ -730,13 +748,10 @@
        }
     </script>
 
-
-
-    <!--  这个是翻译简体 -->
-
-    <!-- 向百度发送信息 -->
-    <script type="text/javascript">
-        let trans = (queryString) => {
+<!-- 这个是翻译简体 -->
+<!-- 向百度发送信息 -->
+        <script type="text/javascript">
+        let trans = (queryString) => {          //输入字符串,返回字符串
 
             //console.log(queryString);
             return new Promise(function (resoleve, reject) {
@@ -763,7 +778,6 @@
                     },
                     success: function (data) {
                         //console.dir(query);
-
                         //console.dir(data.trans_result);
                         resoleve(data.trans_result[0].dst);
                     }
@@ -773,9 +787,9 @@
         }
     </script>
 
-    <!--  中间处理 -->
-    <script>
-        let cht2zh = (resultJson) => {
+<!--  百度翻译的中间处理 -->
+        <script>
+        let cht2zh = (resultJson) => {          //调用前面的trans函数
 
             return new Promise((resolve, reject) => {
                 let myArray = new Array(); //临时数组中转
@@ -853,6 +867,6 @@
         }
 
     </script>
-</body>
+    </body>
 
 </html>
