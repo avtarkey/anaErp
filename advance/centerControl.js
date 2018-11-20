@@ -43,7 +43,9 @@ let rowItem = async function (rows) {
     }
     //如果是方法
     else if (item.type == 'esql') {
+        console.dir('111111111111')
         tmp = await builtInCURD(item.Table_Name)
+        console.dir('222222222222222')
         output.add = output.add.concat(tmp.c);
         output.update = output.update.concat(tmp.u);
         output.select = output.select.concat(tmp.r);
@@ -79,8 +81,9 @@ let centerControl = async function () {
     let flag = 0 //是否执行插入的标记
 
     //根据总行数,一行一行的循环调用rowItem
-    for (let i = 1; i <= total; i++) {
+    for (let i = 121; i <= total; i++) {
 
+        console.dir(i)
         //取数据
         str = `select * from ##allRank a where a.[No]='${i}'`
         let row = await queryFunc(str);
@@ -90,49 +93,74 @@ let centerControl = async function () {
             flag = 1
         }
 
+       
+        console.dir(flag)
         //执行插入
         if (flag == 1) {
+
+            console.dir('################')
+            a.add = a.add.map(v => v.toLowerCase())
+            a.delete = a.delete.map(v => v.toLowerCase())
+            a.update = a.update.map(v => v.toLowerCase())
+            a.select = a.select.map(v => v.toLowerCase())
 
             a.add = Array.from(new Set(a.add))
             a.delete = Array.from(new Set(a.delete))
             a.update = Array.from(new Set(a.update))
             a.select = Array.from(new Set(a.select))
-/* console.dir('*************')
-            console.dir(a.add ) */
-
+            /* console.dir('*************')
+                console.dir(a.add ) */
             if (a.add.length != 0) {
                 bulkInsert(fID, a.add, '[dbo].[addTable]')
+                console.dir('add')
+                console.dir(fID)
+
             }
             if (a.delete.length != 0) {
                 bulkInsert(fID, a.delete, '[dbo].[deleteTable]')
+                console.dir('delete')
+                console.dir(fID)
             }
             if (a.update.length != 0) {
                 bulkInsert(fID, a.update, '[dbo].[modifyTable]')
+                console.dir('update')
+                console.dir(fID)
             }
             if (a.select.length != 0) {
                 bulkInsert(fID, a.select, '[dbo].[queryTable]')
+                console.dir('select')
+                console.dir(fID)
             }
 
             a = { add: [], delete: [], update: [], select: [] }
-            
-            flag=0
+            flag = 0
         }
 
         //不执行插入
+       /*  console.dir('&&&&&&&&&&&')
+        console.dir(row) */
         let b = await rowItem(row);
+      /*   console.dir('$$$$$$$$$$$$$')
+        console.dir(b) */
         a.add = a.add.concat(b.add)
         a.delete = a.delete.concat(b.delete)
         a.update = a.update.concat(b.update)
         a.select = a.select.concat(b.select)
 
         fID = row[0].Form_ID
-        if (i == 30) {
+        if (i == 600) {
             return;
         }
     }
 
     //这里的不插入的作用是 当循环完了后,最后一个并没有插入,所以在这里进行插入
     if (a.add.length != 0 || a.delete.length != 0 || a.update.length != 0 || a.select.length != 0) {
+
+
+        a.add = a.add.map(v => v.toLowerCase())
+        a.delete = a.delete.map(v => v.toLowerCase())
+        a.update = a.update.map(v => v.toLowerCase())
+        a.select = a.select.map(v => v.toLowerCase())
 
         a.add = Array.from(new Set(a.add))
         a.delete = Array.from(new Set(a.delete))
@@ -142,19 +170,28 @@ let centerControl = async function () {
 
         if (a.add.length != 0) {
             bulkInsert(fID, a.add, '[dbo].[addTable]')
+            console.dir('add')
+            console.dir(fID)
+
         }
         if (a.delete.length != 0) {
             bulkInsert(fID, a.delete, '[dbo].[deleteTable]')
+            console.dir('delete')
+            console.dir(fID)
         }
         if (a.update.length != 0) {
             bulkInsert(fID, a.update, '[dbo].[modifyTable]')
+            console.dir('update')
+            console.dir(fID)
         }
         if (a.select.length != 0) {
             bulkInsert(fID, a.select, '[dbo].[queryTable]')
+            console.dir('select')
+            console.dir(fID)
         }
 
         a = { add: [], delete: [], update: [], select: [] }
-        flag=0
+        flag = 0
     }
 
 
@@ -164,16 +201,16 @@ let centerControl = async function () {
 
 
 
-/*  let am = 
-  [ { Form_ID: '20080306110505',
-    Table_Name: 'vwBase_Staff',
-    type: 'vw',
-    No: '79' } ] */
+/*   let am = 
+[ { Form_ID: '20080306120034',
+    Table_Name: 'ExecuteSQL(Rst,exec CYERP.dbo.stHr_ResumeCheck [Form$.MainForm.TextBox8],[Form$.MainForm.TextBox10],[Form$.MainForm.TextBox18],[Form$.MainForm.LargeTextBox79],[Form$.MainForm.TextBox15])',
+    type: 'esql',
+    No: '121' } ]  */
 
 
 let abc = async function () {
     let ss = await centerControl()
-    // let ss=await rowItem(am)
+   //  let ss=await rowItem(am)
 
     console.dir('end')
 

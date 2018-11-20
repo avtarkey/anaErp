@@ -110,7 +110,7 @@ let read = function (str) {
     // from/join
     let Rreg = /(?<=(from|join)\s+\[?)([^,\s\(\)\[\]]+)(?=\]?[\s\(])/ig //查
     //查R
-    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" )
+    str = str.replace(/(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "")
     let r = (str.match(Rreg) == null) ? [] : str.match(Rreg)
     r = proc(r)
 
@@ -125,7 +125,7 @@ let modify = function (str) {
     let Ureg = /(from|update|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^,\s\(\)\[\]]+)(?=[\s])/ig   // 改
 
     //改U
-    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" ) //删除游标
+    str = str.replace(/(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "") //删除游标
     let a = (str.match(Ureg) == null) ? [] : str.match(Ureg)
 
     a = proc(a)
@@ -158,11 +158,11 @@ let dele = function (str) {
     //delete
     let Dreg = /(from|delete\s+from|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^,\s\(\)\[\]]+)(?=[\s])/ig   //删
     //删D
-    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" )
+    str = str.replace(/(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "")
     let a = (str.match(Dreg) == null) ? [] : str.match(Dreg)
-   
+
     a = proc(a)
-    
+
 
     let u = []
     a.forEach((element, index, arr) => {
@@ -172,8 +172,8 @@ let dele = function (str) {
         if (arr[index + 1] != 'from') {
             return;
         }
-//前面两个delete,from 表示必须delete 后面挨着from 采可以 
-// 因为  ExecuteSQL(,delete from  cyerp..tblbase_hr_holiday  where id=[SYSVAR$.ID]  delete from cyerp..tblbase_hr_holiday_sub where parentid=[SYSVAR$.ID])
+        //前面两个delete,from 表示必须delete 后面挨着from 采可以 
+        // 因为  ExecuteSQL(,delete from  cyerp..tblbase_hr_holiday  where id=[SYSVAR$.ID]  delete from cyerp..tblbase_hr_holiday_sub where parentid=[SYSVAR$.ID])
         let tmp = arr[index + 2]
 
         if (tmp.length <= 2) {
@@ -189,7 +189,7 @@ let dele = function (str) {
     });
     u = u.map(v => v.split('.').pop())
 
-    
+
     return u
 }
 
@@ -198,13 +198,13 @@ let add = function (str) {
     //insert into
     let Creg = /(from|into|join)\s+\[?([^,\s\(\)\[\]]+)\]?(\s+([^,\s\(\)\[\]]+))?(?=[\(\s])/ig   // 增 
     //增C
-    str=str.replace( /(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "" )
-   
+    str = str.replace(/(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "")
+
     let a = (str.match(Creg) == null) ? [] : str.match(Creg)
 
 
     a = proc(a)
-   
+
 
     let u = []
     /*   console.dir("******************************")
@@ -247,7 +247,8 @@ let saveProc = function (str) {
 }
 
 //正常方法处理的入口
-let generalSql = async function (str) {
+let generalSql = async function (str,layer=3) {
+    layer=layer-1 //layer是递归层数的定义,必须控制递归的深度,有的可能形成相互依赖,产生死锁,不能自己结束
 
     let returnResult = { c: [], u: [], r: [], d: [] }
     nonTable = []
@@ -272,13 +273,13 @@ let generalSql = async function (str) {
 
     //查询
     let r = read(str)
-  
+
 
     let union = new Set([...c, ...u, ...d]);
     let difference = new Set([...r].filter(x => !union.has(x)));    //在r中减去cud
     r = Array.from(difference);
-   
-    
+
+
 
     //如果过滤之后还有剩  这里有一个需要注意的地方如果是非CyErp中的表,那么会被识别为非对象,进而不会保留!
     if (r.length != 0) {
@@ -297,7 +298,7 @@ let generalSql = async function (str) {
     if (e.length != 0) {
         nonTable = nonTable.concat(e)
     }
-    /* console.dir('cccccccccccccccccccccccc')
+  /*   console.dir('cccccccccccccccccccccccc')
     console.dir(c)
     console.dir('uuuuuuuuuuuuuuuuuuuuuuuu')
      console.dir(u)
@@ -313,7 +314,7 @@ let generalSql = async function (str) {
         return */
 
     //处理前面产生的非表对象
-    if (nonTable.length != 0) {
+    if (nonTable.length != 0 && layer>0) {
         for (let obj of nonTable) {
             let tmpLineStr = await queryFunc('exec sp_helptext ' + obj);
             let tmpStr = '';
@@ -321,7 +322,7 @@ let generalSql = async function (str) {
                 tmpStr += i.Text;
             }
             // console.dir('>>>>>>>>>>>>>>>>>>>>>start:'+obj)
-            let re = await generalSql(tmpStr);//递归本身
+            let re = await generalSql(tmpStr,layer);//递归本身
             // console.dir('<<<<<<<<<<<<<<<<<<<<<<<<<end:'+obj)
 
             //  console.dir('第几层:'+aa)
@@ -360,7 +361,8 @@ let parse = async function (str) {
     // executeSql 方法
     let Ereg = /^ExecuteSQL/
     //前面一个的子集,executeSql 里的直接执行视图或存储过程
-    let reg = /^ExecuteSQL\([^,]*,(exec)?\s*\[?([^,\(\)\[\]]+)\]?[\s\(,\)]/
+    let reg = /^ExecuteSQL\([^,]*,(exec)?\s*\[?([^,\(\)\[\]]+CYERP[^,\(\)\[\]]+)\]?[\s\(,\)]/i
+    //用是否函数cyerp来区别是一般的ececutesql还是特殊的executesql
 
 
 
@@ -393,85 +395,80 @@ let parse = async function (str) {
         return returnResult
     }
 
+    //属于存储executesql
+    if (reg.test(str)) {
+        //2.执行到这里说明是特殊的executesql
+        console.dir('$$$$$$$$$$$$$$$$$')
+       
+        let m = str.match(reg)
+        m = [m.pop()] //m[2]产生的是一个字符串,但是proc是处理数组所以这里加[]     
+
+        m = proc(m)
+        console.dir(m)
+        if (m != undefined || m != null || m.length != 0) {
+            m = await diff(m) //过滤非对象
+            m = m.nonTable //这里出来的结果只能是视图或者存储过程
+            if (m != []) {
+                for (let obj of m) {
+                    let tmpLineStr = await queryFunc('exec sp_helptext ' + obj);
+                    let tmpStr = '';
+                    for (let i of tmpLineStr) {
+                        tmpStr += i.Text;
+                    }
+
+                     
+                      
+                    let r = await generalSql(tmpStr);//递归本身
+
+                    // console.dir('<<<<<<<<<<<<<<<<<<<<<<<<<end:'+obj)
+
+                    //  console.dir('第几层:'+aa)
+                    /*  console.dir('递归对象:'+obj);
+                     console.dir('递归结果:'+dependency) */
+                     console.dir('>>>>>>>>>>>>>>>>>>>>>start:')
+                    tmp = r
+                    console.dir(tmp)
+
+                }
+
+            }
+
+
+
+        }
+        returnResult.c = returnResult.c.concat(tmp.c)
+        returnResult.u = returnResult.u.concat(tmp.u)
+        returnResult.r = returnResult.r.concat(tmp.r)
+        returnResult.d = returnResult.d.concat(tmp.d)
+        return returnResult
+    }
+
     //属于executesql
     if (Ereg.test(str)) {
-        let tmp = { c: [], u: [], r: [], d: [] }
+        let tmp = { c: [], u: [], r: [], d: [] } //存储返回值
 
         //1.首先做一般的executesql处理
         let k = await generalSql(str);
         let m = k.c.length + k.u.length + k.r.length + k.d.length
         if (m != 0) {
             tmp = k   //执行这步说明是一般的executesql方法
-        } else {
-            //2.执行到这里说明是特殊的executesql
-           /*  console.dir('$$$$$$$$$$$$$$$$$')
-            console.dir(str) */
-            let m = str.match(reg)
-         
 
-            
-            m = [m.pop()] //m[2]产生的是一个字符串,但是proc是处理数组所以这里加[]     
-          
-            
-                  
-            m = proc(m)
-            
-
-
-            if (m != undefined || m != null || m.length != 0) {
-                /*  console.dir(m)
-                 console.dir('********************') */
-
-                m = await diff(m) //过滤非对象
-            
-
-                m = m.nonTable //这里出来的结果只能是视图或者存储过程
-                if (m != []) {
-                    for (let obj of m) {
-                        let tmpLineStr = await queryFunc('exec sp_helptext ' + obj);
-                        let tmpStr = '';
-                        for (let i of tmpLineStr) {
-                            tmpStr += i.Text;
-                        }
-                       
-                        // console.dir('>>>>>>>>>>>>>>>>>>>>>start:'+obj)
-                        //   console.dir(tmpStr)
-                        let r = await generalSql(tmpStr);//递归本身
-                     
-                        // console.dir('<<<<<<<<<<<<<<<<<<<<<<<<<end:'+obj)
-
-                        //  console.dir('第几层:'+aa)
-                        /*  console.dir('递归对象:'+obj);
-                         console.dir('递归结果:'+dependency) */
-                        tmp = r
-
-                    }
-
-                }
-
-
-
-            }
+            returnResult.c = returnResult.c.concat(tmp.c)
+            returnResult.u = returnResult.u.concat(tmp.u)
+            returnResult.r = returnResult.r.concat(tmp.r)
+            returnResult.d = returnResult.d.concat(tmp.d)
+            return returnResult
         }
-        returnResult.c = returnResult.c.concat(tmp.c)
-        returnResult.u = returnResult.u.concat(tmp.u)
-        returnResult.r = returnResult.r.concat(tmp.r)
-        returnResult.d = returnResult.d.concat(tmp.d)
-
-
-
-        return returnResult
-
-
-
     }
+
+
 
     //如果进行到了这一步,说明是不是表单中的方法,是视图定义
 
-    
 
-    let t =await generalSql(str)
-  
+
+    let t = await generalSql(str)
+
 
     returnResult.c = returnResult.c.concat(t.c)
     returnResult.u = returnResult.u.concat(t.u)
@@ -482,21 +479,28 @@ let parse = async function (str) {
 }
 
 
-let builtInCURD=async function(str){
-    let returnResult=await parse(str)
-    
+let builtInCURD = async function (str) {
+    let returnResult = await parse(str)
+
 
     //过滤#号临时表
-    returnResult.c=returnResult.c.filter(v=>/\#/.test(v)?false:true)
-    returnResult.u=returnResult.u.filter(v=>/\#/.test(v)?false:true)
-    returnResult.r=returnResult.r.filter(v=>/\#/.test(v)?false:true)
-    returnResult.d=returnResult.d.filter(v=>/\#/.test(v)?false:true)
+    returnResult.c = returnResult.c.filter(v => /\#/.test(v) ? false : true)
+    returnResult.u = returnResult.u.filter(v => /\#/.test(v) ? false : true)
+    returnResult.r = returnResult.r.filter(v => /\#/.test(v) ? false : true)
+    returnResult.d = returnResult.d.filter(v => /\#/.test(v) ? false : true)
+
+    //将字符串全部转换为小写
+    returnResult.c = returnResult.c.map(v => v.toLowerCase())
+    returnResult.u = returnResult.u.map(v => v.toLowerCase())
+    returnResult.r = returnResult.r.map(v => v.toLowerCase())
+    returnResult.d = returnResult.d.map(v => v.toLowerCase())
 
 
-    returnResult.c=Array.from(new Set( returnResult.c))
-    returnResult.u=Array.from(new Set( returnResult.u))
-    returnResult.r=Array.from(new Set( returnResult.r))
-    returnResult.d=Array.from(new Set(returnResult.d))
+    //数组去重
+    returnResult.c = Array.from(new Set(returnResult.c))
+    returnResult.u = Array.from(new Set(returnResult.u))
+    returnResult.r = Array.from(new Set(returnResult.r))
+    returnResult.d = Array.from(new Set(returnResult.d))
 
     return returnResult
 
@@ -512,18 +516,27 @@ let builtInCURD=async function(str){
 
 
 
-/* 
- str = `ExecuteSQL(,delete from  cyerp..tblbase_hr_holiday  where id=[SYSVAR$.ID]  delete from cyerp..tblbase_hr_holiday_sub where parentid=[SYSVAR$.ID])
+
+ str = `ExecuteSQL(,if OBJECT_ID('tempdb..#tmpDoorPoint') is not null drop table #tmpDoorPoint          
+       select distinct a.controllerid,a.doorgroupno ,doorno            
+        into #tmpDoorPoint              
+        from linkbostex.SKEP_DAS.dbo.DAS_ControllerPoint a                
+inner join   linkbostex.SKEP_DAS.dbo.DAS_DoorPoint b 
+
+             on a.staffid=b.staffid  and a.controllerid=b.controllerid               
+              where b.isdoorEnabled=1 and (a.staffid=[VAR$.dtcur.工號]     )                
+ INSERT INTO
+  linkbostex.SKEP_DAS.dbo.DAS_ChangeAccessRight(StaffID,StaffVersion,DoorAccessRight,LiftAccessRight,LockerAccessRight,Flag)                              select [VAR$.dtcur.工號],0,convert(varchar,ControllerID)+','+convert(varchar,doorno),null,null,0                    From #tmpDoorPoint                drop table #tmpDoorPoint     INSERT INTO linkbostex.SKEP_DAS.dbo.DAS_ChangeStaffDetail (StaffID,StaffVersion,StaffCardID,StaffEffectiveDate,StaffEffectiveTime             ,StaffExpiryDate,StaffExpiryTime,StaffIsCardInhibited,StaffIsCardLoss                                   ,StaffIsCardSent,StaffIsUseBiometric,CardCanExpire,CardState                                   ,ModifyDate)                                   select staff_id as 工號,0 as 版本,cardid as 卡號ID                                 ,convert(varchar(10),GETDATE(),101) as 生效日期,'01:00' as 生效時間                                   ,convert(varchar(10),dateadd(year,10,GETDATE()),101) 有效日期,'00:00' 有效時間                                   ,0 as 是否禁止使用卡片,0 as 卡片掛失                                   ,0 as  是否為超級用戶,0  as 是否使用指紋                                   ,0  as 是否有效期管制,1  as 卡片狀態                                   ,GETDATE() as 操作時間                    from  BSMaster.DBO.tbsf_Staff_ByOther               where ID= [VAR$.dtcur.ID]              delete from linkbostex.SKEP_DAS.dbo.DAS_Staff  where staffid=[VAR$.dtcur.工號]         delete from  BSMaster.DBO.tbsf_Staff_ByOther where staff_id=[VAR$.dtcur.工號])
 `
-let abc=async function(){
- //   let s = await builtInCURD(str);
-   let s= dele(str)
+let abc = async function () {
+    let s = await builtInCURD(str);
+    // let s= dele(str)
     console.dir('end result:')
     console.dir(s)
-}  
+}
 
 //[ 'tblHR_DimissionReason', 'tblHR_MonthAttendance' ]
- abc()  */
+abc() 
 
 
 //   node advance/filter.js
@@ -533,7 +546,7 @@ let abc=async function(){
 //console.dir(read(str))
 
 
- module.exports = builtInCURD
+ //module.exports = builtInCURD
 
 
 

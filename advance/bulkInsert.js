@@ -9,8 +9,8 @@ var TYPES = require('tedious').TYPES;
 
 //连接池配置
 var poolConfig = {
-    min: 6,
-    max: 8,
+    min: 10,
+    max: 12,
     log: false
 };
 
@@ -39,8 +39,8 @@ pool.on('error', function (err) {
 
 
 let ins = async function (formID,arr,table) {
-    console.dir('%%%%%%%%%%%%%%%%%')
-    console.dir(formID)
+  
+
     let flag = 0;
 
 

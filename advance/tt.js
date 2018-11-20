@@ -1,15 +1,9 @@
-
-let aa= [ 'tblHR_DefinitionPay_Salary',
-'tblHR_DefinitionPay_Salary',
-'tblHR_DefinitionPay_Salary',
-'tblHR_DefinitionPay_Salary',
-'tblHR_DefinitionPay_Salary',
-'tblHR_DefinitionPay_Salary',
-'tblHR_DefinitionPay_Salary' ]
+let c=function (xx=1){
+    console.dir(xx)
+}
 
 
-let c=Array.from(new Set(aa))
-console.dir(c)
+c(8)
 
 
 

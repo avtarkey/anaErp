@@ -5,8 +5,8 @@ var ConnectionPool = require('tedious-connection-pool');
 var Request = require('tedious').Request;
 
 var poolConfig = {
-  min: 6,
-  max: 8,
+  min: 10,
+  max: 12,
   log: false
 };
 
@@ -29,7 +29,8 @@ var pool
 
 let a = 1
 let queryFunc = async (queryString) => {
-  //console.dir(queryString)
+  console.dir('正在插入数据库.......')
+ 
   if (a == 1) {
     //create the pool
     pool = new ConnectionPool(poolConfig, connectionConfig);
