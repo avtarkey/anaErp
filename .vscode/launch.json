@@ -11,9 +11,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}/advance/Dependence.js",
             "skipFiles": [
-                            "${workspaceFolder}/node_modules/**/*.js",
-                            "${workspaceFolder}/yourLibToSkip/**/*.js",
-                            "<node_internals>/**/*.js"
+                            "${workspaceFolder}/node_modules/**/*.js"
+                        
                             ]
         }
     ]

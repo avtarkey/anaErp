@@ -6,6 +6,11 @@ var bodyParser = require('body-parser');  //调用模板
 //創建編碼解析
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
+const abc=require('../advance/Dependence.js')
+
+
+
+
 
 /* GET users listing. */
 
@@ -74,9 +79,9 @@ router.post('/saveData', function (req, res) {
 //返回图
 router.post('/process_get', function (req, res) {
   let ModuleID=req.body[0].id //从请求中获得模块编号
-  var fs= require('fs');
-   console.log('555555555555555555555555555555555555555555555555')
-    console.dir(req.body)
+  var fs= require('fs')  
+  //console.dir(req.body)
+
     //req.bod的形式
   /*   [ { id: 'Module00001', text: '人事基础资料' },
         { id: 'Module00002', text: '工程基础资料' },
@@ -84,174 +89,25 @@ router.post('/process_get', function (req, res) {
 
   //如果没有在本地文件中找到对应模块的图，则执行的no函数,从数据库中查询
   let no=async function () {
-    // 输出 JSON 格式
-   
-    let para = req.body[0].id;  //这个取得客户端返回的模块编号
-   
+    // 输出 JSON 格式   
+    //let para = req.body[0].id;  //这个取得客户端返回的模块编号
 
-    var getData = require('../myModule/dataAccess.js'); //查询函数
-    var insertData = require('../myModule/insertData.js'); //插入操作函数
-
-     //取得表单依赖的所有视图
-    await (async function () {
-
-      let methodString = `select * from fn_getVw2('${para}')`;
-      //第一步，得到mthodArry
-      let vwArry = new Array();
-      vwArry = await getData(methodString); //得到数据
-      //console.dir('Module00134得到的数据：'+vwArry);
-
-
-      //得到数据
-      //第二部，得到product
-      //mthodArry->product
-      var ana = require('../Logic/parser.js');
-      let product = new Array();
-
-      for (let key in vwArry) {
-
-        let tmppar = new Array();
-
-        let rsArray = new Array(); //视图——依赖表
-
-        let qs = `exec cyerp..sp_helptext ${vwArry[key].Table_Name}`
-        let a = new Array();
-        a = await getData(qs); //视图的定义语句是一行一行的
-        let viewD = '';
-        for (let i in a) {
-          viewD += a[i].Text;
-        }
-        tmppar = ana(viewD); //每个视图依赖的表
-
-        for (let i in tmppar) {
-          let temp = new Object();
-          temp.FormID = vwArry[key].FormID;
-          temp.TableName = tmppar[i];
-          /*   temp.Origin = 'vw';
-            temp.txt=viewD */
-          rsArray.push(temp);
-        }
-        product = product.concat(rsArray);
-
-
-      }
-
-      //处理后，将返回数据库插入
-      //第三部，插入product
-      //product插入
-      //console.dir(product);
-      await insertData(product); //插入数据
-
-    })();
-
-    //取得表单使用的所有方法
-    await (async function () {
-
-      let methodString = `select * from fn_getEsql('${para}')`;
-      //第一步，得到mthodArry
-      let vwArry = new Array();
-      vwArry = await getData(methodString); //得到数据
-      //console.dir('Module00134得到的数据：'+vwArry);
-
-
-      //得到数据
-      //第二部，得到product
-      //mthodArry->product
-      var ana = require('../Logic/parser.js');
-      let product = new Array();
-
-      for (let key in vwArry) {
-
-        let tmppar = new Array();
-
-        let rsArray = new Array(); //方法的——依赖表
-
-
-        tmppar = ana(vwArry[key].Table_Name); //每个方法内部包含的表，返回一个数组
-
-        for (let i in tmppar) {
-          let temp = new Object();
-          temp.FormID = vwArry[key].FormID;
-          temp.TableName = tmppar[i];
-          /*   temp.Origin = 'mth';
-            temp.txt=vwArry[key].Table_Name; */
-
-          if (temp.TableName.substr(0, 1) != '#' && temp.TableName.substr(0, 1) != '[') {
-            rsArray.push(temp);
-          }
-        }
-        product = product.concat(rsArray);
-
-
-      }
-
-      //处理后，将返回数据库插入
-      //第三部，插入product
-      //product插入
-      //console.dir(product);
-      await insertData(product, 1); //附加插入数据
-
-    })(); 
-
-
-     //取得表单使用的所有表
-    await (async function () {
-
-      let methodString = `select * from fn_getTbl3('${para}')`;
-      //第一步，得到mthodArry
-      let vwArry = new Array();
-      vwArry = await getData(methodString); //得到数据
-      //console.dir('Module00134得到的数据：'+vwArry);
-
-
-      //得到数据
-      //第二部，得到product
-      //mthodArry->product
-      var ana = require('../Logic/parser.js');
-      let product = new Array();
-
-      for (let key in vwArry) {
-        let temp = new Object();
-        temp.FormID = vwArry[key].FormID;
-        temp.TableName = vwArry[key].Table_Name;
-        /*   temp.Origin = 'tbl';
-          temp.txt=vwArry[key].Table_Name; */
-
-        product.push(temp);
-      }
-      //处理后，将返回数据库插入
-      //第三部，插入product
-      //product插入
-      //console.dir(product);
-      await insertData(product, 1); //插入数据
-
-    })();
-
-
-    let comps = new Array();
-    let queryString2 = `select * from fn_methodFun()`;
-
-    comps = await getData(queryString2)
-    console.log('--------------------------------');
+    let comps = await abc(req.body)  
     let returnJson = new Array(); //最后的返回数据对象   
 
-    for (let key in comps) {
+    for (let row of comps) {
       let tempObject = Object();//注意首字母大写
-      tempObject.target = comps[key].targetFormName;
-      tempObject.source = comps[key].sourceFormName;
+      tempObject.target = comps[key].targetFormName;                //目标表单名
+      tempObject.source = comps[key].sourceFormName;                //源表单名
       tempObject.type = "resolved";
       tempObject.rela = "主营产品";
-      tempObject.belongModule = comps[key].sourceModuleName;
-      tempObject.belongModuleID = comps[key].sourceModuleID;
+      tempObject.belongModule = comps[key].sourceModuleName;        //源模块名
+      tempObject.belongModuleID = comps[key].sourceModuleID;        //源模块ID
 
       returnJson.push(tempObject);
     }
-
-
-    //console.dir(returnJson);
-
-    return returnJson;
-    
+    //console.dir(returnJson)
+    return returnJson   
   }
 
   //图形在本地的存储位置
@@ -265,6 +121,7 @@ router.post('/process_get', function (req, res) {
       (async function(){
 
         let myData=new Object();
+
         myData.body=await no();      
         myData.isExist=0;
 
