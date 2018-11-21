@@ -97,12 +97,27 @@ router.post('/process_get', function (req, res) {
 
     for (let row of comps) {
       let tempObject = Object();//注意首字母大写
-      tempObject.target = comps[key].targetFormName;                //目标表单名
+     /*  tempObject.target = comps[key].targetFormName;                //目标表单名
       tempObject.source = comps[key].sourceFormName;                //源表单名
       tempObject.type = "resolved";
       tempObject.rela = "主营产品";
       tempObject.belongModule = comps[key].sourceModuleName;        //源模块名
-      tempObject.belongModuleID = comps[key].sourceModuleID;        //源模块ID
+      tempObject.belongModuleID = comps[key].sourceModuleID;        //源模块ID */
+
+
+      tempObject.tarFormName=row.tarFormName
+      tempObject.souFormName=row.souFormName
+      tempObject.tarIsBusiness=row.tarIsBusiness
+      tempObject.souIsBusiness=row.souIsBusiness
+      tempObject.tarIsDisabled=row.tarIsDisabled
+      tempObject.souIsDisabled=row.souIsDisabled
+      tempObject.tarFormID=row.tarFormID
+      tempObject.souFormID=row.souFormID
+      tempObject.tarModuleName=row.tarModuleName
+      tempObject.tarModuleID=row.tarModuleID
+      tempObject.souModuleName=row.souModuleName
+      tempObject.souModuleID=row.souModuleID
+
 
       returnJson.push(tempObject);
     }
