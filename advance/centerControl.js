@@ -43,9 +43,10 @@ let rowItem = async function (rows) {
     }
     //如果是方法
     else if (item.type == 'esql') {
-        console.dir('111111111111')
+        
+        
         tmp = await builtInCURD(item.Table_Name)
-        console.dir('222222222222222')
+       
         output.add = output.add.concat(tmp.c);
         output.update = output.update.concat(tmp.u);
         output.select = output.select.concat(tmp.r);
@@ -111,23 +112,23 @@ let centerControl = async function () {
             /* console.dir('*************')
                 console.dir(a.add ) */
             if (a.add.length != 0) {
-                bulkInsert(fID, a.add, '[dbo].[addTable]')
+                bulkInsert(fID, a.add, '[dbo].[##tableAdd]')
                 console.dir('add')
                 console.dir(fID)
 
             }
             if (a.delete.length != 0) {
-                bulkInsert(fID, a.delete, '[dbo].[deleteTable]')
+                bulkInsert(fID, a.delete, '[dbo].[##tableDelete]')
                 console.dir('delete')
                 console.dir(fID)
             }
             if (a.update.length != 0) {
-                bulkInsert(fID, a.update, '[dbo].[modifyTable]')
+                bulkInsert(fID, a.update, '[dbo].[##tableUpdate]')
                 console.dir('update')
                 console.dir(fID)
             }
             if (a.select.length != 0) {
-                bulkInsert(fID, a.select, '[dbo].[queryTable]')
+                bulkInsert(fID, a.select, '[dbo].[##tableSelect]')
                 console.dir('select')
                 console.dir(fID)
             }
@@ -148,9 +149,9 @@ let centerControl = async function () {
         a.select = a.select.concat(b.select)
 
         fID = row[0].Form_ID
-        if (i == 600) {
+      /*   if (i == 600) {
             return;
-        }
+        } */
     }
 
     //这里的不插入的作用是 当循环完了后,最后一个并没有插入,所以在这里进行插入
@@ -169,23 +170,23 @@ let centerControl = async function () {
 
 
         if (a.add.length != 0) {
-            bulkInsert(fID, a.add, '[dbo].[addTable]')
+            bulkInsert(fID, a.add, '[dbo].[##tableAdd]')
             console.dir('add')
             console.dir(fID)
 
         }
         if (a.delete.length != 0) {
-            bulkInsert(fID, a.delete, '[dbo].[deleteTable]')
+            bulkInsert(fID, a.delete, '[dbo].[##tableDelete]')
             console.dir('delete')
             console.dir(fID)
         }
         if (a.update.length != 0) {
-            bulkInsert(fID, a.update, '[dbo].[modifyTable]')
+            bulkInsert(fID, a.update, '[dbo].[##tableUpdate]')
             console.dir('update')
             console.dir(fID)
         }
         if (a.select.length != 0) {
-            bulkInsert(fID, a.select, '[dbo].[queryTable]')
+            bulkInsert(fID, a.select, '[dbo].[##tableSelect]')
             console.dir('select')
             console.dir(fID)
         }

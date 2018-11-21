@@ -516,7 +516,7 @@ let builtInCURD = async function (str) {
 
 
 
-
+/* 
  str = `ExecuteSQL(,if OBJECT_ID('tempdb..#tmpDoorPoint') is not null drop table #tmpDoorPoint          
        select distinct a.controllerid,a.doorgroupno ,doorno            
         into #tmpDoorPoint              
@@ -527,8 +527,8 @@ inner join   linkbostex.SKEP_DAS.dbo.DAS_DoorPoint b
               where b.isdoorEnabled=1 and (a.staffid=[VAR$.dtcur.工號]     )                
  INSERT INTO
   linkbostex.SKEP_DAS.dbo.DAS_ChangeAccessRight(StaffID,StaffVersion,DoorAccessRight,LiftAccessRight,LockerAccessRight,Flag)                              select [VAR$.dtcur.工號],0,convert(varchar,ControllerID)+','+convert(varchar,doorno),null,null,0                    From #tmpDoorPoint                drop table #tmpDoorPoint     INSERT INTO linkbostex.SKEP_DAS.dbo.DAS_ChangeStaffDetail (StaffID,StaffVersion,StaffCardID,StaffEffectiveDate,StaffEffectiveTime             ,StaffExpiryDate,StaffExpiryTime,StaffIsCardInhibited,StaffIsCardLoss                                   ,StaffIsCardSent,StaffIsUseBiometric,CardCanExpire,CardState                                   ,ModifyDate)                                   select staff_id as 工號,0 as 版本,cardid as 卡號ID                                 ,convert(varchar(10),GETDATE(),101) as 生效日期,'01:00' as 生效時間                                   ,convert(varchar(10),dateadd(year,10,GETDATE()),101) 有效日期,'00:00' 有效時間                                   ,0 as 是否禁止使用卡片,0 as 卡片掛失                                   ,0 as  是否為超級用戶,0  as 是否使用指紋                                   ,0  as 是否有效期管制,1  as 卡片狀態                                   ,GETDATE() as 操作時間                    from  BSMaster.DBO.tbsf_Staff_ByOther               where ID= [VAR$.dtcur.ID]              delete from linkbostex.SKEP_DAS.dbo.DAS_Staff  where staffid=[VAR$.dtcur.工號]         delete from  BSMaster.DBO.tbsf_Staff_ByOther where staff_id=[VAR$.dtcur.工號])
-`
-let abc = async function () {
+` */
+/* let abc = async function () {
     let s = await builtInCURD(str);
     // let s= dele(str)
     console.dir('end result:')
@@ -537,7 +537,7 @@ let abc = async function () {
 
 //[ 'tblHR_DimissionReason', 'tblHR_MonthAttendance' ]
 abc() 
-
+ */
 
 //   node advance/filter.js
 
@@ -546,7 +546,7 @@ abc()
 //console.dir(read(str))
 
 
- //module.exports = builtInCURD
+ module.exports = builtInCURD
 
 
 

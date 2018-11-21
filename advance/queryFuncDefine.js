@@ -30,8 +30,11 @@ var connectionConfig = {
 var pool
 
 let a = 1
-let queryFunc = async (queryString) => {
-  console.dir('正在查询数据库.......')
+//isOmitRows等于0 表示不忽略返回结果集
+let queryFunc = async (queryString,isOmitRows=0) => {
+  console.dir(queryString)
+  
+  console.dir('queryFuncDefine.js正在查询数据库.......')
  
   if (a == 1) {  //如果是第一次调用这个函数就新建连接池
     //create the pool
@@ -54,18 +57,18 @@ let queryFunc = async (queryString) => {
 
     if (err) {
 
-      console.dir('111111111connection1111111')
+      console.dir('queryFuncDefine.js')
       //console.error(err);
       return;
     }
 
     //use the connection as normal
     var request = new Request(queryString, function (err, rowCount) {
-      /*    if (err) {
+         if (err) {
            console.dir('1111111request111111111')
            console.error(err);
            return; 
-         } */
+         } 
 
 
 
@@ -78,7 +81,7 @@ let queryFunc = async (queryString) => {
 
       flag = 1
 
-      if ((rowCount != 0 || rowCount == undefined) && resultArray.length == 0) {
+      if (isOmitRows==0 && (rowCount != 0 || rowCount == undefined) && resultArray.length == 0) {
         let tmp = {};
 
         resultArray = [];
@@ -105,7 +108,7 @@ let queryFunc = async (queryString) => {
 
     request.on('error', function (err) {
       // console.dir('yyyyyyyyyyyyyyyyy')
-      // console.dir(err)
+      console.dir(err)
     });
 
     connection.execSql(request);

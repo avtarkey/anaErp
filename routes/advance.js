@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 
@@ -26,7 +27,7 @@ var options = {
 
 //首页
 router.get('/', function (req, res) {
-  res.sendFile("ii.html", options);
+  res.sendFile("advance.html", options);
   console.log(__dirname)
 
 })
@@ -74,12 +75,19 @@ router.post('/saveData', function (req, res) {
 router.post('/process_get', function (req, res) {
   let ModuleID=req.body[0].id //从请求中获得模块编号
   var fs= require('fs');
+   console.log('555555555555555555555555555555555555555555555555')
+    console.dir(req.body)
+    //req.bod的形式
+  /*   [ { id: 'Module00001', text: '人事基础资料' },
+        { id: 'Module00002', text: '工程基础资料' },
+        { id: 'Module00003', text: '品质基础资料' } ] */
 
   //如果没有在本地文件中找到对应模块的图，则执行的no函数,从数据库中查询
   let no=async function () {
     // 输出 JSON 格式
-    console.log('555555555555555555555555555555555555555555555555')
+   
     let para = req.body[0].id;  //这个取得客户端返回的模块编号
+   
 
     var getData = require('../myModule/dataAccess.js'); //查询函数
     var insertData = require('../myModule/insertData.js'); //插入操作函数

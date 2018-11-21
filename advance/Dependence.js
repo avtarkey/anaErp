@@ -97,18 +97,15 @@ let moduleDependence = async function (mdArray) {
                         select * from esql
                         
                         )                
-                        
-                        --insert into ##all
-                        --select b.Form_Taiwan_Name,a.* from  my  a
-                        --left join bsmaster..TBSF_Form b on b.Form_ID=a.Form_ID   
+              
 
                         insert into ##all
                         select a.* from  my  a  
     `
-        await queryFunc(queryStr);
+    await queryFunc(queryStr,1);
     }
 
-    //对##all表编号,插入##allRank
+ /*    //对##all表编号,插入##allRank
     str = `insert into ##allRank 
     select 
      a.Form_ID as Form_ID,
@@ -118,13 +115,7 @@ let moduleDependence = async function (mdArray) {
     from ##all a`
 
 
-    await queryFunc(str);
-
-
-
-    /*    console.dir('fefe');
-       return b; */
-
+    await queryFunc(str,1) */
 }
 
 
@@ -133,21 +124,21 @@ let moduleDependence = async function (mdArray) {
 //总调用执行
 let abc = async function (moduleArray) {
    
-    await moduleDependence(moduleArray);
-    console.dir('第二部')
+    await moduleDependence(moduleArray); //Depandence的输出是##allrank表
+    console.dir('Dependence.js第二部')
 
-    // await centerControl();
+    // await centerControl(); //centerControl 的输入是##allRank表
     return;
 
 
 
 
-    //console.dir(a);
+  /*   //console.dir(a);
     var c = await insertData(a);
     console.dir('tttttttttttttttttttttttt')
     //console.dir(c.recordsets[0]);
     return c.recordsets[0];
-
+ */
 }
 
 

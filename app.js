@@ -8,6 +8,7 @@ var logger = require('morgan');
 var usersRouter = require('./routes/users');
 var formalRouter=require('./routes/formal');
 var thirdVersionRouter=require('./routes/thirdVersion');
+var advanceRouter=require('./routes/advance')
 
 
 
@@ -32,6 +33,7 @@ app.use(cookieParser());
 app.use('/users', usersRouter);
 app.use('/formal', formalRouter);
 app.use('/third', thirdVersionRouter);
+app.use('/advance', advanceRouter);
 app.use('/static', express.static(__dirname + '/public'));
 
 // catch 404 and forward to error handler

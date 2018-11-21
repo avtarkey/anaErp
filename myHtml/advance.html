@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -148,15 +150,15 @@
             alert(postData[0].id);           
             
             console.dir(postData);
-            if (nodes.length > 1) {     //如果选中的节点大于一个
+          /*   if (nodes.length > 1) {     //如果选中的节点大于一个
                 alert('请输入一个');
                 return;
-            }
+            } */
 
 
             $.ajax({
                 type: "post",
-                url: "http://localhost:3000/users/process_get",
+                url: "http://localhost:3000/advance/process_get",
                 contentType: "application/json; charset=utf-8",
                 data: JSON.stringify(postData),                     //postData是发送到后端的数据
                 dataType: "json",
@@ -208,7 +210,7 @@
 
                 $.ajax({
                     type: "post",
-                    url: "http://localhost:3000/users/saveData",
+                    url: "http://localhost:3000/advance/saveData",
                     contentType: "application/json; charset=utf-8",
                     data: JSON.stringify(sendData),
                     dataType: "json",

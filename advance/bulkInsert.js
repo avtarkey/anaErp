@@ -16,12 +16,12 @@ var poolConfig = {
 
 //数据连接配置
 var connectionConfig = {
-    userName: 'zxb',
-    password: 'zxb123',
-    server: '10.34.1.77',
+    userName: 'cqread',
+    password: 'read123',
+    server: '10.34.1.70',
     options: {
         port: 1433,
-        database: 'acticle',
+        database: 'Cyerp',
         rowCollectionOnDone: true,
         encrypt: false
     }
