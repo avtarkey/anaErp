@@ -130,6 +130,7 @@
                 function getChecked() {     //按钮的点击事件方法
                     var nodes = $('#tt').tree('getChecked');
                     var s = '';
+                    var newPosetData=new Object();
                     var postData = [];      //存储提交到数据库的json
 
                     for (var i = 0; i < nodes.length; i++) {
@@ -141,12 +142,24 @@
                         temp.text = nodes[i].text;
 
                         postData.push(temp);
-                        slfmd=nodes[i].id;
+                        
                     }
-
-                    alert(postData[0].id);           
+                    console.log('这个是EasyUI树形odes',nodes)
                     
-                    console.dir(postData);
+
+                    alert(s)  
+                    slfmd= prompt("请输入密码")   
+                    if(slfmd==null){
+                        return
+                    }else{
+                        slfmd='Module'+slfmd
+                    } 
+
+                    newPosetData.slfMdID=slfmd
+                    newPosetData.body=postData
+
+                    
+                    console.log('前端发往后端的请求:',newPosetData)
                 /*   if (nodes.length > 1) {     //如果选中的节点大于一个
                         alert('请输入一个');
                         return;
@@ -157,25 +170,25 @@
                         type: "post",
                         url: "http://localhost:3000/advance/process_get",
                         contentType: "application/json; charset=utf-8",
-                        data: JSON.stringify(postData),                     //postData是发送到后端的数据
+                        data: JSON.stringify(newPosetData),                     //postData是发送到后端的数据
                         dataType: "json",
                         success: function (resultJson) {                    //resultJson是后端返回前端的结果
-                            console.dir(resultJson);
-                            console.log('8888888')
+                            
+                            console.log('后端返回结果:',resultJson)
+                           
+                            
                             if(resultJson.isExist==0){                      //是否是以前查询过得
-                                console.dir(resultJson.body);
+                               
                                 let a = cht2zh(resultJson.body);            //交给百度翻译
                                 a.then(
                                     (value) => {
                                         let a=new Object();                 //这个是返回对象
-
                                         a.isExist=resultJson.isExist;       //组装要返回的对象
-                                        a.body=value;
-
-                                        console.log('这个是返回的数据')       // 这个是最后的返回
-                                        console.dir(a);
-                                        console.log('返回打印结束')
-                                        showForceGraph(a);                  //交给图形显示
+                                        a.body=value
+                                        //console.log('这个百度翻译返回:',a)  // 这个是最后的返回
+                                     
+                                        console.log('现在开始显示图形...')                                       
+                                        showForceGraph(a)                     //交给图形显示
                                     }
                                 )
                             }else{
@@ -235,22 +248,22 @@
                         }
                     
                     })
-                        .attr({                             //判断当前的透明全局透明状态,如果透明就切换到不透明,否则就透明
-                            'stroke-opacity':function(d){
-                                if(flg=='0'){
-                                    return '0';
-                                }
-                                if(flg=='1'){
-                                    return '1';
-                                }
+                    .attr({                             //判断当前的透明全局透明状态,如果透明就切换到不透明,否则就透明
+                        'stroke-opacity':function(d){
+                            if(flg=='0'){
+                                return '0';
                             }
-                        });
-                        if(flg=='0'){
+                            if(flg=='1'){
+                                return '1';
+                            }
+                        }
+                    });
+                     /*    if(flg=='0'){
                             flg= '1';
                         }
                         else{
                             flg= '0';
-                        }
+                        } */
                         alert('flg:'+flg);
 
                     
@@ -259,40 +272,74 @@
                 let showForceGraph = (flinks) => {          //依据后端返回的数据显示图形
 
                     //D3.js输入数据               
-                        let mylinks=new Array()
+                        let mylinks=new Array()                      
+                        mylinks = flinks.body 
+                      //  mylinks=mylinks.filter((item)=>item.souIsBusiness=='3'?false:true)
 
-                        if(flinks.isExist==0){                  //不存在
-                            mylinks = flinks.body
-                        }
-                        else{                                   //存在
-                            mylinks = flinks.body.links
-                        }
-                    
+                        var links = mylinks; //保存连接   
+                        let graph=new Object()  
+
+                    //开始进行判断是否存在
+                        links.forEach(function(link){           //设置连接每个源节点的名字
+                            if(link.souModuleID!=slfmd){
+                                link.source=link.source+'<>'+link.souModuleName;
+                            }
+                            if(link.tarModuleID!=slfmd){
+                                link.target=link.target+'<>'+link.tarModuleName;
+                            }
+
+                        })
+                        var nodes = {};                         //保存节点         
+                        var tmpTargetNodes = {};                //保存目标节点,这个变量的目的是存储links中已经添加进nodes的目标,当向nodes中添加源是查找是改节点是否已经
+                                                                //添加过,因为有的节点既是目标,又是源,这样的话,就会重复的向nodes添加相同的节点        
+
+                        links.forEach(function (link) {         //将连接中的目标添加进节点,
+                            tmpTargetNodes[link.target] = link.target = nodes[link.target] || (nodes[link.target] = { name: link.target, IsBusiness: link.tarIsBusiness,ModuleName:link.tarModuleName,ModuleID:link.tarModuleID})
+                            if(!nodes[link.target.name].hasOwnProperty('in')){  //这里nodes的[link.target.name]等于link的link.target,因为 || (nodes[link.target] = { name: link.target, selfModu:
+                                nodes[link.target.name].in=0;
+                            } 
+                            if(!nodes[link.target.name].hasOwnProperty('out')){
+                                nodes[link.target.name].out=0;
+                            } 
+                            
+                            
+                            if(link.souModuleID==slfmd){     //如果目标节点属于本模块,对输入进行计数,不过目标节点本身都是是本模块的,这场的判断似乎多余
+                            
+                                if(nodes[link.target.name].hasOwnProperty('in')){
+                                    nodes[link.target.name].in+=1;
+                                }                                
+                            }  
+                        })
+
+                        links.forEach(function (link) {         //将连接中的源节点添加进nodes数组
+                            link.source = tmpTargetNodes[link.source] || ( nodes[link.source]) || ( nodes[link.source] = { name: link.source, IsBusiness: link.souIsBusiness,ModuleName:link.souModuleName,ModuleID:link.tarModuleID })
+                            
+                            if(!nodes[link.source.name].hasOwnProperty('out')){
+                                nodes[link.source.name].out=0;
+                            }
+                                        
+                            if(!nodes[link.source.name].hasOwnProperty('in')){
+                                nodes[link.source.name].in=0;
+                            } 
+                            if(link.tarModuleID==slfmd){
+                            
+                                if(nodes[link.source.name].hasOwnProperty('out')){
+                                    nodes[link.source.name].out+=1;
+                                }                                  
+                            } 
+                        })
+
                         
-                    //过滤非模块节点
-                        /* 
-                            (function () {
-                            mylinks = [];
-                            let a = new Set();
-
-                            flinks.forEach(function (link) {
-                                a.add(link.target);
-                            })
-                            flinks.forEach(function (link) {
-                                if (a.has(link.source)) {
-                                    mylinks.push(link);
-                                }
-                            })
-                            })() */
-                    //
-
-                    var links = mylinks; //保存连接       
-                    var mdSet=new Set();//存储links模块的集合
-
                     //非本模块颜色设定
+                        var mdSet=new Set();//存储links模块的集合
+
+                       
                         links.forEach(function(link){
-                            if(link.belongModuleID!=slfmd){
-                                mdSet.add(link.belongModule)
+                            if(link.target.ModuleID!=slfmd){
+                                mdSet.add(link.target.ModuleName)
+                            }
+                            if(link.source.ModuleID!=slfmd){
+                                mdSet.add(link.source.ModuleName)
                             }
                         })
                         
@@ -306,74 +353,10 @@
                         colorNum=['5adbe5','93f6c2','b4f693','df97d8','d2a6a8','b8eed9','e0eeb8','d6e36e','e4f206','f27106','ee8a8a','e3caca','f4f4ea','c2d1ec','c1f4de']
                         
 
-                        let graph=new Object()  
-
-                    //开始进行判断是否存在
-                        if(flinks.isExist==0){  //如果不存在
 
 
-                            links.forEach(function(link){           //设置连接每个源节点的名字
-                                if(link.belongModuleID!=slfmd){
-                                    link.source=link.source+'<>'+link.belongModule;
-                                }
-
-                            })
-                            var nodes = {};                         //保存节点         
-                            var tmpTargetNodes = {};                //保存目标节点,这个变量的目的是存储links中已经添加进nodes的目标,当向nodes中添加源是查找是改节点是否已经
-                                                                    //添加过,因为有的节点既是目标,又是源,这样的话,就会重复的向nodes添加相同的节点        
-
-                            links.forEach(function (link) {         //将连接中的目标添加进节点,
-                                tmpTargetNodes[link.target] = link.target = nodes[link.target] || (nodes[link.target] = { name: link.target, selfModu: '0',blmdID:slfmd ,blmd:''});
-                                if(!nodes[link.target.name].hasOwnProperty('in')){  //这里nodes的[link.target.name]等于link的link.target,因为 || (nodes[link.target] = { name: link.target, selfModu:
-                                    nodes[link.target.name].in=0;
-                                } 
-                                if(!nodes[link.target.name].hasOwnProperty('out')){
-                                    nodes[link.target.name].out=0;
-                                } 
-                                
-                                
-                                if(link.belongModuleID==slfmd){     //如果目标节点属于本模块,对输入进行计数,不过目标节点本身都是是本模块的,这场的判断似乎多余
-                                
-                                    if(nodes[link.target.name].hasOwnProperty('in')){
-                                        nodes[link.target.name].in+=1;
-                                    }                                
-                                } 
-                            })
-
-                            links.forEach(function (link) {         //将连接中的源节点添加进nodes数组
-                                link.source = tmpTargetNodes[link.source] || (link.rela = '上位产品', nodes[link.source]) || (link.rela = '上位产品', nodes[link.source] = { name: link.source, selfModu: '1',blmd:link.belongModule,blmdID:link.belongModuleID });
-                                
-                                if(!nodes[link.source.name].hasOwnProperty('out')){
-                                    nodes[link.source.name].out=0;
-                                }
-                                            
-                                if(!nodes[link.source.name].hasOwnProperty('in')){
-                                    nodes[link.source.name].in=0;
-                                } 
-                                if(link.belongModuleID==slfmd){
-                                
-                                    if(nodes[link.source.name].hasOwnProperty('out')){
-                                        nodes[link.source.name].out+=1;
-                                    }                                  
-                                }
-                            })
-
-                            graph.nodes=nodes;//對象
-                            graph.links=links; //數組           
-                        }
-                        else{                   //如果存在
-                            
-                            var myNodes = {}; //是一个对象   
-                            var myLinks=flinks.body.links;
-
-                            myLinks.forEach(function(link){
-                                link.target = myNodes[link.target] || (myNodes[link.target] = { name: link.target,blmd:link.t.blmd,blmdID:link.t.blmdID,x:link.t.x,y:link.t.y,in:link.t.in,out:link.t.out })
-                                link.source = myNodes[link.source] || (myNodes[link.source] = { name: link.source,blmd:link.s.blmd,blmdID:link.s.blmdID,x:link.s.x,y:link.s.y,in:link.s.in,out:link.s.out })
-                            });
-                            graph.nodes=myNodes;//對象
-                            graph.links=myLinks; //數組
-                        }
-
+                        graph.nodes=nodes;//對象
+                        graph.links=links; //數組 
 
                     //
 
@@ -501,33 +484,42 @@
                                 
                                 if(node.in!=0 && node.out!=0) {
                                     color = "#F9EBF9";                      //中间节点
-                                    }else if(node.in==0 && node.out!=0){
-                                        color='#70bbdf'                         //开始节点
+                                }else if(node.in==0 && node.out!=0){
+                                    color='#70bbdf'                         //开始节点
 
-                                    }else if(node.in!=0 && node.out==0){
-                                        color='#a784d4'                         //终结点
+                                }else if(node.in!=0 && node.out==0){
+                                    color='#a784d4'                         //终结点
 
-                                    }else if (node.selfModu == '1') {
-                                        //console.dir(node)
-                                    //color = '#bdeba5'//本模块
-                                    }
-                                    else if(node.selfModu == '0'){
-                                        //非本模块
+                                }
+                               /*  else if (node.selfModu == '1') {
+                                    //console.dir(node)
+                                //color = '#bdeba5'//本模块
+                                }
+                                else if(node.selfModu == '0'){
+                                    //非本模块
 
-                                    }else{
+                                } */
+                                else{
 
-                                    }
-                                    //外模块的颜色                   
-                                    if(node.blmdID!=slfmd) 
-                                    {
-                                        let a=colorMap.get(node.blmd);
-                                        color='#'+colorNum[a] || '#06e6ec';
-                                    }
-                                    return color;
-                                })
+                                }
+
+                                //外模块的颜色                   
+                                if(node.ModuleID!=slfmd) 
+                                {
+                                    let a=colorMap.get(node.ModuleName);
+                                    color='#'+colorNum[a] || '#06e6ec';
+                                }
+                                return color;
+                            })
                             .style('stroke', function (node) {
                                 var color;                              //圆圈线条的颜色
-                                var link = links[node.index];
+                                if(node.IsBusiness=='3'){
+                                    color='#f22828'     
+                                }else{
+                                    color='#041E3A'
+                                }
+                                return color
+                                /* var link = links[node.index]; */
                                 /* try{ link.rela 
                                 }catch(e){
                                     console.dir(link);
@@ -544,7 +536,7 @@
                             .on("click", function (node) {
                                 //单击时让连接线加粗
                                 edges_line.style("stroke-width", function (line) {
-                                    //console.log(line);
+                                   
                                     if (line.source.name == node.name || line.target.name == node.name) {
                                         return 5;
                                     } else {
@@ -554,20 +546,25 @@
                                 })
 
                                 edges_line.style("stroke", function (line) {
-                                    // console.log(line);
+                                  
                                     var color;
+                              
                                     if (line.source.name == node.name || line.target.name == node.name) {
-                                        color = '#f22828'                           //选中是的颜色
-                                    }
-                                    else{
-                                        if (line.rela == "上位产品") {              //外部的连线
+                                        color = '#f22828'                         //选中是的颜色
+                                        
+                                    }else{
+                                        if (line.rela == "模块内") {              //外部的连线
                                             color = "#4bc110";
-                                        } else if (line.rela == "主营产品") {       //内部连线
+                                        } else if (line.rela == "模块间") {       //内部连线
                                             color = "#f96959";
-                                        }                           
+                                        } 
                                     } 
 
-                                    return color;
+
+                                     return color                         
+                                    
+
+                                    
                                 })
                             })
                             .call(force.drag)                               //将当前选中的元素传到drag函数中，使顶点可以被拖动
@@ -588,7 +585,7 @@
                             .style('fill', function (node) {
                                 var color;                                          //文字颜色
                                 var link = links[node.index];
-                                if (node.selfModu == '1') {
+                                if (node.ModuleID == slfmd) {
                                     //console.dir(node)
                                     color = "#B43232";
                                 }
@@ -729,11 +726,11 @@
                             sendData.dt.links=ibm;
                             sendData.dt.nodes={};
                             sendData.ModuleID=slfmd;
-                            console.dir(sendData); 
+                           // console.dir(sendData); 
                         }
                         
                         myFun=gps;
-                        console.dir(force.nodes())
+                       // console.dir(force.nodes())
                     //
                 }
             </script>
@@ -783,6 +780,10 @@
                 let cht2zh = (resultJson) => {          //调用前面的trans函数
 
                     return new Promise((resolve, reject) => {
+                        let input=resultJson
+
+                     
+
                         let myArray = new Array(); //临时数组中转
                         let myStr = new String(); //发送字符串
                         let getArray = new Array(); //返回后转换为数组
@@ -792,8 +793,9 @@
 
                         //添加到临时数组
                         for (let key in resultJson) {
-                            myArray.push(resultJson[key].source);
                             myArray.push(resultJson[key].target);
+                            myArray.push(resultJson[key].source);
+                            
                         }
 
                         let disperse = (myArray) => {
@@ -826,8 +828,8 @@
                         //将所有的Promise值，汇聚
                         p.then((value) => {
                             console.log('汇聚value的类型：' + typeof (value));
-                            console.log('汇聚value的每个单元的值：');
-                            console.dir(value);
+                            console.log('汇聚value的每个单元的值：',value);
+                         
 
                             let myValue = new String();
                             for (let key in value) {
@@ -836,21 +838,27 @@
 
 
                             let getArray = myValue.split('gbm');
-                            console.log('汇聚用gbm分割后的数组：');
-                            console.dir(getArray);
-                            for (let i = 0; i <= getArray.length - 3; i += 2) {
-                                let tem = new Object();
-                                tem.source = getArray[i];
-                                tem.target = getArray[i + 1];
-                                tem.type = resultJson[i / 2].type;
-                                tem.rela = resultJson[i / 2].rela;
-                                tem.belongModule=resultJson[i / 2].belongModule;
-                                tem.belongModuleID=resultJson[i / 2].belongModuleID
-                                result.push(tem);
-                            }
-                            console.log('cht2zh的返回值：')
-                            // console.dir(result);
-                            resolve(result);
+                            console.log('汇聚用gbm分割后的数组：',getArray)
+                            
+                           
+
+                            input.forEach(function(item,index,arr){
+                                
+                                    //偶数,是target
+                                    item.target=getArray[2*index]
+                                   //奇数,是source
+                                    item.source=getArray[2*index+1]
+                               
+                              
+
+                            })
+
+
+
+                            console.log('cht2zh的返回值：',input)
+                            let output=input
+                            
+                            resolve(output);
                         })
 
                     })

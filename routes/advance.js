@@ -78,9 +78,9 @@ router.post('/saveData', function (req, res) {
 
 //返回图
 router.post('/process_get', function (req, res) {
-  let ModuleID=req.body[0].id //从请求中获得模块编号
-  var fs= require('fs')  
-  //console.dir(req.body)
+ 
+  
+  
 
     //req.bod的形式
   /*   [ { id: 'Module00001', text: '人事基础资料' },
@@ -90,9 +90,12 @@ router.post('/process_get', function (req, res) {
   //如果没有在本地文件中找到对应模块的图，则执行的no函数,从数据库中查询
   let no=async function () {
     // 输出 JSON 格式   
-    //let para = req.body[0].id;  //这个取得客户端返回的模块编号
+ 
+    let xxx=req.body
+    console.log(xxx)
+   
 
-    let comps = await abc(req.body)  
+    let comps = await abc(xxx.body,xxx.slfMdID)  
     let returnJson = new Array(); //最后的返回数据对象   
 
     for (let row of comps) {
@@ -105,52 +108,44 @@ router.post('/process_get', function (req, res) {
       tempObject.belongModuleID = comps[key].sourceModuleID;        //源模块ID */
 
 
-      tempObject.tarFormName=row.tarFormName
-      tempObject.souFormName=row.souFormName
+      tempObject.target=row.tarFormName
+      tempObject.source=row.souFormName
+
       tempObject.tarIsBusiness=row.tarIsBusiness
       tempObject.souIsBusiness=row.souIsBusiness
+
       tempObject.tarIsDisabled=row.tarIsDisabled
       tempObject.souIsDisabled=row.souIsDisabled
+
       tempObject.tarFormID=row.tarFormID
       tempObject.souFormID=row.souFormID
+
       tempObject.tarModuleName=row.tarModuleName
       tempObject.tarModuleID=row.tarModuleID
+      
       tempObject.souModuleName=row.souModuleName
       tempObject.souModuleID=row.souModuleID
+
+      tempObject.rela=row.tarModuleID==row.souModuleID?'模块内':'模块间'
 
 
       returnJson.push(tempObject);
     }
     //console.dir(returnJson)
     return returnJson   
-  }
+  }  
 
-  //图形在本地的存储位置
-  let baseDir = __dirname + '/../public/jsonFile/';
-  let fileName = baseDir +ModuleID+'.json';
-  //console.dir(fileName);
+  let ccc=async function(){
 
-  //判断在文件中是否存在以前自己保存的图json文件
-  fs.exists(fileName, function(exists) {
-    if(!exists){ //不存在    
-      (async function(){
+    let myData=new Object();
 
-        let myData=new Object();
+    myData.body=await no();      
+    myData.isExist=0;
 
-        myData.body=await no();      
-        myData.isExist=0;
+    res.json(myData);       
+  } 
+  ccc()
 
-        res.json(myData);       
-      })();     
-    }else{//存在 
-
-      let myData=new Object();
-      myData.isExist=1;
-      myData.body=JSON.parse(fs.readFileSync(fileName, 'utf8'));
-      
-      res.json(myData); 
-    }
-  }); 
 })
 module.exports = router;
 

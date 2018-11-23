@@ -77,7 +77,7 @@ let centerControl = async function () {
     let flag = 0 //是否执行插入的标记
 
     //根据总行数,一行一行的循环调用rowItem
-    for (let i = 1; i <= total; i++) {
+    for (let i = 10888; i <= total; i++) {
 
         console.log('centerControl.js ##allRank的总行数:',aa[0].total)  
         console.log('centerControl.js 当前正在处理##allRank表的行数:',i)
@@ -108,19 +108,19 @@ let centerControl = async function () {
             
             //将暂存的数据插入到数据库中
             if (a.add.length != 0) {
-                bulkInsert(fID, a.add, '[dbo].[##tableAdd]')
+                bulkInsert(fID, a.add, '[dbo].[tableAdd]')
                 console.log('centerControl.js 操作:add 对应表单号:',fID)         
             }
             if (a.delete.length != 0) {
-                bulkInsert(fID, a.delete, '[dbo].[##tableDelete]')
+                bulkInsert(fID, a.delete, '[dbo].[tableDelete]')
                 console.log('centerControl.js 操作:delete 对应表单号:',fID)            
             }
             if (a.update.length != 0) {
-                bulkInsert(fID, a.update, '[dbo].[##tableUpdate]')
+                bulkInsert(fID, a.update, '[dbo].[tableUpdate]')
                 console.log('centerControl.js 操作: update 对应表单号:',fID)                
             }
             if (a.select.length != 0) {
-                bulkInsert(fID, a.select, '[dbo].[##tableSelect]')
+                bulkInsert(fID, a.select, '[dbo].[tableSelect]')
                 console.log('centerControl.js 操作: select 对应表单号:',fID)                
             }
 
@@ -158,19 +158,19 @@ let centerControl = async function () {
 
 
         if (a.add.length != 0) {
-            bulkInsert(fID, a.add, '[dbo].[##tableAdd]')
+            bulkInsert(fID, a.add, '[dbo].[tableAdd]')
             console.log('centerControl.js 操作:add 对应表单号:',fID)         
         }
         if (a.delete.length != 0) {
-            bulkInsert(fID, a.delete, '[dbo].[##tableDelete]')
+            bulkInsert(fID, a.delete, '[dbo].[tableDelete]')
             console.log('centerControl.js 操作:delete 对应表单号:',fID)            
         }
         if (a.update.length != 0) {
-            bulkInsert(fID, a.update, '[dbo].[##tableUpdate]')
+            bulkInsert(fID, a.update, '[dbo].[tableUpdate]')
             console.log('centerControl.js 操作: update 对应表单号:',fID)                
         }
         if (a.select.length != 0) {
-            bulkInsert(fID, a.select, '[dbo].[##tableSelect]')
+            bulkInsert(fID, a.select, '[dbo].[tableSelect]')
             console.log('centerControl.js 操作: select 对应表单号:',fID)                
         }
 
@@ -197,7 +197,8 @@ let abc = async function () {
    //  let ss=await rowItem(am)
     console.dir('end')
 }
-abc(); */
+*/
+//centerControl(); 
 
 
 //  node advance/centerControl.js

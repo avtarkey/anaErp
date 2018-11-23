@@ -105,7 +105,9 @@ const queryFunc = require('./queryFuncDefine.js')
     let modify = function (str) {
 
         //update
-        let Ureg = /(from|update|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^,\s\(\)\[\]]+)(?=[\s])/ig   // 改
+        let Ureg =/(from|update|join)\s+\[?([^,\s\(\)\[\]]+)\]?\s+([^u,\s\(\)\[\]]*)(?=[\s])/ig   // 改 
+        //上面的([^u是为了防止 from #dutytable cc
+        // update cyerp..tbl_System_Post_Grant set dutyMan=substring 这种情况
 
         //改U
         str = str.replace(/(fetch)\s+(next)\s+(from)\s+[^,\s\(\)\[\]]+\s+(into)\s+[^,\s\(\)\[\]]+/g, "") //删除游标
@@ -113,27 +115,37 @@ const queryFunc = require('./queryFuncDefine.js')
 
         a = proc(a)
 
-        let u = []
-        a.forEach((element, index, arr) => {
-            if (element != 'update') {
-                return;
-            }
-            let tmp = arr[index + 1]
-
-            if (tmp.length <= 2) {
-                for (let i = index + 2; i <= arr.length - 1; i++) {
-                    if (arr[i + 1] == tmp) {
-                        u.push(arr[i])
-                        break
-                    }
+        try{ 
+            let u = []
+            a.forEach((element, index, arr) => {
+                if (element != 'update') {
+                    return;
                 }
-            } else {
-                u.push(arr[index + 1])
-            }
-        });
-        u = u.map(v => v.split('.').pop())
+                let tmp = arr[index + 1]
 
-        return u
+                if (tmp.length <= 2) {
+                    for (let i = index + 2; i <= arr.length - 1; i++) {
+                        if (arr[i + 1] == tmp) {
+                            u.push(arr[i])
+                            break
+                        }
+                    }
+                } else {
+                    u.push(arr[index + 1])
+                }
+            });
+
+
+            u = u.map(v => v.split('.').pop())
+
+            return u
+        }catch(err){
+
+            console.log('正常方法修改错误,这个方法的接受的参数str:',str)
+            console.log('中间的数据a:',a)
+            throw err
+        }
+        
     }
 
     //正常的删除方法

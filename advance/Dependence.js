@@ -23,10 +23,12 @@ let moduleDependence = async function (mdArray) {
     `
     await queryFunc(createContainerStr,1) 
 
-   
+   let i=1
 
     //2 循环每个模块ID,把每个模块的以来插入##all表
     for (let module of mdArray) {
+        i=i+1
+        console.log('当前进行的循环查询次数:',i)
         let para = module.id;
         let queryStr = ` 
                         declare @moduID nvarchar(100)          
@@ -136,8 +138,18 @@ let moduleDependence = async function (mdArray) {
 }
 
 //总调用执行
-let abc = async function (moduleArray) {
-   
+let abc = async function (moduleArray,slfMdID) {
+
+
+   /*  let kk=`
+        select 
+        Module_ID as id,
+        Module_Taiwan_Name as text
+        from bsmaster..TBSF_Module
+    `
+   let absd= await queryFunc(kk)  */
+    //console.log(absd)
+
     console.log('Dependence.js第一步')
     await moduleDependence(moduleArray) //Depandence的输出是##allrank表
 
@@ -145,7 +157,11 @@ let abc = async function (moduleArray) {
     console.log('Dependence.js第二步')
     await centerControl()               //centerControl 的输入是##allRank表
     
+   
+
+
     console.log('Dependence.js第三步')
+    let para=slfMdID
     let returnProcessStr=`
                                 with selfben   --屬於自身的表
                             as(
@@ -174,20 +190,25 @@ let abc = async function (moduleArray) {
                             erp				--erp系統數據
                             as(
                                 select 
-                                a.System_ID,a.Module_ID,a.Module_Taiwan_Name,
-                                b.Function_ID,
-                                --b.Module_ID,
-                                b.Function_Taiwan_Name,
-                                --b.Function_Detail,
-                                c.Form_ID,c.Form_Taiwan_Name,
-                                isBusiness,isDisabled          --isBusiness 1是基礎數據,2是業務表單,3是無界面
-                                --ROW_NUMBER()over(order by a.System_ID,a.Module_ID,Function_ID,Form_ID) as ra
-                                from bsmaster..TBSF_Module a
-                                left join bsmaster..TBSF_Function  b on b.Module_ID=a.Module_ID
-                                left join bsmaster..TBSF_Form c on b.Function_Detail=c.Form_ID
-                                
-                                where c.Form_ID is not null
-                                --order by a.System_ID,a.Module_ID,Function_ID,Form_ID
+                                    d.System_ID,
+                                    d.System_Taiwan_Name,
+                                    
+                                    
+                                    a.Module_ID,a.Module_Taiwan_Name,
+                                    b.Function_ID,
+                                    --b.Module_ID,
+                                    b.Function_Taiwan_Name,
+                                    --b.Function_Detail,
+                                    c.Form_ID,c.Form_Taiwan_Name,
+                                    isBusiness,isDisabled          --isBusiness 1是基礎數據,2是業務表單,3是無界面
+                                    --ROW_NUMBER()over(order by a.System_ID,a.Module_ID,Function_ID,Form_ID) as ra
+                                    from bsmaster..TBSF_Module a
+                                    left join bsmaster..TBSF_Function  b on b.Module_ID=a.Module_ID
+                                    left join bsmaster..TBSF_Form c on b.Function_Detail=c.Form_ID
+                                    left join BsMaster..TBSF_System d on d.System_ID=a.System_ID
+                                    
+                                    where c.Form_ID is not null
+                                    --order by a.System_ID,a.Module_ID,Function_ID,Form_ID
                             ),
                             result			--根據依賴鏈和erp系統表形成結果
                             as(
@@ -222,11 +243,11 @@ let abc = async function (moduleArray) {
 
                             )
                             --select * from dependencyLink 	 --where tarFormID='20101014100404'
-                            select * from result  --where tarFormID='20101014100404'	
+                            select * from result  where tarModuleID='${para}'	 or souModuleID='${para}'	
                             --select * from erp where Form_ID='20101014100404'	
     
     `
-    let re= await queryFunc(returnProcessStr) 
+    let re= await queryFunc(returnProcessStr)
    
 
     return re
@@ -239,11 +260,12 @@ let abc = async function (moduleArray) {
  */
 }
 module.exports = abc
-
-/* let kk = [
+/* 
+ let kk = [
     { id: 'Module00001', text: '人事基础资料' },
     { id: 'Module00002', text: '工程基础资料' }
 ]
-abc(kk);  //这里不可以简化为匿名函数,不然报错,不知道是为什么 */
+abc('','Module00001');  //这里不可以简化为匿名函数,不然报错,不知道是为什么
+ */
 
 //   node advance/Dependence.js

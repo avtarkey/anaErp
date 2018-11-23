@@ -1,4 +1,5 @@
 
+
 var ConnectionPool = require('tedious-connection-pool');
 var TYPES = require('tedious').TYPES;
 
@@ -33,7 +34,7 @@ pool.on('error', function (err) {
 })
 
 //批量插入函数
-let ins =  function (formID, arr, table) {
+let ins =  function ( arr, table) {
     // formID对应formID字段,arr对应tableName字段,table表示要插入哪个表
 
     return new Promise((resolve, reject) => {  
@@ -66,8 +67,29 @@ let ins =  function (formID, arr, table) {
                 })
 
                 // setup columns
+                bulkLoad.addColumn('System_ID', TYPES.NVarChar, { length: 150, nullable: true })
+                bulkLoad.addColumn('System_Taiwan_Name', TYPES.NVarChar, { length: 150, nullable: true })
+                
+                bulkLoad.addColumn('Module_ID', TYPES.NVarChar, { length: 150, nullable: true })
+                bulkLoad.addColumn('Module_Taiwan_Name', TYPES.NVarChar, { length: 150, nullable: true })
+
                 bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 150, nullable: true })
                 bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 150, nullable: true })
+
+                bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 150, nullable: true })
+                bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 150, nullable: true })
+
+                bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 150, nullable: true })
+                bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 150, nullable: true })
+
+
+
+
+
+
+
+
+
 
                 // add rows
                 for (let item of arr) {
