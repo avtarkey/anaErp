@@ -1,7 +1,8 @@
 const queryFunc = require('./queryFuncDefine.js'); 
+const ins=require('./ErpSysInsertBulk.js')
 
 let str=`
-    select  top 20
+    select 
     d.System_ID,
     d.System_Taiwan_Name,
     
@@ -24,8 +25,8 @@ let str=`
 `
 let abc=async function () {
     let a= await queryFunc(str)
-
-    console.dir(a)
+    ins(a,'tableSys') 
+    
 }
 
 abc()

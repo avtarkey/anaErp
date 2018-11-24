@@ -39,3 +39,32 @@ create table ##tableSelect(
 formID nvarchar(200),
 tableName nvarchar(200)
 )
+
+
+
+delete tableAdd
+delete tableDelete
+delete tableSelect
+delete tableUpdate
+
+
+create table tableTmp(
+tarFormName nvarchar(200),
+souFormName nvarchar(200),
+
+tarIsBusiness nvarchar(200),
+souIsBusiness nvarchar(200),
+
+tarIsDisabled nvarchar(200),
+souIsDisabled nvarchar(200),
+
+tarFormID nvarchar(200),
+souFormID nvarchar(200),
+
+tarModuleName nvarchar(200),
+tarModuleID nvarchar(200),
+
+souModuleName nvarchar(200),
+souModuleID nvarchar(200)
+
+)

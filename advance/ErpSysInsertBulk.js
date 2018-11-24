@@ -66,35 +66,18 @@ let ins =  function ( arr, table) {
                     resolve('OK')              
                 })
 
-                // setup columns
-                bulkLoad.addColumn('System_ID', TYPES.NVarChar, { length: 150, nullable: true })
-                bulkLoad.addColumn('System_Taiwan_Name', TYPES.NVarChar, { length: 150, nullable: true })
-                
-                bulkLoad.addColumn('Module_ID', TYPES.NVarChar, { length: 150, nullable: true })
-                bulkLoad.addColumn('Module_Taiwan_Name', TYPES.NVarChar, { length: 150, nullable: true })
 
-                bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 150, nullable: true })
-                bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 150, nullable: true })
+                if(arr.length!=0){
+                    Object.keys(arr[0]).forEach((element,index,ar) => {
+                        // setup columns
+                        bulkLoad.addColumn(element, TYPES.NVarChar, { length: 150, nullable: true })
+                    })
 
-                bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 150, nullable: true })
-                bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 150, nullable: true })
-
-                bulkLoad.addColumn('formID', TYPES.NVarChar, { length: 150, nullable: true })
-                bulkLoad.addColumn('tableName', TYPES.NVarChar, { length: 150, nullable: true })
-
-
-
-
-
-
-
-
-
-
-                // add rows
-                for (let item of arr) {
-                    //  { tableName: 'bulkLoad', formID: 'hello' }
-                    bulkLoad.addRow([formID, item])
+                     // add rows
+                    for (let item of arr) {
+                        //  { tableName: 'bulkLoad', formID: 'hello' }                        
+                        bulkLoad.addRow(Object.values(item))
+                    }
                 }
 
                 // perform bulk insert

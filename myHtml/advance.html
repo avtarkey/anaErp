@@ -148,11 +148,12 @@
                     
 
                     alert(s)  
-                    slfmd= prompt("请输入密码")   
+                    abb= prompt("请输入密码")   
                     if(slfmd==null){
                         return
                     }else{
-                        slfmd='Module'+slfmd
+                        let abb=abb.split(',')
+                        slfmd=abb.map(v=>'Module00'+v)
                     } 
 
                     newPosetData.slfMdID=slfmd

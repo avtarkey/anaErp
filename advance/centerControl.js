@@ -40,8 +40,7 @@ let rowItem = async function (rows) {
     }
 
     //如果是方法
-    else if (item.type == 'esql') {       
-        
+    else if (item.type == 'esql') {
         tmp = await builtInCURD(item.Table_Name)
        
         output.add = output.add.concat(tmp.c)
@@ -74,20 +73,25 @@ let centerControl = async function () {
 
     let a = { add: [], delete: [], update: [], select: [] }  //暂存将要插入数据库的数据
     let fID = ''                                             //暂存将要插入数据库的表单号
-    let flag = 0 //是否执行插入的标记
+    let flag = 0 //是否执行插入的标记 0表不插入
+    let firstFlag=1 //1表示初始
 
     //根据总行数,一行一行的循环调用rowItem
-    for (let i = 10888; i <= total; i++) {
+    for (let i = 1; i <= total; i++) {
 
+       
+
+
+        firstFlag=0
         console.log('centerControl.js ##allRank的总行数:',aa[0].total)  
         console.log('centerControl.js 当前正在处理##allRank表的行数:',i)
 
         //取数据
         str = `select * from ##allRank a where a.[No]='${i}'`
-        let row = await queryFunc(str)
+        let row = await queryFunc(str)  
 
         //判断是否执行插入
-        if (fID != '' && fID != row[0].Form_ID) {
+        if (firstFlag==0  && fID != row[0].Form_ID) {
             flag = 1
         }       
        
@@ -138,11 +142,14 @@ let centerControl = async function () {
 
         fID = row[0].Form_ID
 
+     
+
+       
+
       /*   if (i == 600) {
             return;
         } */
     }
-
     //这里的不插入的作用是 当循环完了后,最后一个并没有插入,所以在这里进行插入
     if (a.add.length != 0 || a.delete.length != 0 || a.update.length != 0 || a.select.length != 0) {
 
@@ -155,7 +162,6 @@ let centerControl = async function () {
         a.delete = Array.from(new Set(a.delete))
         a.update = Array.from(new Set(a.update))
         a.select = Array.from(new Set(a.select))
-
 
         if (a.add.length != 0) {
             bulkInsert(fID, a.add, '[dbo].[tableAdd]')
@@ -172,13 +178,15 @@ let centerControl = async function () {
         if (a.select.length != 0) {
             bulkInsert(fID, a.select, '[dbo].[tableSelect]')
             console.log('centerControl.js 操作: select 对应表单号:',fID)                
-        }
+        } 
 
         a = { add: [], delete: [], update: [], select: [] }
         flag = 0
 
         console.log('Yes successful!')
     }
+
+     
 }
 
 module.exports = centerControl

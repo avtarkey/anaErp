@@ -66,7 +66,18 @@ const queryFunc = require('./queryFuncDefine.js')
             `
             let tmpResult = await queryFunc(queryStr)
 
-            if (tmpResult[0].total == '0') {        //如果结果为零,表示该对象不是表
+
+             let queryStr2 =  //这条语句是在所有用户表中查询该对象有几个,如果为零,表示这个对象不是表对象
+                            //!!!!!!!!!!!!!!!!!!!这条语句只能判断这个对象是否是cyerp中的表,也就是说_tbsf_staff这个bsmaster中的表不能
+                `   USE BsMaster;          
+                    SELECT  COUNT(1) as total
+                    FROM sys.objects  
+                    WHERE type_desc LIKE '%USER_TABLE%' 
+                    and name='${objStr}'
+            `
+            let tmpResult2 = await queryFunc(queryStr2)
+
+            if (tmpResult[0].total == '0' && tmpResult2[0].total== '0' ) {        //如果结果为零,表示该对象不是表  
                 nonTableArray.push(obj)
             } else {
                 tableArray.push(obj)                //不为零,表示该对象是表
@@ -244,6 +255,13 @@ const queryFunc = require('./queryFuncDefine.js')
 
 //正常方法处理的入口
     let generalSql = async function (str,layer=2) {
+        let delCommentReg=/--[^\r\n]*$/igm        
+         let delCommentReg2=/(?<=\/\*)[\s\S]*?(?=\*\/)/ig
+         str=str.replace(delCommentReg2,'')
+         str=str.replace(delCommentReg,'')
+
+
+       
         layer=layer-1 //layer是递归层数的定义,必须控制递归的深度,有的可能形成相互依赖,产生死锁,不能自己结束
 
         let returnResult = { c: [], u: [], r: [], d: [] }
@@ -269,6 +287,8 @@ const queryFunc = require('./queryFuncDefine.js')
 
         //4 查询
         let r = read(str)
+   
+       
 
         let union = new Set([...c, ...u, ...d]);
         let difference = new Set([...r].filter(x => !union.has(x)));   //在r中减去cud,对集合取差集
@@ -289,8 +309,17 @@ const queryFunc = require('./queryFuncDefine.js')
         //5 存储过程
         let e = saveProc(str)
         if (e.length != 0) {
+
             nonTable = nonTable.concat(e)
         } 
+        
+                      /* console.log('current layer:',layer)
+                    console.log('returnResult :',returnResult)
+                    console.log('nonTable:',nonTable)  
+
+                    return */
+           
+        
 
         //6 处理前面产生的非表对象,layer是递归层数
         if (nonTable.length != 0 && layer>0) {
@@ -376,20 +405,29 @@ const queryFunc = require('./queryFuncDefine.js')
                 let m = str.match(reg)
                 m = [m.pop()] //m[2]产生的是一个字符串,但是proc是处理数组所以这里加[] 
                 m = proc(m)
+
+                //console.log('this is m:',m)
             
                 if (m != undefined || m != null || m.length != 0) {
                     m = await diff(m) //过滤非对象
                     m = m.nonTable //这里出来的结果只能是视图或者存储过程
                     if (m != []) {
                         for (let obj of m) {
+
+                           // console.log('111111111111111111111obj:',obj)
+
                             let tmpLineStr = await queryFunc('exec sp_helptext ' + obj)
                             let tmpStr = ''
                             for (let i of tmpLineStr) {
                                 tmpStr += i.Text
                             }                     
                             
+                          //  console.log('3333333333333',tmpLineStr)
+                           // console.log('1111111111111111111111tmpStr:',tmpStr
+
                             let r = await generalSql(tmpStr)        //递归本身
                             tmp = r  
+                         
                         }
                     }
                 }
@@ -459,38 +497,32 @@ let builtInCURD = async function (str) {
     return returnResult
 }
 
-
 /* 
- str = `ExecuteSQL(,if OBJECT_ID('tempdb..#tmpDoorPoint') is not null drop table #tmpDoorPoint          
-       select distinct a.controllerid,a.doorgroupno ,doorno            
-        into #tmpDoorPoint              
-        from linkbostex.SKEP_DAS.dbo.DAS_ControllerPoint a                
-inner join   linkbostex.SKEP_DAS.dbo.DAS_DoorPoint b 
+入口parse的
+            属于存储executesql(generalSql)-->generalSql(generalSql)
+            属于一般executesql(generalSql)-->generalSql(generalSql)
 
-             on a.staffid=b.staffid  and a.controllerid=b.controllerid               
-              where b.isdoorEnabled=1 and (a.staffid=[VAR$.dtcur.工號]     )                
- INSERT INTO
-  linkbostex.SKEP_DAS.dbo.DAS_ChangeAccessRight(StaffID,StaffVersion,DoorAccessRight,LiftAccessRight,LockerAccessRight,Flag)                              select [VAR$.dtcur.工號],0,convert(varchar,ControllerID)+','+convert(varchar,doorno),null,null,0                    From #tmpDoorPoint                drop table #tmpDoorPoint     INSERT INTO linkbostex.SKEP_DAS.dbo.DAS_ChangeStaffDetail (StaffID,StaffVersion,StaffCardID,StaffEffectiveDate,StaffEffectiveTime             ,StaffExpiryDate,StaffExpiryTime,StaffIsCardInhibited,StaffIsCardLoss                                   ,StaffIsCardSent,StaffIsUseBiometric,CardCanExpire,CardState                                   ,ModifyDate)                                   select staff_id as 工號,0 as 版本,cardid as 卡號ID                                 ,convert(varchar(10),GETDATE(),101) as 生效日期,'01:00' as 生效時間                                   ,convert(varchar(10),dateadd(year,10,GETDATE()),101) 有效日期,'00:00' 有效時間                                   ,0 as 是否禁止使用卡片,0 as 卡片掛失                                   ,0 as  是否為超級用戶,0  as 是否使用指紋                                   ,0  as 是否有效期管制,1  as 卡片狀態                                   ,GETDATE() as 操作時間                    from  BSMaster.DBO.tbsf_Staff_ByOther               where ID= [VAR$.dtcur.ID]              delete from linkbostex.SKEP_DAS.dbo.DAS_Staff  where staffid=[VAR$.dtcur.工號]         delete from  BSMaster.DBO.tbsf_Staff_ByOther where staff_id=[VAR$.dtcur.工號])
-` */
-/* let abc = async function () {
-    let s = await builtInCURD(str);
-    // let s= dele(str)
-    console.dir('end result:')
-    console.dir(s)
-}
-
-//[ 'tblHR_DimissionReason', 'tblHR_MonthAttendance' ]
-abc() 
  */
-
-//   node advance/filter.js
-
-
-
-//console.dir(read(str))
 
 
  module.exports = builtInCURD
+
+/* let str =`ExecuteSQL(VarList,execute CYERP.dbo.stWarehouse_Materiel_Consume_memo [Form$.MainForm.TextBox2],
+[Form$.MainForm.TextBox3],[Form$.MainForm.TextBox5],[Form$.MainForm.ComboBox4],
+[Form$.MainForm.ComboBox6],[Form$.MainForm.TextBox7],[Form$.MainForm.ComboBox8],
+[Form$.MainForm.TextBox9],[Form$.MainForm.TextBox10],[Form$.MainForm.ComboBox11],
+[Form$.MainForm.ComboBox12],[Form$.MainForm.DateBox31],[Form$.MainForm.ComboBox14],
+[Form$.MainForm.ComboBox15],[Form$.MainForm.TextBox16],[Form$.MainForm.DateTimeBox17],
+[Form$.MainForm.DateTimeBox18],[Form$.MainForm.CheckBox20],[VAR$.TempLotName],[Form$.MainForm.ComboBox19],
+[Form$.MainForm.ComboBox55],[Form$.MainForm.CheckBox55],[Form$.MainForm.ComboBox15],[SYSVAR$.Staff_ID])` */
+
+/* let aaa=async function(){
+    let a=await builtInCURD(str)
+console.log('result:',a)
+}
+aaa() */ 
+
+//   node ./advance/filter.js
 
 
 
