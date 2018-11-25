@@ -57,9 +57,9 @@ let queryFunc =  (queryString,isOmitRows=0) => {
           console.log('queryFuncDefine.js正在查询数据库.......')
           if (err) {
             console.dir('查询建立出错')
-            //console.error(err);
+            console.error(err);
             console.log('该错误的查询语句:',queryString)
-            //return
+            return
             storeResult.push(''),storeResult.push('')
           } 
           //release the connection back to the pool when finished       

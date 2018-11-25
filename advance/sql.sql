@@ -68,3 +68,72 @@ souModuleName nvarchar(200),
 souModuleID nvarchar(200)
 
 )
+
+
+--产生result表
+
+  with selfben   --屬於自身的表
+                            as(
+                                select * from tableAdd
+                            ),
+                            dependency    --屬於依賴的表
+                            as(
+                                select * from tableDelete
+                                union all
+                                select * from tableUpdate
+                                union all
+                                select * from tableSelect
+                            ),
+                            dependencyLink  --根據自身表和依賴表形成依賴鏈
+                            as(
+                                select distinct
+                                    a.formID as tarFormID,  --目標
+                                    b.formID as souFormID   --源
+                                    --a.tableName as tarTableName
+                                    --b.tableName as souTableName    
+                                from dependency a
+                                left join selfben b on a.tableName=b.tableName
+                                where a.formID <>b.formID 
+                                --and a.formID='20080306120034'
+                            ),
+                            erp				--erp系統數據
+                            as(
+                              select * from acticle..tableSys
+                            ),
+                            result			--根據依賴鏈和erp系統表形成結果
+                            as(
+                                select 
+                                
+                                c.Form_Taiwan_Name as tarFormName,
+                                b.Form_Taiwan_Name as souFormName,
+                                
+                                c.isBusiness as tarIsBusiness,
+                                b.isBusiness as souIsBusiness,
+                                
+                                
+                                c.isDisabled as tarIsDisabled,	
+                                b.isDisabled as souIsDisabled,
+                                
+                                a.tarFormID as tarFormID,
+                                a.souFormID as souFormID,	
+                                
+                                --a.tarTableName,
+                                --a.souTableName,	
+
+                                c.Module_Taiwan_Name as tarModuleName,	 --目標
+                                c.Module_ID as tarModuleID,
+                                
+                                b.Module_Taiwan_Name as souModuleName,   --源
+                                b.Module_ID as souModuleID
+                                
+
+                                from dependencyLink a	
+                                left join erp c on a.tarFormID=c.Form_ID  --目標
+                                left join erp b on a.souFormID=b.Form_ID  --源
+
+                            )
+                            
+
+select * 
+ into acticle..tableResult
+from result

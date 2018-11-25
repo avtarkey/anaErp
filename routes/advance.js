@@ -79,7 +79,7 @@ router.post('/saveData', function (req, res) {
 //返回图
 router.post('/process_get', function (req, res) {
  
-  
+  console.log('**************************************************')
   
 
     //req.bod的形式
@@ -92,10 +92,10 @@ router.post('/process_get', function (req, res) {
     // 输出 JSON 格式   
  
     let xxx=req.body
-    console.log(xxx)
+    console.log('this is xxx:',xxx)
    
 
-    let comps = await abc(xxx.body,xxx.slfMdID)  
+    let comps = await abc([xxx.body.shift()],xxx.slfMdID[0],xxx.slfMdID[1])  
     let returnJson = new Array(); //最后的返回数据对象   
 
     for (let row of comps) {

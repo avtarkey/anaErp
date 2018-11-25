@@ -148,16 +148,20 @@
                     
 
                     alert(s)  
-                    abb= prompt("请输入密码")   
-                    if(slfmd==null){
-                        return
+                   let  abb= prompt("请输入密码")   
+                    if(abb==null || abb.length==0){
+                        abb='0,0'
                     }else{
-                        let abb=abb.split(',')
-                        slfmd=abb.map(v=>'Module00'+v)
+                        abb=abb.split(',')
+                        abb=abb
                     } 
 
-                    newPosetData.slfMdID=slfmd
+                    newPosetData.slfMdID=abb
                     newPosetData.body=postData
+
+                    slfmd=postData[0].id
+
+
 
                     
                     console.log('前端发往后端的请求:',newPosetData)
