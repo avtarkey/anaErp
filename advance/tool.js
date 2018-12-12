@@ -1,4 +1,6 @@
-
+/**
+ * 根据模块ID数组,查询出所有的模块的依赖并编号,以便centercontrol.js进行后续分析
+ */
 
 
 const queryFunc = require('./queryFuncDefine.js');  //这个是执行查询的函数

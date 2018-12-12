@@ -4,6 +4,7 @@
 
 if  object_id('tempdb..##all') is not null drop table ##all
 if  object_id('tempdb..##allRank') is not null drop table ##allRank
+
 if  object_id('tempdb..##tableAdd') is not null drop table ##tableAdd
 if  object_id('tempdb..##tableDelete') is not null drop table ##tableDelete
 if  object_id('tempdb..##tableUpdate') is not null drop table ##tableUpdate
@@ -137,3 +138,8 @@ souModuleID nvarchar(200)
 select * 
  into acticle..tableResult
 from result
+
+
+**************************************************
+
+

@@ -117,7 +117,7 @@ router.post('/process_get', function (req, res) {
       tempObject.tarIsDisabled=row.tarIsDisabled
       tempObject.souIsDisabled=row.souIsDisabled
 
-      tempObject.tarFormID=row.tarFormID
+      tempObject.tarFormID=row.tarFormID 
       tempObject.souFormID=row.souFormID
 
       tempObject.tarModuleName=row.tarModuleName
@@ -125,6 +125,7 @@ router.post('/process_get', function (req, res) {
       
       tempObject.souModuleName=row.souModuleName
       tempObject.souModuleID=row.souModuleID
+      empObject.tag=row.tag
 
       tempObject.rela=row.tarModuleID==row.souModuleID?'模块内':'模块间'
 
@@ -149,4 +150,4 @@ router.post('/process_get', function (req, res) {
 })
 module.exports = router;
 
-// set DEBUG=myapp:* & npm start
+//   set DEBUG=myapp:* & npm start

@@ -1,3 +1,9 @@
+/**
+ * 这个是生成tableSys系统表的语句
+ */
+
+
+
 const queryFunc = require('./queryFuncDefine.js'); 
 const ins=require('./ErpSysInsertBulk.js')
 
