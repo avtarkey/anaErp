@@ -483,8 +483,13 @@
                                 .attr('xlink:href', function (d, i) { return '#edgepath' + i })
                                 .style("pointer-events", "none")
                                 .text(function (d) {
-                                    //return d.rela;
-                                    return
+                                    if(d.tag=='S'){
+                                        return
+                                    }else{
+                                        return d.tag
+                                    }
+                                   
+                                   // return
                                 })
                     //
 
@@ -568,9 +573,19 @@
                                         
                                     }else{
                                         if (line.rela == "模块内") {              //外部的连线
-                                            color = "#4bc110";
+                                            if(line.tar!='S'){
+                                                color = "#f220000";
+                                            }else{
+                                                color = "#4bc110";
+                                            }
+                                            
                                         } else if (line.rela == "模块间") {       //内部连线
-                                            color = "#f96959";
+                                            if(line.tar!='S'){
+                                                color = "#f220000";
+                                            }else{
+                                                color = "#f96959";
+                                            }
+                                            
                                         } 
                                     } 
 
