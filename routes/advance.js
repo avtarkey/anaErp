@@ -92,14 +92,16 @@ router.post('/process_get', function (req, res) {
     // 输出 JSON 格式   
 
     let xxx = req.body
-    console.log('this is xxx:', xxx)
+   // console.log('this is xxx:', xxx)
+
     let a1 = [xxx.body.shift()]
     console.log('send:', [a1, xxx.slfMdID[0], xxx.slfMdID[1]])
     let comps = await abc(a1, xxx.slfMdID[0], xxx.slfMdID[1])
 
 
+
     let returnJson = new Array(); //最后的返回数据对象   
-    console.log('comps:', comps)
+   // console.log('comps:', comps)
     for (let row of comps) {
       let tempObject = Object();//注意首字母大写
       /*  tempObject.target = comps[key].targetFormName;                //目标表单名
@@ -145,7 +147,7 @@ router.post('/process_get', function (req, res) {
     myData.isExist = 0;
 
     res.json(myData);
-    console.log('myData', myData)
+   // console.log('myData', myData)
   }
   ccc()
 

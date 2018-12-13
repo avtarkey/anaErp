@@ -445,15 +445,25 @@
                                             return 0;                        
                                     } */
                             })
-                            .style("stroke", function (d) {
-                                var lineColor;
+                            .style("stroke", function (line) {
+                                var color
                                 //根据关系的不同设置线条颜色
-                                if (d.rela == "模块间") {                 //外部的连线
-                                    lineColor = "#4bc110";
-                                } else if (d.rela == "模块内") {          //内部连线
-                                    lineColor = "#f96959";
-                                }
-                                return lineColor;
+                                if (line.rela == "模块内") {              //外部的连线
+                                            if(line.tag=='S'){
+                                               
+                                                color = '#447e1a'  //绿色
+                                            }else{
+                                                color ='#0628f5'    //深蓝色
+                                            }
+                                            
+                                        } else if (line.rela == "模块间") {       //内部连线
+                                            if(line.tag=='S'){
+                                                color = '#f56806'   //橘黄
+                                            }else{
+                                                color ='#0628f5'    //深蓝色
+                                            }                                            
+                                        } 
+                                return color
                             })
                             .style("pointer-events", "none")
                             .style("stroke-width", 2)                       //线条粗细
@@ -552,9 +562,9 @@
                                 } */
                             })
                             .attr("r", 28)                                  //设置圆圈半径
-                            .on("click", function (node) {
+                            .on("click", function (node) {  //节点被单击时
                                 //单击时让连接线加粗
-                                edges_line.style("stroke-width", function (line) {
+                                edges_line.style("stroke-width", function (line) { //连线在变化
                                    
                                     if (line.source.name == node.name || line.target.name == node.name) {
                                         return 5;
@@ -569,31 +579,25 @@
                                     var color;
                               
                                     if (line.source.name == node.name || line.target.name == node.name) {
-                                        color = '#f22828'                         //选中是的颜色
+                                        color = '#f22828'                        //选中是的颜色 红色
                                         
                                     }else{
                                         if (line.rela == "模块内") {              //外部的连线
-                                            if(line.tar!='S'){
-                                                color = "#f220000";
+                                            if(line.tag=='S'){
+                                                color = '#447e1a'  //绿色
                                             }else{
-                                                color = "#4bc110";
+                                                color ='#0628f5'    //深蓝色
                                             }
                                             
                                         } else if (line.rela == "模块间") {       //内部连线
-                                            if(line.tar!='S'){
-                                                color = "#f220000";
+                                            if(line.tag=='S'){
+                                                color = '#f56806'   //橘黄
                                             }else{
-                                                color = "#f96959";
-                                            }
-                                            
+                                                color ='#0628f5'    //深蓝色
+                                            }                                            
                                         } 
                                     } 
-
-
-                                     return color                         
-                                    
-
-                                    
+                                    return color         
                                 })
                             })
                             .call(force.drag)                               //将当前选中的元素传到drag函数中，使顶点可以被拖动
