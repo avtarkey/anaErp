@@ -1,0 +1,357 @@
+ {
+  "links": [
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080422085410",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "工程基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00002",
+        "ModuleName": "工程基礎資料",
+        "in": 0,
+        "name": "治具類型維護<>工程基礎資料",
+        "out": 1,
+        "x": 2703.9594978314626,
+        "y": 1349.8046488300363
+      },
+      "tarFormID": "20080416110130",
+      "tarIsBusiness": "2",
+      "tarIsDisabled": "true",
+      "tarModuleName": "費用管理",
+      "target": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00046",
+        "ModuleName": "費用管理",
+        "in": 0,
+        "name": "探針套管數量統計",
+        "out": 1,
+        "x": 2434.145559935094,
+        "y": 1474.0389166049044
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080318152616",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "工程基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00002",
+        "ModuleName": "工程基礎資料",
+        "in": 0,
+        "name": "治具探針項目維護<>工程基礎資料",
+        "out": 1,
+        "x": 2693.6966087158157,
+        "y": 1266.995649985622
+      },
+      "tarFormID": "20080416110130",
+      "tarIsBusiness": "2",
+      "tarIsDisabled": "true",
+      "tarModuleName": "費用管理",
+      "target": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00046",
+        "ModuleName": "費用管理",
+        "in": 0,
+        "name": "探針套管數量統計",
+        "out": 1,
+        "x": 2434.145559935094,
+        "y": 1474.0389166049044
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080306113543",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "倉庫基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00071",
+        "ModuleName": "倉庫基礎資料",
+        "in": 0,
+        "name": "倉位維護<>倉庫基礎資料",
+        "out": 0,
+        "x": 2827.419690974173,
+        "y": 1750.8043411533051
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080306141711",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "系統基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00005",
+        "ModuleName": "系統基礎資料",
+        "in": 0,
+        "name": "單位設定<>系統基礎資料",
+        "out": 0,
+        "x": 2822.48720669518,
+        "y": 1485.5778870788156
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080308092346",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "采購基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00070",
+        "ModuleName": "采購基礎資料",
+        "in": 0,
+        "name": "供應商基本資料<>采購基礎資料",
+        "out": 0,
+        "x": 2865.6099469422484,
+        "y": 1832.350801533788
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080305103146",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "財務基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00004",
+        "ModuleName": "財務基礎資料",
+        "in": 0,
+        "name": "會計科目維護<>財務基礎資料",
+        "out": 0,
+        "x": 2759.8247495528144,
+        "y": 1436.4044663435566
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080729173628",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "采購管理",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00021",
+        "ModuleName": "采購管理",
+        "in": 0,
+        "name": "物料編號申請_V1<>采購管理",
+        "out": 0,
+        "x": 2875.7894961429433,
+        "y": 1671.9295556593527
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080326173252",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "倉庫基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00071",
+        "ModuleName": "倉庫基礎資料",
+        "in": 0,
+        "name": "物料類別維護<>倉庫基礎資料",
+        "out": 0,
+        "x": 2981.3674739973003,
+        "y": 1785.5727253021337
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080305115642",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "人事基礎資料",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00001",
+        "ModuleName": "人事基礎資料",
+        "in": 0,
+        "name": "組織架構<>人事基礎資料",
+        "out": 0,
+        "x": 2854.6549437770764,
+        "y": 1570.223277213815
+      },
+      "tarFormID": "20080312120445",
+      "tarIsBusiness": "1",
+      "tarIsDisabled": "true",
+      "tarModuleName": "已禁用功能",
+      "target": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      }
+    },
+    {
+      "rela": "模块内",
+      "tag": "S",
+      "souFormID": "20080416110130",
+      "souIsBusiness": "2",
+      "souIsDisabled": "true",
+      "souModuleName": "費用管理",
+      "source": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00046",
+        "ModuleName": "費用管理",
+        "in": 0,
+        "name": "探針套管數量統計",
+        "out": 1,
+        "x": 2434.145559935094,
+        "y": 1474.0389166049044
+      },
+      "tarFormID": "20080422094635",
+      "tarIsBusiness": "2",
+      "tarIsDisabled": "true",
+      "tarModuleName": "費用管理",
+      "target": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00046",
+        "ModuleName": "費用管理",
+        "in": 1,
+        "name": "治具費用維護",
+        "out": 0,
+        "x": 2340.2108697687136,
+        "y": 1606.581856763298
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080312120445",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "已禁用功能",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 1,
+        "x": 2646.797481889711,
+        "y": 1666.9315400733065
+      },
+      "tarFormID": "20080422094635",
+      "tarIsBusiness": "2",
+      "tarIsDisabled": "true",
+      "tarModuleName": "費用管理",
+      "target": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00046",
+        "ModuleName": "費用管理",
+        "in": 1,
+        "name": "治具費用維護",
+        "out": 0,
+        "x": 2340.2108697687136,
+        "y": 1606.581856763298
+      }
+    }
+  ],
+  "nodes": {}
+}

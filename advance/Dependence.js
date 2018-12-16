@@ -7,7 +7,7 @@ const centerControl = require('./centerControl.js'); //这个是中间处理的
 
 
 //总调用执行
-let abc = async function (moduleArray, later, former = 1) {
+let abc = async function (moduleArray, former = 1,later=1 ) {
 
     let add = []
     moduleArray.forEach(element => {
@@ -51,6 +51,33 @@ let abc = async function (moduleArray, later, former = 1) {
         
         insert into acticle..tableTmp3
         select formID from acticle..tableTmpFormID  `
+    
+    
+        let souInsert3 =
+        `
+        delete acticle..tableTmp3
+
+        insert into acticle..tableTmp3
+        select tarFormID from acticle..tableResult  
+        where  1=1
+        and tarModuleID in (${para},'Module00236')   and souModuleID  in (${para},'Module00236')  
+        
+        and not (tarModuleID  in ('Module00236') and  souModuleID  in ('Module00236') )
+    `
+
+    let souInsert4 =    // 输出
+        `insert into acticle..tableTmp
+        select *         from acticle..tableResult  where  souFormID in (select * from acticle..tableTmp3) 
+    
+        delete acticle..tableTmpFormID
+        
+        insert into acticle..tableTmpFormID
+        select tarFormID from acticle..tableResult  where  souFormID in (select * from acticle..tableTmp3) 
+        
+        delete acticle..tableTmp3
+        
+        insert into acticle..tableTmp3
+        select formID from acticle..tableTmpFormID  `
 
 
 
@@ -60,6 +87,12 @@ let abc = async function (moduleArray, later, former = 1) {
 
         for (let i = 1; i <= later; i++) {
             await queryFunc(souInsert2)
+           // console.log('souInsert2:', souInsert2)
+        }
+        await queryFunc(souInsert3)
+
+        for (let i = 1; i <= former; i++) {
+            await queryFunc(souInsert4)
            // console.log('souInsert2:', souInsert2)
         }
     }
@@ -136,11 +169,11 @@ let abc = async function (moduleArray, later, former = 1) {
    */
 }
  module.exports = abc
-
-/*  let kk = [
-    { id: 'Module00001', text: '人事基础资料' }  
-]   */
-//abc([{ id: 'Module00057', text: '报废管理' }], '0', ',');  //这里不可以简化为匿名函数,不然报错,不知道是为什么
-
+/* async function ccc(){
+    let kk = await abc( [ { id: 'Module00035', text: '制程管理' } ], '1', '1');  //这里不可以简化为匿名函数,不然报错,不知道是为什么
+    console.log('kk:',kk)
+}
+ccc()
+ */
 
 //   node advance/Dependence.js

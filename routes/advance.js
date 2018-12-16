@@ -60,7 +60,7 @@ router.post('/saveData', function (req, res) {
     let data = jjson;
     //console.dir(jjson);
 
-    let baseDir = __dirname + '/../public/jsonFile/';
+    let baseDir = __dirname + '/../public/advanceJsonF/';
     let opts = {
       cwd: baseDir,
       encoding: 'utf8',
@@ -78,6 +78,16 @@ router.post('/saveData', function (req, res) {
 
 //返回图
 router.post('/process_get', function (req, res) {
+  console.log('33333333333333333333333333333333')
+  console.log(req.body)
+  console.log('ddddddddddd',req.body.body[0])
+  console.log('222222222222222222222222222222')
+  let ModuleID=req.body.body[0].id //从请求中获得模块编号
+
+  var fs= require('fs');
+  console.log('11111111111111111111111111111')
+  console.log('ModuleID:',ModuleID)
+
 
   console.log('**************************************************')
 
@@ -92,7 +102,7 @@ router.post('/process_get', function (req, res) {
     // 输出 JSON 格式   
 
     let xxx = req.body
-   // console.log('this is xxx:', xxx)
+    // console.log('this is xxx:', xxx)
 
     let a1 = [xxx.body.shift()]
     console.log('send:', [a1, xxx.slfMdID[0], xxx.slfMdID[1]])
@@ -101,7 +111,7 @@ router.post('/process_get', function (req, res) {
 
 
     let returnJson = new Array(); //最后的返回数据对象   
-   // console.log('comps:', comps)
+    // console.log('comps:', comps)
     for (let row of comps) {
       let tempObject = Object();//注意首字母大写
       /*  tempObject.target = comps[key].targetFormName;                //目标表单名
@@ -131,25 +141,43 @@ router.post('/process_get', function (req, res) {
       tempObject.souModuleID = row.souModuleID
       tempObject.tag = row.tag
 
-      tempObject.rela = row.tarModuleID == row.souModuleID ? '模块内' : '模块间'
+      tempObject.rela = (row.tarModuleID ==a1[0].id && row.souModuleID==a1[0].id) ? '模块内' : '模块间'
 
-
+     /*  console.dir(tempObject)
+      console.dir(a1[0].id) */
       returnJson.push(tempObject);
     }
 
     return returnJson
   }
 
-  let ccc = async function () {
-    let myData = new Object();
+  //图形在本地的存储位置
+  let baseDir = __dirname + '/../public/advanceJsonF/';
+  let fileName = baseDir + ModuleID + '.json';
+  console.dir(fileName);
 
-    myData.body = await no();
-    myData.isExist = 0;
+  //判断在文件中是否存在以前自己保存的图json文件
+  fs.exists(fileName, function (exists) {
+    if (!exists) { //不存在
+      let ccc = async function () {
+        let myData = new Object();
 
-    res.json(myData);
-   // console.log('myData', myData)
-  }
-  ccc()
+        myData.body = await no();
+        myData.isExist = 0;
+
+        res.json(myData);
+        // console.log('myData', myData)
+      }
+      ccc()
+    } else {//存在 
+
+      let myData = new Object();
+      myData.isExist = 1;
+      myData.body = JSON.parse(fs.readFileSync(fileName, 'utf8'));
+
+      res.json(myData);
+    }
+  })
 
 })
 module.exports = router;
