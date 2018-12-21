@@ -1,0 +1,1100 @@
+/* ebseducation : Tue, 30 Oct 2018 15:05:52 +0800 */
+*{
+	font-family: Microsoft JhengHei;
+}
+
+#comment-form table{    
+	margin: 0 auto ;
+}
+#comment-form td , #comment-form th{
+    border: 0px solid #000 ;
+    padding: 0px 0px;    
+}
+#comment-form input#send-comment{
+    padding: 0px 0px ;    
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+        margin:0;
+        padding:0;
+}
+table {
+        border-collapse:collapse;
+        border-spacing:0;
+}
+fieldset,img {
+        border:0;
+}
+address,caption,cite,code,dfn,em,th,var {
+        font-style:normal;
+        font-weight:normal;
+}
+ol,ul {
+        list-style:none;
+}
+caption,th {
+        text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+        font-size:100%;
+        font-weight:normal;
+}
+q:before,q:after {
+        content:'';
+}
+abbr,acronym {
+        border:0;
+}
+pre{
+        font-size: 1em ;
+}
+.article-content{
+  font-size: 14px;
+  _height: 360px ;
+  overflow: hidden ;
+  _overflow: none;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 部落格前置設定 */
+body{
+	font-size: 12px ;
+	font-family:"Arial" ;
+	min-width: 1200px;
+	background: #ffffff;
+}
+#container{
+	width: 1100px;
+	margin: 0 auto;
+}
+a{
+	color:#000000;
+	text-decoration:none ;
+}
+a:hover{
+	text-decoration:none ;
+}
+textarea{
+	font-size: 12px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 快捷功能BAR */
+.topbar__logo{display: none;}
+.topbar__search{display: none;}
+.topbar__announce{display: none;}
+.topbar{
+	width: 205px !important;
+	min-width: 140px !important;
+	z-index: 1 !important;
+	box-shadow: none !important;
+	background: transparent !important;
+	left: 50% !important;
+	margin-left: -540px;
+}
+.topbar__notification .topbar__dropdown-lists{
+	left: -10px !important;
+}
+.topbar__notification .topbar__dropdown-lists:before{
+	margin-left: -195px !important;
+}
+.topbar__notification .topbar__dropdown-lists:after{
+	margin-left: -195px !important;
+}
+.topbar--fixed{
+position: absolute;
+}
+.topbar__lang .topbar__lang__switcher, .topbar__notification .topbar__notification__counter, .topbar__user .topbar__user__avator, .topbar__user .topbar__user__login{
+color: #bbb;
+}
+.topbar__search-container	{display: none;}
+#blog-category{ /*白色的底*/
+	width: 1080px;
+	height: 60px;
+	position: absolute;
+	top: -60px;
+	left: 10px;
+	background: #ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px -2px rgba(20%,20%,40%,0.7);
+	font-size: 0px;
+}
+.topbar__related-article__cat-name{display: none !important;}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 部落格資訊 */
+#header{
+	width: 1110px;
+	margin: 0 auto;
+	padding: 45px 0px 45px 0px;
+	position: relative;
+}
+#banner{
+	text-align: center;
+}
+#banner h1{
+	font-size: 35px;
+}
+#banner h2{
+	color: #555;
+	padding-top: 25px;
+	line-height: 250%;
+}
+/*--跳到主文--*/
+#banner .skiplink{display: none;}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 連結區塊 */
+#navigation{
+	margin: 0 auto;
+	width: 300px;
+	border-top: 1px dotted #999;
+	padding-top: 7px;
+	margin-top: 7px;
+	text-align: center;
+}
+/*--其他服務連結區塊內的所有連結--*/
+#navigation a:before{
+	content: "● ";
+	padding-left: 6px;
+}
+#navigation li{
+	display: inline-block;
+	padding-right: 6px;
+}
+#navigation a{
+	color: #555;
+}
+#navigation a:hover{
+	color: #007bbb;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 主要內文 */
+#main{clear: both;}
+
+/*--主要內容區--*/
+#content{
+	width: 1110px;
+	margin: 0 auto;
+}
+/*--公告區塊--*/
+#spotlight{
+	margin: 0px 15px 30px 15px;
+	padding: 15px;
+	border-top: dotted #999 1px;
+	border-bottom: dotted #999 1px;
+}
+
+/*--公告注目區標題--*/
+#spotlight h5{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 首頁模式 */
+.article{
+	float: left;
+	width: 300px;
+	height: 360px;
+	padding: 20px;
+	margin: 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px -2px rgba(20%,20%,40%,0.7);
+	background: #ffffff;
+	overflow : hidden;
+	position: relative;
+}
+.article:hover{
+	top: 1px;
+	left: 1px;
+	box-shadow: 1px 1px 5px -2px rgba(20%,20%,40%,0.7);
+}
+.article-head{
+	padding-bottom: 5px;
+}
+/*--發表時間--*/
+.publish{
+	font-weight: bold;
+	width: 300px;
+	text-align: center;
+	padding-bottom: 2px;
+}
+/*--月份--*/
+.month{
+	padding-right: 5px;
+}
+/*--日期--*/
+.date{
+	font-size: 25px;
+	font-weight: bold;
+}
+/*--星期--*/
+.day{display: none;}
+/*--年--*/
+.year{
+	padding-left: 5px;
+}
+/*--時間--*/
+.time{display: none;}
+
+/*--文章標題--*/
+.title h2{
+	font-size: 16px;
+	width: 300px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-align: center;
+	border-top: dotted #ccc 1px;
+	padding: 10px 0px 10px 0px;
+}
+
+.title h2 a{
+	font-weight: bold;
+}
+/*--文章標題前的密碼圖示/隱藏圖示/好友保護圖示--*/
+.title h2 img{
+	display: none;
+}
+
+/*--文章內容--*/
+.article-content{
+	font-size: 14px;
+	color: #555;
+	padding-top: 210px;
+	line-height: 200%;
+}
+.article-content a{
+	font-size: 14px;
+	color: #007bbb;
+}
+.article-content a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+.article-content p{
+	line-height: 200%;
+}
+.article-content p:nth-child(n+5){
+	display: none;
+}
+
+#blog-main .article-content img{
+	display: block;
+	width: 300px;
+	height: auto;
+	position: absolute;
+	top: 90px;
+	left: 20px;
+	clip:rect(0px,300px,200px,0px);
+}
+#category-main .article-content img{
+	display: block;
+	width: 300px;
+	height: auto;
+	position: absolute;
+	top: 90px;
+	left: 20px;
+	clip:rect(0px,300px,200px,0px);
+}
+
+.more a{
+	display: none;
+}
+.article:hover .more a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 0px;
+}
+
+
+/*--發表時間--*/
+.author{display:none;}
+/*--單一篇文章最下方--*/
+.article-footer{
+	line-height: 170%;
+}
+/*--此篇文章分類 : 個人分類+全站分類--*/
+.refer{display:none}
+/*--歷史上的今天--*/
+.history{display:none;}
+/*--轉寄文章--*/
+.forward{display:none;}
+/*--回到頁首--*/
+.back-to-top{display:none;}
+.article-keyword{display:none;}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 文章模式 */
+#article-main #content{
+	width: 1080px;
+}
+
+#article-main .article{
+	float: none;
+	width: 900px;
+	height: auto;
+	padding: 50px 90px;
+	margin: 15px 0px 0px 0px;
+}
+#article-main .article:hover{
+	top: 0px;
+	left: 0px;
+	box-shadow: 2px 2px 5px -2px rgba(20%,20%,40%,0.7);
+}
+#article-main .publish{
+	font-size: 16px;
+	padding: 5px 0px;
+	text-align: left;
+}
+#article-main .date{
+	font-size: 16px;
+	font-weight: bold;
+}
+#article-main .title h2{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	padding: 5px 0px 15px 0px;
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
+	position: static;
+	text-align: left;
+	border: 0px;
+}
+#article-main .title h2 img{
+	position: absolute;
+	top: 80px;
+	right: 112px;
+	display: block;
+}
+#article-main .article-content{
+	padding: 0px;
+	border-bottom: dotted #999 1px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	background: none;
+}
+#article-main .article-content p{
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
+	border-bottom: 0px;
+	display: block;
+	padding: 2px 0px;
+}
+#article-main .article-content img{
+	max-width: 900px;
+}
+
+
+/*--發表時間--*/
+#article-main  .author{display: block;}
+
+
+/*--單一篇文章最下方--*/
+#article-main  .article-footer{}
+
+
+/*--此篇文章分類 : 個人分類+全站分類--*/
+#article-main  .refer{display: block;}
+
+
+/*--歷史上的今天--*/
+#article-main  .history{display: block;}
+/*--轉寄文章--*/
+#article-main  .forward{display: block;}
+/*--回到頁首--*/
+#article-main  .back-to-top{display: block;}
+#article-main  .article-keyword{display: block;}
+/*--加入書籤--*/
+#article-main .bookmark{}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 分類/列表模式 */
+h3{
+	text-align: center;
+	padding: 20px 0px 3px 0px;
+}
+#view-mode{
+	text-align: center;
+	padding: 3px 0px 20px 0px;
+}
+#view-mode a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+
+/*--列表--*/
+.main-list{
+	background: #ffffff;
+	margin: 20px 15px;
+	padding: 90px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 6px -2px rgba(20%,20%,40%,0.7);
+}
+
+.main-list table{
+	width: 100%;
+}
+.main-list td.list-date{
+	width: 14%;
+}
+.main-list td.list-title{
+	width: 70%;
+}
+.main-list td.list-visit{
+	width: 8%;
+	text-align: center;
+}
+.main-list th.list-visit{
+	text-align: center;
+}
+.main-list td.list-comment{
+	width: 8%;
+	text-align: center;
+}
+.main-list th.list-comment{
+	text-align: center;
+}
+.main-list tr:hover{
+	background:#efefef;
+}
+.main-list th{
+	color:#000000;
+	padding:10px;
+	border:0px;
+	text-align: left;
+	-moz-box-shadow: 0 2px 2px -2px #ccc;
+	-webkit-box-shadow: 0 2px 2px -2px #ccc;
+	border-bottom: dotted #bbb 1px;
+}
+.main-list td{
+	border:0px;
+	padding:10px;
+	-moz-box-shadow: 0 2px 2px -2px #ccc;
+	-webkit-box-shadow: 0 2px 2px -2px #ccc;
+	border-bottom: dotted #aaa 1px;
+}
+
+
+
+/*--頁數--*/
+.page{
+	clear: both;
+	padding: 30px 0px 10px 0px;
+	text-align: center;
+}
+.page a{
+	padding: 0px 5px 0px 5px;
+}
+.page span{
+	padding: 0px 5px 0px 5px;
+	color: #777;
+}
+.page a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 留言區塊 */
+/*--僅引用區塊--*/
+#trackback-box{display: none;}
+/*--引用及回應列表全部的大範圍--*/
+#user-post{
+	width: 900px;
+	padding: 50px 90px;
+	background: #ffffff;
+	margin-top: 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 6px -2px rgba(20%,20%,40%,0.7);
+}
+#comment-title{
+	padding: 30px 0px 10px 50px;
+	background: url(https://pic.pimg.tw/weilife/1390024476-1925841079.png)  20px 27px no-repeat;
+	text-align: left;
+}
+.post-comment{
+	padding: 2px 0px 20px 50px;
+	background: url(https://pic.pimg.tw/weilife/1390024476-3525513496.png)  20px top no-repeat;
+	border-bottom: dotted #aaa 1px;
+}
+
+/*--單一引用+單一回應--*/
+.single-post{
+	padding: 20px;
+	-webkit-transition: background 0.5s ease-out;
+	-moz-transition: background 0.5s ease-out;
+	-o-transition: background 0.5s ease-out;
+	border-bottom: dotted #aaa 1px;
+	position: static;
+}
+.single-post:hover{
+	background: #efefef;
+}
+.secret{
+	padding: 0px;
+}
+.secret li{
+	font-size: 0px;
+	padding: 27px;
+	background: url(https://pic.pimg.tw/weilife/1395323895-307323769.png) 20px 27px no-repeat;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+}
+.post-info{
+	position: relative;
+	top: 1px;
+	left: 35px;
+	font-weight: bold;
+	z-index: 10;
+}
+.post-info a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+.post-photo{
+	position: relative;	
+	top: -20px;
+}
+.post-photo img{
+	width: 25px;
+	height: 25px;
+}
+.post-text{
+	padding: 0px 0px 0px 35px;
+	position: relative;
+	top: -10px;
+}
+.reply-text{
+	color: #888;
+	padding: 2px 0px 0px 35px;
+	background: url(https://pic.pimg.tw/weilife/1381057934-3628601167.jpg) 20px top repeat-y;
+}
+.reply-text p{
+	padding-top: 10px;
+	padding-bottom: 2px;
+}
+.reply-text a{
+	color: #888;
+}
+.reply-text a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+/*--------------------icon--------------*/
+.floor{
+	padding-right: 5px;
+}
+.user-name a{
+	padding-left: 13px;
+	margin: 0 10px 0 5px;
+	background: url(https://pic.pimg.tw/weilife/1381045870-1786288759.png) top left no-repeat;
+}
+.user-name img{
+	display: none;
+}
+.homepage{
+	background: url(https://pic.pimg.tw/weilife/1381045870-1646743796.png) center center no-repeat;
+}
+.homepage img{
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;	
+}
+.hide-message{
+	background: url(https://pic.pimg.tw/weilife/1381045870-893869105.png) center center no-repeat;
+}
+.hide-message img{
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;	
+}
+.show-message{
+	background: url(https://pic.pimg.tw/weilife/1381045870-1392687776.png) center center no-repeat;
+}
+.show-message img{
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;	
+}
+.delete-message{
+	background: url(https://pic.pimg.tw/weilife/1381045869-3234832763.png) center center no-repeat;
+}
+.delete-message img{
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;	
+}
+.spam-message{
+	background: url(https://pic.pimg.tw/weilife/1381045869-3826508189.png) center center no-repeat;
+}
+.spam-message img{
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;	
+}
+.reply-message{
+	background: url(https://pic.pimg.tw/weilife/1381045870-4208701959.png) center center no-repeat;
+}
+.reply-message img{
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity: 0;	
+}
+.reply-text .comment-icon{
+	display: none;
+}
+
+
+
+/*撰寫留言區*/
+#container #main #content #user-post #comment-box #comment-area {
+	width: 600px;
+	padding: 0px;
+}
+#container #main #content #user-post #comment-box #comment-area-2 {
+	width: 560px;
+background: #e6e6e6;	
+	padding: 20px;
+	border: 0px;
+}
+#container #main #content #user-post #comment-box #comment-area iframe{
+	position: absolute ;
+	top:20px;
+	right: 20px;
+	float:right;
+}
+#container #main #content #user-post #comment-box .comment-identity{
+	width: 560px;
+	background:url(https://pic.pimg.tw/weilife/1368612429-2456652207.png) repeat-x bottom left;
+	border: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+}
+#container #main #content #user-post #comment-box .identity-login img.photo{
+	border: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#container #main #content #user-post #comment-box .comment-body{
+	border: 0px;
+	padding: 0px;
+}
+#container #main #content #user-post #comment-box input.comment-name{
+	background: #F2F2F2;
+	width: 550px;
+	border: 0px;
+	padding: 5px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+#container #main #content #user-post #comment-box .comment-textarea{
+	background: #F2F2F2;
+	width: 560px;
+	border: 0px;
+	padding: 0px;
+	padding-bottom: 2px;
+	margin: 0px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#container #main #content #user-post #comment-box .comment-textarea textarea{
+	background: #F2F2F2;
+	width: 550px;
+	padding: 5px;
+	margin-bottom:5px;
+}
+#container #main #content #user-post #comment-box .captcha{
+	background: #F2F2F2;
+	width: 560px;
+	border: 0px;
+	padding: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#container #main #content #user-post #comment-box .captcha div{
+	position: absolute;
+	top:5px;
+	left: 210px;
+}
+#container #main #content #user-post #comment-box .captcha input{
+	width: 200px;
+	height: 25px;
+	border: 0px;
+	position: absolute;
+	top:0px;
+	left: 120px;
+}
+#container #main #content #user-post #comment-box a.reload-captcha{
+	position: absolute;
+	top:22px;
+	left:0px;
+	background: url(https://pic.pimg.tw/weilife/1368619771-4138190912.png) no-repeat right 4px;
+}
+#container #main #content #user-post #comment-box a.reload-captcha:hover{
+	position: absolute;
+	top:22px;
+	left:0px;
+	background:url(https://pic.pimg.tw/weilife/1368619770-3632605094.png) no-repeat right 4px;
+	color: #000000
+}
+#container #main #content #user-post #comment-box .comment-extra{
+	background:url(https://pic.pimg.tw/weilife/1368612429-2456652207.png) repeat-x top left;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0px;
+	padding-top: 10px;
+}
+#container #main #content #user-post #comment-box #comment-area button{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #F2F2F2;
+	border: 0px;
+}
+#container #main #content #user-post #comment-box .extra{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #F2F2F2;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+	margin-top: 10px;
+	border: 0px;
+}
+#container #main #content #user-post #comment-box .extra input {
+	width: 251px;
+	background: #F2F2F2;
+	border: 0px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 側欄 */
+
+/*--側邊欄位區--*/
+#links{
+	clear: both;
+}
+.box-text li{
+	display: block;
+	padding: 5px 0px;
+	line-height: 150%;
+	border-bottom: 1px dotted #ccc;
+}
+.box h6{
+	padding: 5px 0px;
+	border-bottom: 1px dotted #ccc;
+}
+.box-more{
+	padding: 4px 0px 4px 0px;
+}
+.box a{
+	color: #007bbb;
+}
+.box a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 側欄1 > 左方伸縮欄位 */
+#links-row-1{
+	position: absolute;
+	top: 0px;
+	left: -210px;
+	background: #ffffff;
+	width: 240px;
+	-webkit-transition: left 0.5s ease-out;
+	-moz-transition: left 0.5s ease-out;
+	-o-transition: left 0.5s ease-out;
+	transition: left 0.5s ease-out;
+	z-index: 11;
+	box-shadow: 1px 1px 6px -2px rgba(20%,20%,40%,0.7);
+	padding-bottom: 30px;
+	padding-left: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#links-row-1:hover{
+	left: 0px;
+}
+#links-row-1 .box{
+	width: 180px;
+	padding: 10px;
+	border-top: dotted #999 1px;
+}
+#links-row-1 .box-title:before{
+	content: "● ";
+}
+#links-row-1 .box-title{
+	font-weight: bold;	
+	padding: 0px 0px 10px 0px;
+}
+#links-row-1 .box:first-child{
+	padding-right: 40px;
+	background: url(https://pic.pimg.tw/weilife/1402317219-2254195646.png) right 10px no-repeat;
+	border-top: none;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 側欄2 > 上方下拉式選單 */
+#links-row-2{
+	position: absolute;
+	top: 0px;
+	width: 860px;
+	padding-left: 220px;
+}
+#links-row-2 .box{
+	display: inline-block;
+}
+#links-row-2 .box-title{
+	padding: 18px 20px 15px 20px;
+	color: #555;
+}
+#links-row-2 .box-title img{display: none;}
+#links-row-2 .box:hover .box-title{
+	background: #bce2e8;
+}
+#links-row-2 .box-text{
+	display: none;
+	position: absolute;
+	min-width: 200px;
+	padding: 15px;
+	background: #f3f3f2;
+	border-top: 4px solid #bce2e8;
+	box-shadow: 2px 2px 5px -2px rgba(20%,20%,40%,0.7);
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#links-row-2 .box:hover .box-text{
+	display: block;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 側欄元件定義 */
+/*-我去誰家-*/
+#crumb{}
+#crumb .box-text{}
+#crumb .box-text ul:after {
+	content: " ";
+	display: block;
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+}
+#crumb .box-text li:before{display:none;}
+#crumb .box-text li {
+	float: left;
+	padding:5px;
+	background: none;
+	border: 0px;
+}
+#crumb .box-text img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+/*-好友列表-*/
+#friendbox{}
+#friendbox.box-text{}
+#friendbox .box-text ul:after {
+	content: " ";
+	display: block;
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+}
+#friendbox .box-text li:before{display:none;}
+#friendbox .box-text li {
+	float: left;
+	padding:5px;
+	background: none;
+	border: 0px;
+}
+#friendbox .box-text img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+	border: 0px;
+}
+#friendbox .box-text a{
+	border: 0px;
+}
+
+/*-訪客列表-*/
+#visitor{}
+#visitor .box-text{}
+#visitor .box-text ul:after {
+	content: " ";
+	display: block;
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+}
+#visitor  .box-text li:before{display:none;}
+#visitor .box-text li {
+	float: left;
+	padding:5px;
+	background: none;
+	border: 0px;
+}
+#visitor .box-text img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+*-個人資訊-*/
+#user-info .box-title{}
+#user-info .box-text {}
+#user-info{}
+#user-info dt{}
+#user-info dl dd {}
+#user-info .user-img {
+	margin-bottom:5px;
+	width: 95px;
+}
+#user-info .user-img img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px;
+	border:0px;
+	margin-bottom:5px;
+}
+
+
+/*-日曆-*/
+#calendar .box-title{}
+#calendar .box-text {}
+#calendar{}
+#calendar table{
+	width:100%;
+}
+#calendar th,
+#calendar td{
+	text-align:center;
+	padding:1px;
+}
+#calendar td a{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:#007bbb;
+	color: #ffffff;
+	display:block;
+}
+
+/*-計數器-*/
+#counter .box-text li{
+	border: 0px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ 頁尾 */
+#footer{
+	line-height: 200%;
+	clear: both;
+	padding: 30px 0px 30px 0px;
+}
+
+
+/*--頁尾-自訂聲明--*/
+#footer p{
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+
+
+/*--頁尾-pixnet連結--*/
+#footer #bottom{
+	text-align: center;
+}
+#footer #bottom:before{
+	display: block;
+	content: "Copyright © CSS designed by Wei @ Dribs & Drabs, https://weilife.pixnet.net/blog";
+}
+
+
+#MYFB_slide{
+position: fixed;
+top: 0px;
+right: 0px;
+height: 100%;
+z-index: 9999;
+}
+#MYBTN{
+display: inline-block;
+position: absolute;
+top: 50%;
+left: -30px;
+background: url(https://pic.pimg.tw/weilife/1464262350-2208202000.png) no-repeat, #4867aa;
+width: 40px;
+height: 135px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border: 0px;
+font-size: 0px;
+display: block;
+margin-top: -67px;
+}
+#MYBTN:hover{
+cursor: pointer;
+}
+#MYIFRAME_outter{
+display: inline-block;
+padding-left: 10px;
+background: #4867aa;
+height: 100%;
+}
+#MYIFRAME{
+display: none;
+height: 100%;
+padding-bottom: 40px;
+}

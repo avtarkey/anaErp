@@ -177,8 +177,8 @@
 
 
                     if (resultJson.isExist == 0) {                      //是否是以前查询过得
-
-                        /*   let a = cht2zh(resultJson.body);            //交给百度翻译
+/*
+                           let a = cht2zh(resultJson.body);            //交给百度翻译
                           a.then(
                               (value) => {
                                   let a=new Object();                 //这个是返回对象
@@ -189,9 +189,9 @@
                                   console.log('现在开始显示图形...')                                       
                                   showForceGraph(a)                     //交给图形显示
                               }
-                          )  */
-
-                        let a = new Object();                 //这个是返回对象
+                          )  
+*/
+                         let a = new Object();                 //这个是返回对象
                         a.isExist = resultJson.isExist;       //组装要返回的对象
                         a.body = resultJson.body
                         showForceGraph(a)                    //交给图形显示 -->

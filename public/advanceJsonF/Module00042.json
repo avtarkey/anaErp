@@ -1,0 +1,101 @@
+ {
+  "links": [
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080312120445",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "已禁用功能",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 2,
+        "x": 1737.7555332795428,
+        "y": 1041.012756502993
+      },
+      "tarFormID": "20090212112811",
+      "tarIsBusiness": "2",
+      "tarIsDisabled": "true",
+      "tarModuleName": "工單管理",
+      "target": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00042",
+        "ModuleName": "工單管理",
+        "in": 0,
+        "name": "備料作業",
+        "out": 0,
+        "x": 1492.6956443042857,
+        "y": 1047.2980741691263
+      }
+    },
+    {
+      "rela": "模块间",
+      "tag": "S",
+      "souFormID": "20080312120445",
+      "souIsBusiness": "1",
+      "souIsDisabled": "true",
+      "souModuleName": "已禁用功能",
+      "source": {
+        "IsBusiness": "1",
+        "ModuleID": "Module00236",
+        "ModuleName": "已禁用功能",
+        "in": 0,
+        "name": "物料基本信息維護<>已禁用功能",
+        "out": 2,
+        "x": 1737.7555332795428,
+        "y": 1041.012756502993
+      },
+      "tarFormID": "20080903114623",
+      "tarIsBusiness": "2",
+      "tarIsDisabled": "true",
+      "tarModuleName": "工單管理",
+      "target": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00042",
+        "ModuleName": "工單管理",
+        "in": 0,
+        "name": "發料審核",
+        "out": 1,
+        "x": 1490.0680315456523,
+        "y": 1133.6226121565833
+      }
+    },
+    {
+      "rela": "模块内",
+      "tag": "S",
+      "souFormID": "20080903114623",
+      "souIsBusiness": "2",
+      "souIsDisabled": "true",
+      "souModuleName": "工單管理",
+      "source": {
+        "IsBusiness": "2",
+        "ModuleID": "Module00042",
+        "ModuleName": "工單管理",
+        "in": 0,
+        "name": "發料審核",
+        "out": 1,
+        "x": 1490.0680315456523,
+        "y": 1133.6226121565833
+      },
+      "tarFormID": "20080827152246",
+      "tarIsBusiness": "3",
+      "tarIsDisabled": "true",
+      "tarModuleName": "工單管理",
+      "target": {
+        "IsBusiness": "3",
+        "ModuleID": "Module00042",
+        "ModuleName": "工單管理",
+        "in": 1,
+        "name": "投料計算1",
+        "out": 0,
+        "x": 1363.1840576667373,
+        "y": 1135.5462602220234
+      }
+    }
+  ],
+  "nodes": {}
+}
